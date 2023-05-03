@@ -1,0 +1,322 @@
+{
+    "sourceFile": "src/pages/Logement.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 76,
+            "patches": [
+                {
+                    "date": 1682441967654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1682441992564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from 'react';\n import Header from '../components/Header';\n import Footer from '../components/Footer';\n-//import '../Sass/pages/_logement.scss';\n+import '../Sass/pages/_logement.scss';\n import logements from '../data/logements.json';\n import { useParams } from 'react-router-dom';\n import Carousel from '../components/caroussel';\n import Error from './Error'\n"
+                },
+                {
+                    "date": 1682442000291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from 'react';\n import Header from '../components/Header';\n import Footer from '../components/Footer';\n-import '../Sass/pages/_logement.scss';\n+import '../';\n import logements from '../data/logements.json';\n import { useParams } from 'react-router-dom';\n import Carousel from '../components/caroussel';\n import Error from './Error'\n"
+                },
+                {
+                    "date": 1682442011747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from 'react';\n import Header from '../components/Header';\n import Footer from '../components/Footer';\n-import '../';\n+import '../styles';\n import logements from '../data/logements.json';\n import { useParams } from 'react-router-dom';\n import Carousel from '../components/caroussel';\n import Error from './Error'\n"
+                },
+                {
+                    "date": 1682442017662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from 'react';\n import Header from '../components/Header';\n import Footer from '../components/Footer';\n-import '../styles';\n+import '../styles/pages/';\n import logements from '../data/logements.json';\n import { useParams } from 'react-router-dom';\n import Carousel from '../components/caroussel';\n import Error from './Error'\n"
+                },
+                {
+                    "date": 1682442038634,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from 'react';\n import Header from '../components/Header';\n import Footer from '../components/Footer';\n-import '../styles/pages/';\n+import '../styles/pages/-';\n import logements from '../data/logements.json';\n import { useParams } from 'react-router-dom';\n import Carousel from '../components/caroussel';\n import Error from './Error'\n"
+                },
+                {
+                    "date": 1682442055526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from 'react';\n import Header from '../components/Header';\n import Footer from '../components/Footer';\n-import '../styles/pages/-';\n+import '../styles/pages/_lo';\n import logements from '../data/logements.json';\n import { useParams } from 'react-router-dom';\n import Carousel from '../components/caroussel';\n import Error from './Error'\n"
+                },
+                {
+                    "date": 1682442065577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from 'react';\n import Header from '../components/Header';\n import Footer from '../components/Footer';\n-import '../styles/pages/_lo';\n+import '../styles/pages/_logement.scss';\n import logements from '../data/logements.json';\n import { useParams } from 'react-router-dom';\n import Carousel from '../components/caroussel';\n import Error from './Error'\n"
+                },
+                {
+                    "date": 1683026439609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,9 @@\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n           <div className='tags'>{logement.tags}</div>\n+          \n         </div>\n         <div className='logement_owner'>\n           <div className='owner'>\n             <h3>{logement.host.name}</h3>\n"
+                },
+                {
+                    "date": 1683026452679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,10 +25,11 @@\n       <div className='logement_title_owner'>\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n-          <div className='tags'>{logement.tags}</div>\n-          \n+          <div className='tags'>{logement.tags.}</div>\n+          {isEquipementVisible && <p className='paragraph open'>{logement.equipments.map((eq, i) => (\n+              <li key={ i }>{ eq }</li>))}</p>}\n         </div>\n         <div className='logement_owner'>\n           <div className='owner'>\n             <h3>{logement.host.name}</h3>\n"
+                },
+                {
+                    "date": 1683026466050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,10 +25,10 @@\n       <div className='logement_title_owner'>\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n-          <div className='tags'>{logement.tags.}</div>\n-          {isEquipementVisible && <p className='paragraph open'>{logement.equipments.map((eq, i) => (\n+          <div className='tags'>{logement.tags.map}</div>\n+          <p className='paragraph open'>{logement.equipments.map((eq, i) => (\n               <li key={ i }>{ eq }</li>))}</p>}\n         </div>\n         <div className='logement_owner'>\n           <div className='owner'>\n"
+                },
+                {
+                    "date": 1683026476795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n           <div className='tags'>{logement.tags.map}</div>\n-          <p className='paragraph open'>{logement.equipments.map((eq, i) => (\n+         {logement.equipments.map((eq, i) => (\n               <li key={ i }>{ eq }</li>))}</p>}\n         </div>\n         <div className='logement_owner'>\n           <div className='owner'>\n"
+                },
+                {
+                    "date": 1683026489097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n           <div className='tags'>{logement.tags.map}</div>\n-         {logement.equipments.map((eq, i) => (\n+       ((eq, i) => (\n               <li key={ i }>{ eq }</li>))}</p>}\n         </div>\n         <div className='logement_owner'>\n           <div className='owner'>\n"
+                },
+                {
+                    "date": 1683026494726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n           <div className='tags'>{logement.tags.map}</div>\n-       ((eq, i) => (\n+         {logement.equipments.map((eq, i) => (\n               <li key={ i }>{ eq }</li>))}</p>}\n         </div>\n         <div className='logement_owner'>\n           <div className='owner'>\n"
+                },
+                {
+                    "date": 1683026504460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n       <div className='logement_title_owner'>\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n-          <div className='tags'>{logement.tags.map}</div>\n+          <div className='tags'>{logement.tags.map()}</div>\n          {logement.equipments.map((eq, i) => (\n               <li key={ i }>{ eq }</li>))}</p>}\n         </div>\n         <div className='logement_owner'>\n"
+                },
+                {
+                    "date": 1683026520923,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n       <div className='logement_title_owner'>\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n-          <div className='tags'>{logement.tags.map()}</div>\n+          <div className='tags'>{logement.tags.map(tag)}</div>\n          {logement.equipments.map((eq, i) => (\n               <li key={ i }>{ eq }</li>))}</p>}\n         </div>\n         <div className='logement_owner'>\n"
+                },
+                {
+                    "date": 1683026532547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n       <div className='logement_title_owner'>\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n-          <div className='tags'>{logement.tags.map(tag)}</div>\n+          <div className='tags'>{logement.tags.map(tag, i)}</div>\n          {logement.equipments.map((eq, i) => (\n               <li key={ i }>{ eq }</li>))}</p>}\n         </div>\n         <div className='logement_owner'>\n"
+                },
+                {
+                    "date": 1683026539833,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n       <div className='logement_title_owner'>\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n-          <div className='tags'>{logement.tags.map(tag, i)}</div>\n+          <div className='tags'>{logement.tags.map((tag, i)}</div>\n          {logement.equipments.map((eq, i) => (\n               <li key={ i }>{ eq }</li>))}</p>}\n         </div>\n         <div className='logement_owner'>\n"
+                },
+                {
+                    "date": 1683026548612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n       <div className='logement_title_owner'>\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n-          <div className='tags'>{logement.tags.map((tag, i)}</div>\n+          <div className='tags'>{logement.tags.map((tag, i)=}</div>\n          {logement.equipments.map((eq, i) => (\n               <li key={ i }>{ eq }</li>))}</p>}\n         </div>\n         <div className='logement_owner'>\n"
+                },
+                {
+                    "date": 1683026556500,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n       <div className='logement_title_owner'>\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n-          <div className='tags'>{logement.tags.map((tag, i)=}</div>\n+          <div className='tags'>{logement.tags.map((tag, i)=>()}</div>\n          {logement.equipments.map((eq, i) => (\n               <li key={ i }>{ eq }</li>))}</p>}\n         </div>\n         <div className='logement_owner'>\n"
+                },
+                {
+                    "date": 1683026567800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n           <div className='tags'>{logement.tags.map((tag, i)=>()}</div>\n          {logement.equipments.map((eq, i) => (\n-              <li key={ i }>{ eq }</li>))}</p>}\n+             </p>}\n         </div>\n         <div className='logement_owner'>\n           <div className='owner'>\n             <h3>{logement.host.name}</h3>\n"
+                },
+                {
+                    "date": 1683026580647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n       <div className='logement_title_owner'>\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n-          <div className='tags'>{logement.tags.map((tag, i)=>()}</div>\n+          <div className='tags'>{logement.tags.map((tag, i)=>( <li key={ i }>{ eq }</li>))}}</div>\n          {logement.equipments.map((eq, i) => (\n              </p>}\n         </div>\n         <div className='logement_owner'>\n"
+                },
+                {
+                    "date": 1683026586665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,10 +26,9 @@\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n           <div className='tags'>{logement.tags.map((tag, i)=>( <li key={ i }>{ eq }</li>))}}</div>\n-         {logement.equipments.map((eq, i) => (\n-             </p>}\n+        \n         </div>\n         <div className='logement_owner'>\n           <div className='owner'>\n             <h3>{logement.host.name}</h3>\n"
+                },
+                {
+                    "date": 1683026595266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n       <div className='logement_title_owner'>\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n-          <div className='tags'>{logement.tags.map((tag, i)=>( <li key={ i }>{ eq }</li>))}}</div>\n+          <div className='tags'>{logement.tags.map((tag, i)=>( <li key={ i }>{ tag }</li>))}}</div>\n         \n         </div>\n         <div className='logement_owner'>\n           <div className='owner'>\n"
+                },
+                {
+                    "date": 1683026611948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n       <div className='logement_title_owner'>\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n-          <div className='tags'>{logement.tags.map((tag, i)=>( <li key={ i }>{ tag }</li>))}}</div>\n+          <div className='tags'>{logement.tags.map((tag, i)=>( <li key={ i }>{ tags }</li>))}</div>\n         \n         </div>\n         <div className='logement_owner'>\n           <div className='owner'>\n"
+                },
+                {
+                    "date": 1683026633665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n       <div className='logement_title_owner'>\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n-          <div className='tags'>{logement.tags.map((tag, i)=>( <li key={ i }>{ tags }</li>))}</div>\n+          <div className='tags'>{logement.tags.map((tags, i)=>( <s key={ i }>{ tags }</li>))}</div>\n         \n         </div>\n         <div className='logement_owner'>\n           <div className='owner'>\n"
+                },
+                {
+                    "date": 1683026643997,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n       <div className='logement_title_owner'>\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n-          <div className='tags'>{logement.tags.map((tags, i)=>( <s key={ i }>{ tags }</li>))}</div>\n+          <div className='tags'>{logement.tags.map((tags, i)=>( <span key={ i }>{ tags }</span>))}</div>\n         \n         </div>\n         <div className='logement_owner'>\n           <div className='owner'>\n"
+                },
+                {
+                    "date": 1683027123760,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n       <div className='logement_title_owner'>\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n-          <div className='tags'>{logement.tags.map((tags, i)=>( <span key={ i }>{ tags }</span>))}</div>\n+          <div className='tags'>{logement.tags.map((tag, i)=>( <span key={ i }>{ tags }</span>))}</div>\n         \n         </div>\n         <div className='logement_owner'>\n           <div className='owner'>\n"
+                },
+                {
+                    "date": 1683027138130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n       <div className='logement_title_owner'>\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n-          <div className='tags'>{logement.tags.map((tag, i)=>( <span key={ i }>{ tags }</span>))}</div>\n+          <div className='tags'>{logement.tags.map((tag, i)=>( <span key={ i }>{ tag }</span>))}</div>\n         \n         </div>\n         <div className='logement_owner'>\n           <div className='owner'>\n"
+                },
+                {
+                    "date": 1683032441922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,11 +30,9 @@\n         \n         </div>\n         <div className='logement_owner'>\n           <div className='owner'>\n-            <h3>{logement.host.name}</h3>\n-            <img className='logement_owner-badge' src={logement.host.picture} alt='' />\n-          </div>\n+            \n           <div className='rating-stars'>\n             {[1, 2, 3, 4, 5].map((num)=> <span className={logement.rating >= num ? \"star on\" : \"star off\"}>★</span>)}\n           </div>\n         </div>\n"
+                },
+                {
+                    "date": 1683032454274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,11 @@\n         \n         </div>\n         <div className='logement_owner'>\n           <div className='owner'>\n-            \n+            <h3>{logement.host.name}</h3>\n+            <img className='logement_owner-badge' src={logement.host.picture} alt='' />\n+          </div>\n           <div className='rating-stars'>\n             {[1, 2, 3, 4, 5].map((num)=> <span className={logement.rating >= num ? \"star on\" : \"star off\"}>★</span>)}\n           </div>\n         </div>\n"
+                },
+                {
+                    "date": 1683032464242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,12 +29,9 @@\n           <div className='tags'>{logement.tags.map((tag, i)=>( <span key={ i }>{ tag }</span>))}</div>\n         \n         </div>\n         <div className='logement_owner'>\n-          <div className='owner'>\n-            <h3>{logement.host.name}</h3>\n-            <img className='logement_owner-badge' src={logement.host.picture} alt='' />\n-          </div>\n+         \n           <div className='rating-stars'>\n             {[1, 2, 3, 4, 5].map((num)=> <span className={logement.rating >= num ? \"star on\" : \"star off\"}>★</span>)}\n           </div>\n         </div>\n"
+                },
+                {
+                    "date": 1683032475365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,8 +33,9 @@\n          \n           <div className='rating-stars'>\n             {[1, 2, 3, 4, 5].map((num)=> <span className={logement.rating >= num ? \"star on\" : \"star off\"}>★</span>)}\n           </div>\n+          \n         </div>\n       </div>\n       <div className='container_description-equipment'>\n         <DescriptionEquipment />\n"
+                },
+                {
+                    "date": 1683109338803,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,8 @@\n import logements from '../data/logements.json';\n import { useParams } from 'react-router-dom';\n import Carousel from '../components/caroussel';\n import Error from './Error'\n-import DescriptionEquipment from '../components/DescriptionEquipement';\n \n const Logement = () => {\n   const { id } = useParams();\n   const logement = logements.find((logement) => logement.id === id);\n@@ -33,9 +32,12 @@\n          \n           <div className='rating-stars'>\n             {[1, 2, 3, 4, 5].map((num)=> <span className={logement.rating >= num ? \"star on\" : \"star off\"}>★</span>)}\n           </div>\n-          \n+          <div className='owner'>\n+            <h3>{logement.host.name}</h3>\n+            <img className='logement_owner-badge' src={logement.host.picture} alt='' />\n+          </div>\n         </div>\n       </div>\n       <div className='container_description-equipment'>\n         <DescriptionEquipment />\n"
+                },
+                {
+                    "date": 1683109353674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,12 @@\n import React from 'react';\n import Header from '../components/Header';\n import Footer from '../components/Footer';\n-import '../styles/pages/_logement.scss';\n import logements from '../data/logements.json';\n import { useParams } from 'react-router-dom';\n import Carousel from '../components/caroussel';\n+import DescriptionEquipment from '../components/DescriptionEquipement';\n+\n import Error from './Error'\n \n const Logement = () => {\n   const { id } = useParams();\n"
+                },
+                {
+                    "date": 1683109359036,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,11 @@\n import logements from '../data/logements.json';\n import { useParams } from 'react-router-dom';\n import Carousel from '../components/caroussel';\n import DescriptionEquipment from '../components/DescriptionEquipement';\n+import '../styles/pages/_logement.scss';\n \n+\n import Error from './Error'\n \n const Logement = () => {\n   const { id } = useParams();\n"
+                },
+                {
+                    "date": 1683109366275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n import React from 'react';\n import Header from '../components/Header';\n import Footer from '../components/Footer';\n import logements from '../data/logements.json';\n-import { useParams } from 'react-router-dom';\n import Carousel from '../components/caroussel';\n import DescriptionEquipment from '../components/DescriptionEquipement';\n import '../styles/pages/_logement.scss';\n \n"
+                },
+                {
+                    "date": 1683109371460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n import React from 'react';\n+import { useParams } from 'react-router-dom';\n+\n import Header from '../components/Header';\n import Footer from '../components/Footer';\n import logements from '../data/logements.json';\n import Carousel from '../components/caroussel';\n"
+                },
+                {
+                    "date": 1683109379603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n import { useParams } from 'react-router-dom';\n \n import Header from '../components/Header';\n import Footer from '../components/Footer';\n-import logements from '../data/logements.json';\n import Carousel from '../components/caroussel';\n import DescriptionEquipment from '../components/DescriptionEquipement';\n import '../styles/pages/_logement.scss';\n \n"
+                },
+                {
+                    "date": 1683109385243,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react';\n import { useParams } from 'react-router-dom';\n-\n+import logements from '../data/logements.json';\n import Header from '../components/Header';\n import Footer from '../components/Footer';\n import Carousel from '../components/caroussel';\n import DescriptionEquipment from '../components/DescriptionEquipement';\n"
+                },
+                {
+                    "date": 1683109415391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,8 @@\n import DescriptionEquipment from '../components/DescriptionEquipement';\n import '../styles/pages/_logement.scss';\n \n \n-import Error from './Error'\n \n const Logement = () => {\n   const { id } = useParams();\n   const logement = logements.find((logement) => logement.id === id);\n"
+                },
+                {
+                    "date": 1683109420836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,10 @@\n import Header from '../components/Header';\n import Footer from '../components/Footer';\n import Carousel from '../components/caroussel';\n import DescriptionEquipment from '../components/DescriptionEquipement';\n+import Error from './Error'\n+\n import '../styles/pages/_logement.scss';\n \n \n \n"
+                },
+                {
+                    "date": 1683109432345,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,13 +5,11 @@\n import Footer from '../components/Footer';\n import Carousel from '../components/caroussel';\n import DescriptionEquipment from '../components/DescriptionEquipement';\n import Error from './Error'\n-\n import '../styles/pages/_logement.scss';\n \n \n-\n const Logement = () => {\n   const { id } = useParams();\n   const logement = logements.find((logement) => logement.id === id);\n \n"
+                },
+                {
+                    "date": 1683109443400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,17 +7,15 @@\n import DescriptionEquipment from '../components/DescriptionEquipement';\n import Error from './Error'\n import '../styles/pages/_logement.scss';\n \n-\n const Logement = () => {\n   const { id } = useParams();\n   const logement = logements.find((logement) => logement.id === id);\n \n   if (!logement) {\n     return <Error />;\n   }\n-\n   return (\n \n     <div className='logement_page'>\n       <Header />\n"
+                },
+                {
+                    "date": 1683109466908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,10 @@\n       <div className='logement_title_owner'>\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n-          <div className='tags'>{logement.tags.map((tag, i)=>( <span key={ i }>{ tag }</span>))}</div>\n+          <div className='tags'>{logement.tags.map((tag, i)=>( <span key={ i }>{ tag }</span>))}\n+          </div>\n         \n         </div>\n         <div className='logement_owner'>\n          \n"
+                },
+                {
+                    "date": 1683109475419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,12 +26,10 @@\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n           <div className='tags'>{logement.tags.map((tag, i)=>( <span key={ i }>{ tag }</span>))}\n           </div>\n-        \n         </div>\n         <div className='logement_owner'>\n-         \n           <div className='rating-stars'>\n             {[1, 2, 3, 4, 5].map((num)=> <span className={logement.rating >= num ? \"star on\" : \"star off\"}>★</span>)}\n           </div>\n           <div className='owner'>\n"
+                },
+                {
+                    "date": 1683115286956,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,9 @@\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n           <div className='tags'>{logement.tags.map((tag, i)=>( <span key={ i }>{ tag }</span>))}\n           </div>\n+          \n         </div>\n         <div className='logement_owner'>\n           <div className='rating-stars'>\n             {[1, 2, 3, 4, 5].map((num)=> <span className={logement.rating >= num ? \"star on\" : \"star off\"}>★</span>)}\n"
+                },
+                {
+                    "date": 1683115318799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,11 +24,12 @@\n       <div className='logement_title_owner'>\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n+          \n           <div className='tags'>{logement.tags.map((tag, i)=>( <span key={ i }>{ tag }</span>))}\n-          </div>\n-          \n+</div>\n+\n         </div>\n         <div className='logement_owner'>\n           <div className='rating-stars'>\n             {[1, 2, 3, 4, 5].map((num)=> <span className={logement.rating >= num ? \"star on\" : \"star off\"}>★</span>)}\n"
+                },
+                {
+                    "date": 1683115368713,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n           \n-          <div className='tags'>{logement.tags.map((tag, i)=>( <span key={ i }>{ tag }</span>))}\n+          <div className='tags'>{logement.tags.map((tag)=>( <span key={ tag }>{ tag }</span>))}\n </div>\n \n         </div>\n         <div className='logement_owner'>\n"
+                },
+                {
+                    "date": 1683115397032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n           \n-          <div className='tags'>{logement.tags.map((tag)=>( <span key={ tag }>{ tag }</span>))}\n+          <div className='tags'>{logement.tags.map((tag, i)=>( <span key={ i }>{ tag }</span>))}\n </div>\n \n         </div>\n         <div className='logement_owner'>\n"
+                },
+                {
+                    "date": 1683115502482,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n           \n-          <div className='tags'>{logement.tags.map((tag, i)=>( <span key={ i }>{ tag }</span>))}\n+          <div className='tags'>{logement.tags.map((tag)=>( <span key={ tag.id }>{ tag }</span>))}\n </div>\n \n         </div>\n         <div className='logement_owner'>\n"
+                },
+                {
+                    "date": 1683115775214,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n import '../styles/pages/_logement.scss';\n \n const Logement = () => {\n   const { id } = useParams();\n-  const logement = logements.find((logement) => logement.id === id);\n+  const logement = logements.find((logement) => logement.id === parseInt(id));\n \n   if (!logement) {\n     return <Error />;\n   }\n"
+                },
+                {
+                    "date": 1683116266135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,13 +9,16 @@\n import '../styles/pages/_logement.scss';\n \n const Logement = () => {\n   const { id } = useParams();\n-  const logement = logements.find((logement) => logement.id === parseInt(id));\n+  console.log('id:', id); // Ajout de cette ligne\n+  const logement = logements.find((logement) => logement.id === id);\n \n   if (!logement) {\n     return <Error />;\n   }\n+  ...\n+}\n   return (\n \n     <div className='logement_page'>\n       <Header />\n"
+                },
+                {
+                    "date": 1683116281684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,8 @@\n \n   if (!logement) {\n     return <Error />;\n   }\n-  ...\n }\n   return (\n \n     <div className='logement_page'>\n"
+                },
+                {
+                    "date": 1683116298647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \n   if (!logement) {\n     return <Error />;\n   }\n-}\n+\n   return (\n \n     <div className='logement_page'>\n       <Header />\n"
+                },
+                {
+                    "date": 1683116630222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,8 @@\n import '../styles/pages/_logement.scss';\n \n const Logement = () => {\n   const { id } = useParams();\n-  console.log('id:', id); // Ajout de cette ligne\n   const logement = logements.find((logement) => logement.id === id);\n \n   if (!logement) {\n     return <Error />;\n"
+                },
+                {
+                    "date": 1683116686296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n           \n-          <div className='tags'>{logement.tags.map((tag)=>( <span key={ tag.id }>{ tag }</span>))}\n+          <div className='tags'>{logement.tags.map((tag)=>( <span key={ tags.id }>{ tag }</span>))}\n </div>\n \n         </div>\n         <div className='logement_owner'>\n"
+                },
+                {
+                    "date": 1683116697321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n           \n-          <div className='tags'>{logement.tags.map((tag)=>( <span key={ tags.id }>{ tag }</span>))}\n+          <div className='tags'>{logement.tags.map((tags)=>( <span key={ tags.id }>{ tags }</span>))}\n </div>\n \n         </div>\n         <div className='logement_owner'>\n"
+                },
+                {
+                    "date": 1683116737806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n import '../styles/pages/_logement.scss';\n \n const Logement = () => {\n   const { id } = useParams();\n+  console.log('id:', id); // Ajout de cette ligne\n   const logement = logements.find((logement) => logement.id === id);\n \n   if (!logement) {\n     return <Error />;\n@@ -26,9 +27,9 @@\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n           \n-          <div className='tags'>{logement.tags.map((tags)=>( <span key={ tags.id }>{ tags }</span>))}\n+          <div className='tags'>{logement.tags.map((tag)=>( <span key={ tag.id }>{ tag }</span>))}\n </div>\n \n         </div>\n         <div className='logement_owner'>\n"
+                },
+                {
+                    "date": 1683116745384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,8 @@\n import '../styles/pages/_logement.scss';\n \n const Logement = () => {\n   const { id } = useParams();\n-  console.log('id:', id); // Ajout de cette ligne\n   const logement = logements.find((logement) => logement.id === id);\n \n   if (!logement) {\n     return <Error />;\n"
+                },
+                {
+                    "date": 1683116821363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n           \n-          <div className='tags'>{logement.tags.map((tag)=>( <span key={ tag.id }>{ tag }</span>))}\n+          <div className='tags'>{[logement.tags.map((tag)=>( <span key={ tag.id }>{ tag }</span>))}\n </div>\n \n         </div>\n         <div className='logement_owner'>\n"
+                },
+                {
+                    "date": 1683116838122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n           \n-          <div className='tags'>{[logement.tags.map((tag)=>( <span key={ tag.id }>{ tag }</span>))}\n+          <div className='tags'>{[logement.tags].map((tag)=>( <span key={ tag.id }>{ tag }</span>))}\n </div>\n \n         </div>\n         <div className='logement_owner'>\n"
+                },
+                {
+                    "date": 1683116961416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n           \n-          <div className='tags'>{[logement.tags].map((tag)=>( <span key={ tag.id }>{ tag }</span>))}\n+          <div className='tags'>{logement.tags].map((tag)=>( <span key={ tag.id }>{ tag }</span>))}\n </div>\n \n         </div>\n         <div className='logement_owner'>\n"
+                },
+                {
+                    "date": 1683116968099,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n           \n-          <div className='tags'>{logement.tags].map((tag)=>( <span key={ tag.id }>{ tag }</span>))}\n+          <div className='tags'>{logement.tags.map((tag)=>( <span key={ tag.id }>{ tag }</span>))}\n </div>\n \n         </div>\n         <div className='logement_owner'>\n"
+                },
+                {
+                    "date": 1683117087078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,10 @@\n           <h2>{logement.location}</h2>\n           \n           <div className='tags'>{logement.tags.map((tag)=>( <span key={ tag.id }>{ tag }</span>))}\n </div>\n-\n+{logement.equipments.map((eq, i) => (\n+              <li key={ i }>{ eq }</li>))}\n         </div>\n         <div className='logement_owner'>\n           <div className='rating-stars'>\n             {[1, 2, 3, 4, 5].map((num)=> <span className={logement.rating >= num ? \"star on\" : \"star off\"}>★</span>)}\n"
+                },
+                {
+                    "date": 1683117099869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,10 +28,9 @@\n           <h2>{logement.location}</h2>\n           \n           <div className='tags'>{logement.tags.map((tag)=>( <span key={ tag.id }>{ tag }</span>))}\n </div>\n-{logement.equipments.map((eq, i) => (\n-              <li key={ i }>{ eq }</li>))}\n+{logement.equipments.map((eq, i) => (<li key={ i }>{ eq }</li>))}\n         </div>\n         <div className='logement_owner'>\n           <div className='rating-stars'>\n             {[1, 2, 3, 4, 5].map((num)=> <span className={logement.rating >= num ? \"star on\" : \"star off\"}>★</span>)}\n"
+                },
+                {
+                    "date": 1683117112006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n           \n-          <div className='tags'>{logement.tags.map((tag)=>( <span key={ tag.id }>{ tag }</span>))}\n+          <div className='tags'>{logement.tags.map((tag, )=>( <span key={ tag.id }>{ tag }</span>))}\n </div>\n {logement.equipments.map((eq, i) => (<li key={ i }>{ eq }</li>))}\n         </div>\n         <div className='logement_owner'>\n"
+                },
+                {
+                    "date": 1683117134496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n           \n-          <div className='tags'>{logement.tags.map((tag, )=>( <span key={ tag.id }>{ tag }</span>))}\n+          <div className='tags'>{logement.tags.map((tag, i)=>( <span key={ }>{ tag }</span>))}\n </div>\n {logement.equipments.map((eq, i) => (<li key={ i }>{ eq }</li>))}\n         </div>\n         <div className='logement_owner'>\n"
+                },
+                {
+                    "date": 1683117160566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,11 +26,11 @@\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n           \n-          <div className='tags'>{logement.tags.map((tag, i)=>( <span key={ }>{ tag }</span>))}\n+          <div className='tags'>{logement.tags.map((tag, i)=>( <span key={ i}>{ tag }</span>))}\n </div>\n-{logement.equipments.map((eq, i) => (<li key={ i }>{ eq }</li>))}\n+\n         </div>\n         <div className='logement_owner'>\n           <div className='rating-stars'>\n             {[1, 2, 3, 4, 5].map((num)=> <span className={logement.rating >= num ? \"star on\" : \"star off\"}>★</span>)}\n"
+                },
+                {
+                    "date": 1683117257847,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n           \n-          <div className='tags'>{logement.tags.map((tag, i)=>( <span key={ i}>{ tag }</span>))}\n+          <div className='tags'>{logement.tags.map((tag)=>( <span key={ i}>{ tag }</span>))}\n </div>\n \n         </div>\n         <div className='logement_owner'>\n"
+                },
+                {
+                    "date": 1683117266692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n           \n-          <div className='tags'>{logement.tags.map((tag)=>( <span key={ i}>{ tag }</span>))}\n+          <div className='tags'>{logement.tags.map((tag)=>( <span key={ tag.id}>{ tag }</span>))}\n </div>\n \n         </div>\n         <div className='logement_owner'>\n"
+                },
+                {
+                    "date": 1683117310562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n           <h2>{logement.location}</h2>\n           \n           <div className='tags'>{logement.tags.map((tag)=>( <span key={ tag.id}>{ tag }</span>))}\n </div>\n-\n+{logement.equipments.map((eq, i) => (<li key={ i }>{ eq }</li>))}\n         </div>\n         <div className='logement_owner'>\n           <div className='rating-stars'>\n             {[1, 2, 3, 4, 5].map((num)=> <span className={logement.rating >= num ? \"star on\" : \"star off\"}>★</span>)}\n"
+                },
+                {
+                    "date": 1683117321316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n           <h2>{logement.location}</h2>\n           \n           <div className='tags'>{logement.tags.map((tag)=>( <span key={ tag.id}>{ tag }</span>))}\n </div>\n-{logement.equipments.map((eq, i) => (<li key={ i }>{ eq }</li>))}\n+\n         </div>\n         <div className='logement_owner'>\n           <div className='rating-stars'>\n             {[1, 2, 3, 4, 5].map((num)=> <span className={logement.rating >= num ? \"star on\" : \"star off\"}>★</span>)}\n"
+                },
+                {
+                    "date": 1683117405464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n           <h2>{logement.location}</h2>\n           \n           <div className='tags'>{logement.tags.map((tag)=>( <span key={ tag.id}>{ tag }</span>))}\n </div>\n-\n+{logement.equipments.map((eq, i) => (<li key={ i }>{ eq }</li>))}\n         </div>\n         <div className='logement_owner'>\n           <div className='rating-stars'>\n             {[1, 2, 3, 4, 5].map((num)=> <span className={logement.rating >= num ? \"star on\" : \"star off\"}>★</span>)}\n"
+                },
+                {
+                    "date": 1683117431338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n           \n-          <div className='tags'>{logement.tags.map((tag)=>( <span key={ tag.id}>{ tag }</span>))}\n+          <div className='tags'>{logement.tags.map((tag,)=>( <span key={ tag.id}>{ tag }</span>))}\n </div>\n {logement.equipments.map((eq, i) => (<li key={ i }>{ eq }</li>))}\n         </div>\n         <div className='logement_owner'>\n"
+                },
+                {
+                    "date": 1683117451355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n           \n-          <div className='tags'>{logement.tags.map((tag,)=>( <span key={ tag.id}>{ tag }</span>))}\n+          <div className='tags'>{logement.tags.map((tag, i)=>( <span key={ i}>{ tag }</span>))}\n </div>\n {logement.equipments.map((eq, i) => (<li key={ i }>{ eq }</li>))}\n         </div>\n         <div className='logement_owner'>\n"
+                },
+                {
+                    "date": 1683117490106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,11 +26,10 @@\n         <div className='logement_title'>\n           <h1>{logement.title}</h1>\n           <h2>{logement.location}</h2>\n           \n-          <div className='tags'>{logement.tags.map((tag, i)=>( <span key={ i}>{ tag }</span>))}\n+          <div className='tags'>{logement.tags.map((tag, i)=>( <span key={ i }>{ tag }</span>))}\n </div>\n-{logement.equipments.map((eq, i) => (<li key={ i }>{ eq }</li>))}\n         </div>\n         <div className='logement_owner'>\n           <div className='rating-stars'>\n             {[1, 2, 3, 4, 5].map((num)=> <span className={logement.rating >= num ? \"star on\" : \"star off\"}>★</span>)}\n"
+                }
+            ],
+            "date": 1682441967654,
+            "name": "Commit-0",
+            "content": "import React from 'react';\nimport Header from '../components/Header';\nimport Footer from '../components/Footer';\n//import '../Sass/pages/_logement.scss';\nimport logements from '../data/logements.json';\nimport { useParams } from 'react-router-dom';\nimport Carousel from '../components/caroussel';\nimport Error from './Error'\nimport DescriptionEquipment from '../components/DescriptionEquipement';\n\nconst Logement = () => {\n  const { id } = useParams();\n  const logement = logements.find((logement) => logement.id === id);\n\n  if (!logement) {\n    return <Error />;\n  }\n\n  return (\n\n    <div className='logement_page'>\n      <Header />\n      <Carousel pictures={logement.pictures} />\n     \n      <div className='logement_title_owner'>\n        <div className='logement_title'>\n          <h1>{logement.title}</h1>\n          <h2>{logement.location}</h2>\n          <div className='tags'>{logement.tags}</div>\n        </div>\n        <div className='logement_owner'>\n          <div className='owner'>\n            <h3>{logement.host.name}</h3>\n            <img className='logement_owner-badge' src={logement.host.picture} alt='' />\n          </div>\n          <div className='rating-stars'>\n            {[1, 2, 3, 4, 5].map((num)=> <span className={logement.rating >= num ? \"star on\" : \"star off\"}>★</span>)}\n          </div>\n        </div>\n      </div>\n      <div className='container_description-equipment'>\n        <DescriptionEquipment />\n      </div>\n      <Footer />\n    </div>\n  );\n};\n\nexport default Logement;\n"
+        }
+    ]
+}

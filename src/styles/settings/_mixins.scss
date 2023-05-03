@@ -1,0 +1,74 @@
+@import './variables';
+
+@mixin dropdown{
+  @include media_tablet{
+    h4, p{
+    font-size: $text *2;
+    }
+}
+  .paragraph_title{
+    background-color: $primary-color;
+    font-weight: 500;
+    color: white;
+    border-radius: $brxs;
+    padding: 13px 20px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    caret-color: transparent;
+    margin-bottom: 20px;
+  }
+  .paragraph{
+    background-color: $color-whitesmoke;
+    color: $primary-color;
+    font-weight: 400;
+    border-radius: $brxs;
+    padding: 50px 20px;
+    position: relative;
+    top: -20px;
+    z-index: -1;
+    animation: dropdown 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.5s ease;
+  }
+  .paragraph .open{
+    opacity: 1;
+  }
+  span {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 0.1;
+    position: absolute; 
+    bottom: 40px;
+    right: 10px;
+    &.open{
+      transform: rotate(180deg);
+      display: inline-block;
+      bottom: 0;
+    }
+  }
+}
+
+@mixin media_tablet{
+  @media screen and (min-width:map-get($breakpoints, tablet)){
+      @content;
+  }
+}
+@mixin media_desktop{
+  @media screen and (min-width:map-get($breakpoints, desktop)){
+      @content;
+  }
+}
+
+@keyframes dropdown{
+  0%{
+   height: 0px;
+  }
+ 100%{
+  height: fit-content;
+  opacity: 1;
+  }
+}
+

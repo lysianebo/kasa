@@ -1,0 +1,170 @@
+{
+    "sourceFile": "src/components/Header.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 38,
+            "patches": [
+                {
+                    "date": 1682442411975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1682442422792,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import logo from \"../assets/images/logo.svg\";\n import Navbar from \"./Navbar\"\n import { NavLink } from \"react-router-dom\";\n-import '..'\n+import '../styles'\n \n export default function Header() {\n \treturn (\n \t\t<header className=\"header__logo__navigation\">\n"
+                },
+                {
+                    "date": 1682447335076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import logo from \"../assets/images/logo.svg\";\n import Navbar from \"./Navbar\"\n import { NavLink } from \"react-router-dom\";\n-import '../styles'\n+import '../styles/'\n \n export default function Header() {\n \treturn (\n \t\t<header className=\"header__logo__navigation\">\n"
+                },
+                {
+                    "date": 1682447341100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import logo from \"../assets/images/logo.svg\";\n import Navbar from \"./Navbar\"\n import { NavLink } from \"react-router-dom\";\n-import '../styles/'\n+import '../styles/layout/'\n \n export default function Header() {\n \treturn (\n \t\t<header className=\"header__logo__navigation\">\n"
+                },
+                {
+                    "date": 1682447351213,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import logo from \"../assets/images/logo.svg\";\n import Navbar from \"./Navbar\"\n import { NavLink } from \"react-router-dom\";\n-import '../styles/layout/'\n+import '../styles/layout/Header.scss'\n \n export default function Header() {\n \treturn (\n \t\t<header className=\"header__logo__navigation\">\n"
+                },
+                {
+                    "date": 1682447364271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import logo from \"../assets/images/logo.svg\";\n import Navbar from \"./Navbar\"\n import { NavLink } from \"react-router-dom\";\n-import '../styles/layout/Header.scss'\n+import './styles/layout/Header.scss'\n \n export default function Header() {\n \treturn (\n \t\t<header className=\"header__logo__navigation\">\n"
+                },
+                {
+                    "date": 1682447377338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import logo from \"../assets/images/logo.svg\";\n import Navbar from \"./Navbar\"\n import { NavLink } from \"react-router-dom\";\n-import './styles/layout/Header.scss'\n+import '../styles/layout/Header.scss'\n \n export default function Header() {\n \treturn (\n \t\t<header className=\"header__logo__navigation\">\n"
+                },
+                {
+                    "date": 1682447385568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import logo from \"../assets/images/logo.svg\";\n import Navbar from \"./Navbar\"\n import { NavLink } from \"react-router-dom\";\n-import '../styles/layout/Header.scss'\n+import '../styles/layout/Header.scss',\n \n export default function Header() {\n \treturn (\n \t\t<header className=\"header__logo__navigation\">\n"
+                },
+                {
+                    "date": 1682447448135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import logo from \"../assets/images/logo.svg\";\n import Navbar from \"./Navbar\"\n import { NavLink } from \"react-router-dom\";\n-import '../styles/layout/Header.scss',\n+import '../styles/layout/header.scss';\n \n export default function Header() {\n \treturn (\n \t\t<header className=\"header__logo__navigation\">\n"
+                },
+                {
+                    "date": 1682447455320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import logo from \"../assets/images/logo.svg\";\n import Navbar from \"./Navbar\"\n import { NavLink } from \"react-router-dom\";\n-import '../styles/layout/header.scss';\n+import '../styles/layout/_header.scss';\n \n export default function Header() {\n \treturn (\n \t\t<header className=\"header__logo__navigation\">\n"
+                },
+                {
+                    "date": 1682471557013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import logo from \"../assets/images/logo.svg\";\n+\n import Navbar from \"./Navbar\"\n import { NavLink } from \"react-router-dom\";\n import '../styles/layout/_header.scss';\n \n"
+                },
+                {
+                    "date": 1682471565063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import logo from \"../assets/images/logo.svg\";\n-\n+import logo from \"../assets/images/logo4.svg\";\n import Navbar from \"./Navbar\"\n import { NavLink } from \"react-router-dom\";\n import '../styles/layout/_header.scss';\n \n"
+                },
+                {
+                    "date": 1682471574826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import logo from \"../assets/images/logo.svg\";\n-import logo from \"../assets/images/logo4.svg\";\n+import logo4 from \"../assets/images/logo4.svg\";\n import Navbar from \"./Navbar\"\n import { NavLink } from \"react-router-dom\";\n import '../styles/layout/_header.scss';\n \n"
+                },
+                {
+                    "date": 1682471588831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \treturn (\n \t\t<header className=\"header__logo__navigation\">\n \t\t\t<NavLink to=\"/\">\n \t\t\t\t<figure className=\"navbar__logo\">\n-\t\t\t\t\t<img className=\"logo\" src={logo} alt=\"logo de kasa\" />\n+\t\t\t\t\t<img className=\"logo\" src={logo4} alt=\"logo de kasa\" />\n \t\t\t\t</figure>\n \t\t\t</NavLink>\n \t\t\t<Navbar className=\"navigation\" />\n \t\t</header>\n"
+                },
+                {
+                    "date": 1682471595366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import logo from \"../assets/images/logo.svg\";\n+/import logo from \"../assets/images/logo.svg\";\n import logo4 from \"../assets/images/logo4.svg\";\n import Navbar from \"./Navbar\"\n import { NavLink } from \"react-router-dom\";\n import '../styles/layout/_header.scss';\n"
+                },
+                {
+                    "date": 1682471624826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n-/import logo from \"../assets/images/logo.svg\";\n-import logo4 from \"../assets/images/logo4.svg\";\n+//import logo from \"../assets/images/logo.svg\";\n+import logo1 from \"../assets/images/logo4.svg\";\n import Navbar from \"./Navbar\"\n import { NavLink } from \"react-router-dom\";\n import '../styles/layout/_header.scss';\n \n"
+                },
+                {
+                    "date": 1682471635120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n //import logo from \"../assets/images/logo.svg\";\n-import logo1 from \"../assets/images/logo4.svg\";\n+import logo1 from \"../assets/images/logo1.svg\";\n import Navbar from \"./Navbar\"\n import { NavLink } from \"react-router-dom\";\n import '../styles/layout/_header.scss';\n \n@@ -8,9 +8,9 @@\n \treturn (\n \t\t<header className=\"header__logo__navigation\">\n \t\t\t<NavLink to=\"/\">\n \t\t\t\t<figure className=\"navbar__logo\">\n-\t\t\t\t\t<img className=\"logo\" src={logo4} alt=\"logo de kasa\" />\n+\t\t\t\t\t<img className=\"logo\" src={logo1} alt=\"logo de kasa\" />\n \t\t\t\t</figure>\n \t\t\t</NavLink>\n \t\t\t<Navbar className=\"navigation\" />\n \t\t</header>\n"
+                },
+                {
+                    "date": 1682487017112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-//import logo from \"../assets/images/logo.svg\";\n+import logo from \"../assets/images/logo.svg\";\n import logo1 from \"../assets/images/logo1.svg\";\n import Navbar from \"./Navbar\"\n import { NavLink } from \"react-router-dom\";\n import '../styles/layout/_header.scss';\n"
+                },
+                {
+                    "date": 1682487031354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \treturn (\n \t\t<header className=\"header__logo__navigation\">\n \t\t\t<NavLink to=\"/\">\n \t\t\t\t<figure className=\"navbar__logo\">\n-\t\t\t\t\t<img className=\"logo\" src={logo1} alt=\"logo de kasa\" />\n+\t\t\t\t\t<img className=\"logo\" src={logo} alt=\"logo de kasa\" />\n \t\t\t\t</figure>\n \t\t\t</NavLink>\n \t\t\t<Navbar className=\"navigation\" />\n \t\t</header>\n"
+                },
+                {
+                    "date": 1682487046898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import logo from \"../assets/images/logo.svg\";\n-import logo1 from \"../assets/images/logo1.svg\";\n+//import logo1 from \"../assets/images/logo1.svg\";\n import Navbar from \"./Navbar\"\n import { NavLink } from \"react-router-dom\";\n import '../styles/layout/_header.scss';\n \n"
+                },
+                {
+                    "date": 1682487900149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import logo from \"../assets/images/logo.svg\";\n-//import logo1 from \"../assets/images/logo1.svg\";\n+import logo1 from \"../assets/images/logo1.svg\";\n import Navbar from \"./Navbar\"\n import { NavLink } from \"react-router-dom\";\n import '../styles/layout/_header.scss';\n \n"
+                },
+                {
+                    "date": 1682490105518,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import logo from \"../assets/images/logo.svg\";\n-import logo1 from \"../assets/images/logo1.svg\";\n+//import logo1 from \"../assets/images/logo1.svg\";\n import Navbar from \"./Navbar\"\n import { NavLink } from \"react-router-dom\";\n import '../styles/layout/_header.scss';\n \n"
+                },
+                {
+                    "date": 1682491306959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n export default function Header() {\n \treturn (\n \t\t<header className=\"header__logo__navigation\">\n \t\t\t<NavLink to=\"/\">\n-\t\t\t\t<figure className=\"navbar__logo\">\n+\t\t\t\t\n \t\t\t\t\t<img className=\"logo\" src={logo} alt=\"logo de kasa\" />\n \t\t\t\t</figure>\n \t\t\t</NavLink>\n \t\t\t<Navbar className=\"navigation\" />\n"
+                },
+                {
+                    "date": 1682491315167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \t\t<header className=\"header__logo__navigation\">\n \t\t\t<NavLink to=\"/\">\n \t\t\t\t\n \t\t\t\t\t<img className=\"logo\" src={logo} alt=\"logo de kasa\" />\n-\t\t\t\t</figure>\n+\t\t\t\t\n \t\t\t</NavLink>\n \t\t\t<Navbar className=\"navigation\" />\n \t\t</header>\n \t);\n"
+                },
+                {
+                    "date": 1682500770179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \t\t<header className=\"header__logo__navigation\">\n \t\t\t<NavLink to=\"/\">\n \t\t\t\t\n \t\t\t\t\t<img className=\"logo\" src={logo} alt=\"logo de kasa\" />\n-\t\t\t\t\n+\t\t\t\t</figure>\n \t\t\t</NavLink>\n \t\t\t<Navbar className=\"navigation\" />\n \t\t</header>\n \t);\n"
+                },
+                {
+                    "date": 1682506853969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n export default function Header() {\n \treturn (\n \t\t<header className=\"header__logo__navigation\">\n \t\t\t<NavLink to=\"/\">\n-\t\t\t\t\n+\t\t\t\t<figure className=\"navbar__logo\">\n \t\t\t\t\t<img className=\"logo\" src={logo} alt=\"logo de kasa\" />\n \t\t\t\t</figure>\n \t\t\t</NavLink>\n \t\t\t<Navbar className=\"navigation\" />\n"
+                },
+                {
+                    "date": 1682619203141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n import '../styles/layout/_header.scss';\n \n export default function Header() {\n \treturn (\n+\t\t\n \t\t<header className=\"header__logo__navigation\">\n \t\t\t<NavLink to=\"/\">\n \t\t\t\t<figure className=\"navbar__logo\">\n \t\t\t\t\t<img className=\"logo\" src={logo} alt=\"logo de kasa\" />\n"
+                },
+                {
+                    "date": 1682619224475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n import '../styles/layout/_header.scss';\n \n export default function Header() {\n \treturn (\n-\t\t\n+\t\t<div><\n \t\t<header className=\"header__logo__navigation\">\n \t\t\t<NavLink to=\"/\">\n \t\t\t\t<figure className=\"navbar__logo\">\n \t\t\t\t\t<img className=\"logo\" src={logo} alt=\"logo de kasa\" />\n"
+                },
+                {
+                    "date": 1682619233892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,6 +14,7 @@\n \t\t\t\t</figure>\n \t\t\t</NavLink>\n \t\t\t<Navbar className=\"navigation\" />\n \t\t</header>\n+\t\t</div>\n \t);\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682619251756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n import '../styles/layout/_header.scss';\n \n export default function Header() {\n \treturn (\n-\t\t<div><\n+\t\t<div>\n \t\t<header className=\"header__logo__navigation\">\n \t\t\t<NavLink to=\"/\">\n \t\t\t\t<figure className=\"navbar__logo\">\n \t\t\t\t\t<img className=\"logo\" src={logo} alt=\"logo de kasa\" />\n"
+                },
+                {
+                    "date": 1682619260445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,7 +14,7 @@\n \t\t\t\t</figure>\n \t\t\t</NavLink>\n \t\t\t<Navbar className=\"navigation\" />\n \t\t</header>\n-\t\t</div>\n+\n \t);\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683114226424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,11 @@\n import '../styles/layout/_header.scss';\n \n export default function Header() {\n \treturn (\n-\t\t<div>\n+\t\t\n \t\t<header className=\"header__logo__navigation\">\n-\t\t\t<NavLink to=\"/\">\n+\t\t\t<NavLink to=\"/kasa\">\n \t\t\t\t<figure className=\"navbar__logo\">\n \t\t\t\t\t<img className=\"logo\" src={logo} alt=\"logo de kasa\" />\n \t\t\t\t</figure>\n \t\t\t</NavLink>\n"
+                },
+                {
+                    "date": 1683114237967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n export default function Header() {\n \treturn (\n \t\t\n \t\t<header className=\"header__logo__navigation\">\n-\t\t\t<NavLink to=\"/kasa\">\n+\t\t\t<NavLink to=\"/kasa/\">\n \t\t\t\t<figure className=\"navbar__logo\">\n \t\t\t\t\t<img className=\"logo\" src={logo} alt=\"logo de kasa\" />\n \t\t\t\t</figure>\n \t\t\t</NavLink>\n"
+                },
+                {
+                    "date": 1683114246571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n export default function Header() {\n \treturn (\n \t\t\n \t\t<header className=\"header__logo__navigation\">\n-\t\t\t<NavLink to=\"/kasa/\">\n+\t\t\t<NavLink to=\"/\">\n \t\t\t\t<figure className=\"navbar__logo\">\n \t\t\t\t\t<img className=\"logo\" src={logo} alt=\"logo de kasa\" />\n \t\t\t\t</figure>\n \t\t\t</NavLink>\n"
+                },
+                {
+                    "date": 1683114457580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n export default function Header() {\n \treturn (\n \t\t\n \t\t<header className=\"header__logo__navigation\">\n-\t\t\t<NavLink to=\"/\">\n+\t\t\t<NavLink to=\"/kasa\">\n \t\t\t\t<figure className=\"navbar__logo\">\n \t\t\t\t\t<img className=\"logo\" src={logo} alt=\"logo de kasa\" />\n \t\t\t\t</figure>\n \t\t\t</NavLink>\n"
+                },
+                {
+                    "date": 1683114482191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n export default function Header() {\n \treturn (\n \t\t\n \t\t<header className=\"header__logo__navigation\">\n-\t\t\t<NavLink to=\"/kasa\">\n+\t\t\t<NavLink to=\"/k\">\n \t\t\t\t<figure className=\"navbar__logo\">\n \t\t\t\t\t<img className=\"logo\" src={logo} alt=\"logo de kasa\" />\n \t\t\t\t</figure>\n \t\t\t</NavLink>\n"
+                },
+                {
+                    "date": 1683114650791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n export default function Header() {\n \treturn (\n \t\t\n \t\t<header className=\"header__logo__navigation\">\n-\t\t\t<NavLink to=\"/k\">\n+\t\t\t<NavLink to=\"/kasa\">\n \t\t\t\t<figure className=\"navbar__logo\">\n \t\t\t\t\t<img className=\"logo\" src={logo} alt=\"logo de kasa\" />\n \t\t\t\t</figure>\n \t\t\t</NavLink>\n"
+                },
+                {
+                    "date": 1683114670638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n export default function Header() {\n \treturn (\n \t\t\n \t\t<header className=\"header__logo__navigation\">\n-\t\t\t<NavLink to=\"/kasa\">\n+\t\t\t<NavLink to=\"kasa/\">\n \t\t\t\t<figure className=\"navbar__logo\">\n \t\t\t\t\t<img className=\"logo\" src={logo} alt=\"logo de kasa\" />\n \t\t\t\t</figure>\n \t\t\t</NavLink>\n"
+                },
+                {
+                    "date": 1683114696211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n export default function Header() {\n \treturn (\n \t\t\n \t\t<header className=\"header__logo__navigation\">\n-\t\t\t<NavLink to=\"kasa/\">\n+\t\t\t<NavLink to=\"/\">\n \t\t\t\t<figure className=\"navbar__logo\">\n \t\t\t\t\t<img className=\"logo\" src={logo} alt=\"logo de kasa\" />\n \t\t\t\t</figure>\n \t\t\t</NavLink>\n"
+                }
+            ],
+            "date": 1682442411975,
+            "name": "Commit-0",
+            "content": "import logo from \"../assets/images/logo.svg\";\nimport Navbar from \"./Navbar\"\nimport { NavLink } from \"react-router-dom\";\nimport '..'\n\nexport default function Header() {\n\treturn (\n\t\t<header className=\"header__logo__navigation\">\n\t\t\t<NavLink to=\"/\">\n\t\t\t\t<figure className=\"navbar__logo\">\n\t\t\t\t\t<img className=\"logo\" src={logo} alt=\"logo de kasa\" />\n\t\t\t\t</figure>\n\t\t\t</NavLink>\n\t\t\t<Navbar className=\"navigation\" />\n\t\t</header>\n\t);\n}"
+        }
+    ]
+}

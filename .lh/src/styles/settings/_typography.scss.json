@@ -1,0 +1,1046 @@
+{
+    "sourceFile": "src/styles/settings/_typography.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 257,
+            "patches": [
+                {
+                    "date": 1682467365169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1682470724032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n }\n \n body{\n     font-family: Montserrat;\n-    font-size: 12px;\n+    font-size: 1;\n     //margin: 50px 100px;\n     \n }\n h1{\n"
+                },
+                {
+                    "date": 1682470751032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n }\n \n body{\n     font-family: Montserrat;\n-    font-size: 1;\n+    font-size: 1rem;\n     //margin: 50px 100px;\n     \n }\n h1{\n"
+                },
+                {
+                    "date": 1682470788261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n }\n \n body{\n     font-family: Montserrat;\n-    font-size: 1rem;\n+    font-size: 1em;\n     //margin: 50px 100px;\n     \n }\n h1{\n"
+                },
+                {
+                    "date": 1682470807597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n }\n \n body{\n     font-family: Montserrat;\n-    font-size: 1em;\n+    font-size: 1;\n     //margin: 50px 100px;\n     \n }\n h1{\n"
+                },
+                {
+                    "date": 1682470830346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n }\n \n body{\n     font-family: Montserrat;\n-    font-size: 1;\n+    font-size: 1rem;\n     //margin: 50px 100px;\n     \n }\n h1{\n"
+                },
+                {
+                    "date": 1682471842013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n }\n \n body{\n     font-family: Montserrat;\n-    font-size: 1rem;\n+    font-size: 12px;\n     //margin: 50px 100px;\n     \n }\n h1{\n"
+                },
+                {
+                    "date": 1682472181512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n-   //border: 1px solid red;\n+   border: 1px solid red;\n    \n }\n \n body{\n"
+                },
+                {
+                    "date": 1682472277786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n-   border: 1px solid red;\n+   //border: 1px solid red;\n    \n }\n \n body{\n"
+                },
+                {
+                    "date": 1682484556602,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,11 @@\n \n body{\n     font-family: Montserrat;\n     font-size: 12px;\n+    font-family: var(--ff-body);\n+    font-size: var(--fs-400);\n+    line-height: 1.6;\n     //margin: 50px 100px;\n     \n }\n h1{\n"
+                },
+                {
+                    "date": 1682484634747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,9 @@\n h1{\n     \n     font-size: 48px;\n     font-weight: 500;\n+    \n }\n a{\n     text-decoration: none;\n }\n"
+                },
+                {
+                    "date": 1682484693119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,11 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n \n \n+\n+\n+\n+\n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n    //border: 1px solid red;\n@@ -20,9 +24,10 @@\n h1{\n     \n     font-size: 48px;\n     font-weight: 500;\n-    \n+    font-size: var(--fs-xl);\n+  line-height: 1;\n }\n a{\n     text-decoration: none;\n }\n"
+                },
+                {
+                    "date": 1682484721644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,23 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n \n+:root {\n+    --ff-body: \"Montserrat;\", sans-serif;\n+    --ff-heading: \"Oswald\", sans-serif;\n+  \n+    --clr-primary-400: hsl(60 100% 50%);\n+    --clr-neutral-900: hsl(0 0% 0%);\n+    --clr-neutral-100: hsl(0 0% 100%);\n+  \n+    --fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);\n+    --fs-600: 2rem;\n+    --fs-400: 1rem;\n+  }\n+  \n \n \n \n \n-\n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n    //border: 1px solid red;\n"
+                },
+                {
+                    "date": 1682484736964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n \n :root {\n-    --ff-body: \"Montserrat;\", sans-serif;\n+    --ff-body: \"Montserrat\", sans-serif;\n     --ff-heading: \"Oswald\", sans-serif;\n   \n     --clr-primary-400: hsl(60 100% 50%);\n     --clr-neutral-900: hsl(0 0% 0%);\n@@ -24,9 +24,9 @@\n    \n }\n \n body{\n-    font-family: Montserrat;\n+    //font-family: Montserrat;\n     font-size: 12px;\n     font-family: var(--ff-body);\n     font-size: var(--fs-400);\n     line-height: 1.6;\n"
+                },
+                {
+                    "date": 1682484781463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n }\n \n body{\n     //font-family: Montserrat;\n-    font-size: 12px;\n+    //font-size: 12px;\n     font-family: var(--ff-body);\n     font-size: var(--fs-400);\n     line-height: 1.6;\n     //margin: 50px 100px;\n"
+                },
+                {
+                    "date": 1682485739661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n     --clr-primary-400: hsl(60 100% 50%);\n     --clr-neutral-900: hsl(0 0% 0%);\n     --clr-neutral-100: hsl(0 0% 100%);\n   \n+    \n     --fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);\n     --fs-600: 2rem;\n     --fs-400: 1rem;\n   }\n"
+                },
+                {
+                    "date": 1682485748283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     --clr-primary-400: hsl(60 100% 50%);\n     --clr-neutral-900: hsl(0 0% 0%);\n     --clr-neutral-100: hsl(0 0% 100%);\n   \n-    \n+    --fs-400: 1rem;\n     --fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);\n     --fs-600: 2rem;\n     --fs-400: 1rem;\n   }\n"
+                },
+                {
+                    "date": 1682485761830,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,12 @@\n     --clr-neutral-900: hsl(0 0% 0%);\n     --clr-neutral-100: hsl(0 0% 100%);\n   \n     --fs-400: 1rem;\n+    --fs-600: 2rem;\n     --fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);\n     --fs-600: 2rem;\n-    --fs-400: 1rem;\n+   \n   }\n   \n \n \n"
+                },
+                {
+                    "date": 1682485784664,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   \n     --fs-400: 1rem;\n     --fs-600: 2rem;\n     --fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);\n-    --fs-600: 2rem;\n+    \n    \n   }\n   \n \n"
+                },
+                {
+                    "date": 1682485808161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,10 @@\n     --clr-neutral-100: hsl(0 0% 100%);\n   \n     --fs-400: 1rem;\n     --fs-600: 2rem;\n+    --fs-600: 2rem;\n+    --fs-600: 2rem;\n     --fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);\n     \n    \n   }\n"
+                },
+                {
+                    "date": 1682485813663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     --clr-primary-400: hsl(60 100% 50%);\n     --clr-neutral-900: hsl(0 0% 0%);\n     --clr-neutral-100: hsl(0 0% 100%);\n   \n-    --fs-400: 1rem;\n+    //--fs-400: 1rem;\n     --fs-600: 2rem;\n     --fs-600: 2rem;\n     --fs-600: 2rem;\n     --fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);\n"
+                },
+                {
+                    "date": 1682485819147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,11 @@\n     --clr-neutral-900: hsl(0 0% 0%);\n     --clr-neutral-100: hsl(0 0% 100%);\n   \n     //--fs-400: 1rem;\n+    --fs-400: 2rem;\n     --fs-600: 2rem;\n     --fs-600: 2rem;\n-    --fs-600: 2rem;\n     --fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);\n     \n    \n   }\n"
+                },
+                {
+                    "date": 1682485833372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     --clr-neutral-900: hsl(0 0% 0%);\n     --clr-neutral-100: hsl(0 0% 100%);\n   \n     //--fs-400: 1rem;\n-    --fs-400: 2rem;\n+    --fs-400: ;\n     --fs-600: 2rem;\n     --fs-600: 2rem;\n     --fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);\n     \n"
+                },
+                {
+                    "date": 1682485863203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,14 +3,14 @@\n :root {\n     --ff-body: \"Montserrat\", sans-serif;\n     --ff-heading: \"Oswald\", sans-serif;\n   \n-    --clr-primary-400: hsl(60 100% 50%);\n+   // --clr-primary-400: hsl(60 100% 50%);\n     --clr-neutral-900: hsl(0 0% 0%);\n     --clr-neutral-100: hsl(0 0% 100%);\n   \n     //--fs-400: 1rem;\n-    --fs-400: ;\n+    --fs-400: 4vw;\n     --fs-600: 2rem;\n     --fs-600: 2rem;\n     --fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);\n     \n"
+                },
+                {
+                    "date": 1682485871662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n     --ff-body: \"Montserrat\", sans-serif;\n     --ff-heading: \"Oswald\", sans-serif;\n   \n    // --clr-primary-400: hsl(60 100% 50%);\n-    --clr-neutral-900: hsl(0 0% 0%);\n-    --clr-neutral-100: hsl(0 0% 100%);\n+  //  --clr-neutral-900: hsl(0 0% 0%);\n+  //  --clr-neutral-100: hsl(0 0% 100%);\n   \n     //--fs-400: 1rem;\n     --fs-400: 4vw;\n     --fs-600: 2rem;\n"
+                },
+                {
+                    "date": 1682486054043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n     \n    \n   }\n   \n+  \n \n \n \n \n"
+                },
+                {
+                    "date": 1682486082668,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,31 @@\n     \n    \n   }\n   \n+  /* font sizes */\n+  --font-size-5xl: 24px;\n+  --font-size-lg: 18px;\n+  --font-size-sm: 14px;\n+  --font-size-smi: 13px;\n+  --font-size-xs: 12px;\n+  --font-size-17xl: 36px;\n+  --font-size-3xs: 10px;\n+\n+  /* Colors */\n+  --color-red: #ff0000;\n+  --color-white: #fff;\n+  --color-tomato: #ff6060;\n+  --color-whitesmoke: #f6f6f6;\n+  --color-dimgray: #666;\n+  --color-black: #000;\n+\n+  /* border radiuses */\n+  --br-3xs: 10px;\n+  --br-6xl: 25px;\n+  --br-8xs: 5px;\n+}\n+\n   \n \n \n \n"
+                },
+                {
+                    "date": 1682488406716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,8 @@\n     --fs-600: 2rem;\n     --fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);\n     \n    \n-  }\n   \n   /* font sizes */\n   --font-size-5xl: 24px;\n   --font-size-lg: 18px;\n@@ -47,9 +46,9 @@\n \n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n-   //border: 1px solid red;\n+   border: 1px solid red;\n    \n }\n \n body{\n"
+                },
+                {
+                    "date": 1682489186015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   //  --clr-neutral-900: hsl(0 0% 0%);\n   //  --clr-neutral-100: hsl(0 0% 100%);\n   \n     //--fs-400: 1rem;\n-    --fs-400: 4vw;\n+    --fs-400: vw;\n     --fs-600: 2rem;\n     --fs-600: 2rem;\n     --fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);\n     \n"
+                },
+                {
+                    "date": 1682489351205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,12 +8,12 @@\n   //  --clr-neutral-900: hsl(0 0% 0%);\n   //  --clr-neutral-100: hsl(0 0% 100%);\n   \n     //--fs-400: 1rem;\n-    --fs-400: vw;\n+    --fs-400: 2vw;\n     --fs-600: 2rem;\n     --fs-600: 2rem;\n-    --fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);\n+    --fs-xl: clamp(2.5rem, 12vw + 1rem, 12rem);\n     \n    \n   \n   /* font sizes */\n"
+                },
+                {
+                    "date": 1682489365312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     //--fs-400: 1rem;\n     --fs-400: 2vw;\n     --fs-600: 2rem;\n     --fs-600: 2rem;\n-    --fs-xl: clamp(2.5rem, 12vw + 1rem, 12rem);\n+    --fs-xl: clamp(1.5rem, 12vw + 1rem, rem);\n     \n    \n   \n   /* font sizes */\n"
+                },
+                {
+                    "date": 1682489384149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     //--fs-400: 1rem;\n     --fs-400: 2vw;\n     --fs-600: 2rem;\n     --fs-600: 2rem;\n-    --fs-xl: clamp(1.5rem, 12vw + 1rem, rem);\n+    --fs-xl: clamp(1.5rem, 12vw + 1rem, 3.5rem);\n     \n    \n   \n   /* font sizes */\n"
+                },
+                {
+                    "date": 1682489417655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     //--fs-400: 1rem;\n     --fs-400: 2vw;\n     --fs-600: 2rem;\n     --fs-600: 2rem;\n-    --fs-xl: clamp(1.5rem, 12vw + 1rem, 3.5rem);\n+    --fs-xl: clamp(1rem, 12vw + 1rem, 3.5rem);\n     \n    \n   \n   /* font sizes */\n"
+                },
+                {
+                    "date": 1682489449083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   \n     //--fs-400: 1rem;\n     --fs-400: 2vw;\n     --fs-600: 2rem;\n-    --fs-600: 2rem;\n+    --fs-600: 2.rem;\n     --fs-xl: clamp(1rem, 12vw + 1rem, 3.5rem);\n     \n    \n   \n"
+                },
+                {
+                    "date": 1682489460777,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,10 @@\n   //  --clr-neutral-100: hsl(0 0% 100%);\n   \n     //--fs-400: 1rem;\n     --fs-400: 2vw;\n-    --fs-600: 2rem;\n-    --fs-600: 2.rem;\n+    --fs-600: 1rem;\n+    --fs-600: 2.5rem;\n     --fs-xl: clamp(1rem, 12vw + 1rem, 3.5rem);\n     \n    \n   \n"
+                },
+                {
+                    "date": 1682503290768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n \n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n-   border: 1px solid red;\n+  // border: 1px solid red;\n    \n }\n \n body{\n"
+                },
+                {
+                    "date": 1682503332085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   //  --clr-neutral-900: hsl(0 0% 0%);\n   //  --clr-neutral-100: hsl(0 0% 100%);\n   \n     //--fs-400: 1rem;\n-    --fs-400: 2vw;\n+    --fs-400: 4vw;\n     --fs-600: 1rem;\n     --fs-600: 2.5rem;\n     --fs-xl: clamp(1rem, 12vw + 1rem, 3.5rem);\n     \n"
+                },
+                {
+                    "date": 1682503347873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   //  --clr-neutral-900: hsl(0 0% 0%);\n   //  --clr-neutral-100: hsl(0 0% 100%);\n   \n     //--fs-400: 1rem;\n-    --fs-400: 4vw;\n+    --fs-400: 1;\n     --fs-600: 1rem;\n     --fs-600: 2.5rem;\n     --fs-xl: clamp(1rem, 12vw + 1rem, 3.5rem);\n     \n"
+                },
+                {
+                    "date": 1682504052295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   //  --clr-neutral-900: hsl(0 0% 0%);\n   //  --clr-neutral-100: hsl(0 0% 100%);\n   \n     //--fs-400: 1rem;\n-    --fs-400: 1;\n+    --fs-400: 1rem;\n     --fs-600: 1rem;\n     --fs-600: 2.5rem;\n     --fs-xl: clamp(1rem, 12vw + 1rem, 3.5rem);\n     \n@@ -46,9 +46,9 @@\n \n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n-  // border: 1px solid red;\n+   border: 1px solid red;\n    \n }\n \n body{\n"
+                },
+                {
+                    "date": 1682504400620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   //  --clr-neutral-900: hsl(0 0% 0%);\n   //  --clr-neutral-100: hsl(0 0% 100%);\n   \n     //--fs-400: 1rem;\n-    --fs-400: 1rem;\n+    --fs-400: rem;\n     --fs-600: 1rem;\n     --fs-600: 2.5rem;\n     --fs-xl: clamp(1rem, 12vw + 1rem, 3.5rem);\n     \n"
+                },
+                {
+                    "date": 1682504405856,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   //  --clr-neutral-900: hsl(0 0% 0%);\n   //  --clr-neutral-100: hsl(0 0% 100%);\n   \n     //--fs-400: 1rem;\n-    --fs-400: rem;\n+    --fs-400: 3vhrem;\n     --fs-600: 1rem;\n     --fs-600: 2.5rem;\n     --fs-xl: clamp(1rem, 12vw + 1rem, 3.5rem);\n     \n"
+                },
+                {
+                    "date": 1682504412463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   //  --clr-neutral-900: hsl(0 0% 0%);\n   //  --clr-neutral-100: hsl(0 0% 100%);\n   \n     //--fs-400: 1rem;\n-    --fs-400: 3vhrem;\n+    --fs-400: 1vhrem;\n     --fs-600: 1rem;\n     --fs-600: 2.5rem;\n     --fs-xl: clamp(1rem, 12vw + 1rem, 3.5rem);\n     \n"
+                },
+                {
+                    "date": 1682504421082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   //  --clr-neutral-900: hsl(0 0% 0%);\n   //  --clr-neutral-100: hsl(0 0% 100%);\n   \n     //--fs-400: 1rem;\n-    --fs-400: 1vhrem;\n+    --fs-400: 1vh;\n     --fs-600: 1rem;\n     --fs-600: 2.5rem;\n     --fs-xl: clamp(1rem, 12vw + 1rem, 3.5rem);\n     \n"
+                },
+                {
+                    "date": 1682504427422,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   //  --clr-neutral-900: hsl(0 0% 0%);\n   //  --clr-neutral-100: hsl(0 0% 100%);\n   \n     //--fs-400: 1rem;\n-    --fs-400: 1vh;\n+    --fs-400: 3vh;\n     --fs-600: 1rem;\n     --fs-600: 2.5rem;\n     --fs-xl: clamp(1rem, 12vw + 1rem, 3.5rem);\n     \n"
+                },
+                {
+                    "date": 1682504447040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   //  --clr-neutral-900: hsl(0 0% 0%);\n   //  --clr-neutral-100: hsl(0 0% 100%);\n   \n     //--fs-400: 1rem;\n-    --fs-400: 3vh;\n+    --fs-400: 1;\n     --fs-600: 1rem;\n     --fs-600: 2.5rem;\n     --fs-xl: clamp(1rem, 12vw + 1rem, 3.5rem);\n     \n"
+                },
+                {
+                    "date": 1682504453638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   //  --clr-neutral-900: hsl(0 0% 0%);\n   //  --clr-neutral-100: hsl(0 0% 100%);\n   \n     //--fs-400: 1rem;\n-    --fs-400: 1;\n+    --fs-400: 0.5rem;\n     --fs-600: 1rem;\n     --fs-600: 2.5rem;\n     --fs-xl: clamp(1rem, 12vw + 1rem, 3.5rem);\n     \n"
+                },
+                {
+                    "date": 1682505902139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   //  --clr-neutral-900: hsl(0 0% 0%);\n   //  --clr-neutral-100: hsl(0 0% 100%);\n   \n     //--fs-400: 1rem;\n-    --fs-400: 0.5rem;\n+    --fs-400: 12px;\n     --fs-600: 1rem;\n     --fs-600: 2.5rem;\n     --fs-xl: clamp(1rem, 12vw + 1rem, 3.5rem);\n     \n"
+                },
+                {
+                    "date": 1682506046878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   //  --clr-neutral-900: hsl(0 0% 0%);\n   //  --clr-neutral-100: hsl(0 0% 100%);\n   \n     //--fs-400: 1rem;\n-    --fs-400: 12px;\n+    --fs-400: ;\n     --fs-600: 1rem;\n     --fs-600: 2.5rem;\n     --fs-xl: clamp(1rem, 12vw + 1rem, 3.5rem);\n     \n"
+                },
+                {
+                    "date": 1682506647153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,12 +8,12 @@\n   //  --clr-neutral-900: hsl(0 0% 0%);\n   //  --clr-neutral-100: hsl(0 0% 100%);\n   \n     //--fs-400: 1rem;\n-    --fs-400: ;\n+    --fs-400: 0.75rem;\n     --fs-600: 1rem;\n     --fs-600: 2.5rem;\n-    --fs-xl: clamp(1rem, 12vw + 1rem, 3.5rem);\n+    --fs-xl: clamp(1rem, 12vw + 1rem, 2.5rem);\n     \n    \n   \n   /* font sizes */\n"
+                },
+                {
+                    "date": 1682506679575,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,11 @@\n     //--fs-400: 1rem;\n     --fs-400: 0.75rem;\n     --fs-600: 1rem;\n     --fs-600: 2.5rem;\n-    --fs-xl: clamp(1rem, 12vw + 1rem, 2.5rem);\n+    --fs-xl: clamp(1rem, 12vw + 1rem, 1.5rem);\n     \n+    \n    \n   \n   /* font sizes */\n   --font-size-5xl: 24px;\n"
+                },
+                {
+                    "date": 1682506694999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n     --fs-400: 0.75rem;\n     --fs-600: 1rem;\n     --fs-600: 2.5rem;\n     --fs-xl: clamp(1rem, 12vw + 1rem, 1.5rem);\n+    --fs-xl: calc;\n     \n-    \n    \n   \n   /* font sizes */\n   --font-size-5xl: 24px;\n"
+                },
+                {
+                    "date": 1682506704095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     --fs-400: 0.75rem;\n     --fs-600: 1rem;\n     --fs-600: 2.5rem;\n     --fs-xl: clamp(1rem, 12vw + 1rem, 1.5rem);\n-    --fs-xl: calc;\n+    --fs-xl: calc(12vw );\n     \n    \n   \n   /* font sizes */\n"
+                },
+                {
+                    "date": 1682506709897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     --fs-400: 0.75rem;\n     --fs-600: 1rem;\n     --fs-600: 2.5rem;\n     --fs-xl: clamp(1rem, 12vw + 1rem, 1.5rem);\n-    --fs-xl: calc(12vw );\n+    --fs-xl: calc(12vw *1%);\n     \n    \n   \n   /* font sizes */\n"
+                },
+                {
+                    "date": 1682506723812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     --fs-400: 0.75rem;\n     --fs-600: 1rem;\n     --fs-600: 2.5rem;\n     --fs-xl: clamp(1rem, 12vw + 1rem, 1.5rem);\n-    --fs-xl: calc(12vw *1%);\n+    --fs-xl: calc( *1%);\n     \n    \n   \n   /* font sizes */\n"
+                },
+                {
+                    "date": 1682506735974,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     --fs-400: 0.75rem;\n     --fs-600: 1rem;\n     --fs-600: 2.5rem;\n     --fs-xl: clamp(1rem, 12vw + 1rem, 1.5rem);\n-    --fs-xl: calc( *1%);\n+    --fs-xl: calc(1rem *10%);\n     \n    \n   \n   /* font sizes */\n"
+                },
+                {
+                    "date": 1682506764380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     --fs-400: 0.75rem;\n     --fs-600: 1rem;\n     --fs-600: 2.5rem;\n     --fs-xl: clamp(1rem, 12vw + 1rem, 1.5rem);\n-    --fs-xl: calc(1rem *10%);\n+    --fs-xl: 2.5rem\n     \n    \n   \n   /* font sizes */\n"
+                },
+                {
+                    "date": 1682609903679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,13 +8,13 @@\n   //  --clr-neutral-900: hsl(0 0% 0%);\n   //  --clr-neutral-100: hsl(0 0% 100%);\n   \n     //--fs-400: 1rem;\n-    --fs-400: 0.75rem;\n+   // --fs-400: 0.75rem;\n     --fs-600: 1rem;\n     --fs-600: 2.5rem;\n     --fs-xl: clamp(1rem, 12vw + 1rem, 1.5rem);\n-    --fs-xl: 2.5rem\n+    --fs-xl: 2.5rem;\n     \n    \n   \n   /* font sizes */\n"
+                },
+                {
+                    "date": 1682609910013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,10 @@\n   //  --clr-neutral-100: hsl(0 0% 100%);\n   \n     //--fs-400: 1rem;\n    // --fs-400: 0.75rem;\n-    --fs-600: 1rem;\n-    --fs-600: 2.5rem;\n+   // --fs-600: 1rem;\n+   // --fs-600: 2.5rem;\n     --fs-xl: clamp(1rem, 12vw + 1rem, 1.5rem);\n     --fs-xl: 2.5rem;\n     \n    \n"
+                },
+                {
+                    "date": 1682609961268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,49 +3,13 @@\n :root {\n     --ff-body: \"Montserrat\", sans-serif;\n     --ff-heading: \"Oswald\", sans-serif;\n   \n-   // --clr-primary-400: hsl(60 100% 50%);\n-  //  --clr-neutral-900: hsl(0 0% 0%);\n-  //  --clr-neutral-100: hsl(0 0% 100%);\n-  \n-    //--fs-400: 1rem;\n-   // --fs-400: 0.75rem;\n-   // --fs-600: 1rem;\n-   // --fs-600: 2.5rem;\n-    --fs-xl: clamp(1rem, 12vw + 1rem, 1.5rem);\n-    --fs-xl: 2.5rem;\n-    \n    \n-  \n-  /* font sizes */\n-  --font-size-5xl: 24px;\n-  --font-size-lg: 18px;\n-  --font-size-sm: 14px;\n-  --font-size-smi: 13px;\n-  --font-size-xs: 12px;\n-  --font-size-17xl: 36px;\n-  --font-size-3xs: 10px;\n \n-  /* Colors */\n-  --color-red: #ff0000;\n-  --color-white: #fff;\n-  --color-tomato: #ff6060;\n-  --color-whitesmoke: #f6f6f6;\n-  --color-dimgray: #666;\n-  --color-black: #000;\n \n-  /* border radiuses */\n-  --br-3xs: 10px;\n-  --br-6xl: 25px;\n-  --br-8xs: 5px;\n-}\n \n-  \n \n-\n-\n-\n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n    border: 1px solid red;\n"
+                },
+                {
+                    "date": 1682609982564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,6 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n \n-:root {\n-    --ff-body: \"Montserrat\", sans-serif;\n-    --ff-heading: \"Oswald\", sans-serif;\n-  \n-   \n \n \n \n \n"
+                },
+                {
+                    "date": 1682610143939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,11 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n \n+:root {\n+    --ff-body: \"Montserrat\", sans-serif;\n+    --ff-heading: \"Oswald\", sans-serif;\n+  \n+   \n \n \n \n \n"
+                },
+                {
+                    "date": 1682610177765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,36 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n \n-:root {\n-    --ff-body: \"Montserrat\", sans-serif;\n-    --ff-heading: \"Oswald\", sans-serif;\n+\n   \n-   \n+  /* font sizes */\n+  --font-size-5xl: 24px;\n+  --font-size-lg: 18px;\n+  --font-size-sm: 14px;\n+  --font-size-smi: 13px;\n+  --font-size-xs: 12px;\n+  --font-size-17xl: 36px;\n+  --font-size-3xs: 10px;\n \n+  /* Colors */\n+  --color-red: #ff0000;\n+  --color-white: #fff;\n+  --color-tomato: #ff6060;\n+  --color-whitesmoke: #f6f6f6;\n+  --color-dimgray: #666;\n+  --color-black: #000;\n \n+  /* border radiuses */\n+  --br-3xs: 10px;\n+  --br-6xl: 25px;\n+  --br-8xs: 5px;\n+}\n \n+  \n \n+\n+\n+\n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n    border: 1px solid red;\n"
+                },
+                {
+                    "date": 1682610203599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n \n-\n-  \n+ \n   /* font sizes */\n   --font-size-5xl: 24px;\n   --font-size-lg: 18px;\n   --font-size-sm: 14px;\n@@ -10,27 +9,11 @@\n   --font-size-xs: 12px;\n   --font-size-17xl: 36px;\n   --font-size-3xs: 10px;\n \n-  /* Colors */\n-  --color-red: #ff0000;\n-  --color-white: #fff;\n-  --color-tomato: #ff6060;\n-  --color-whitesmoke: #f6f6f6;\n-  --color-dimgray: #666;\n-  --color-black: #000;\n+ \n \n-  /* border radiuses */\n-  --br-3xs: 10px;\n-  --br-6xl: 25px;\n-  --br-8xs: 5px;\n-}\n \n-  \n-\n-\n-\n-\n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n    border: 1px solid red;\n"
+                },
+                {
+                    "date": 1682610225548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n    \n }\n \n body{\n-    //font-family: Montserrat;\n+    font-family: Montserrat;\n     //font-size: 12px;\n     font-family: var(--ff-body);\n     font-size: var(--fs-400);\n     line-height: 1.6;\n"
+                },
+                {
+                    "date": 1682610231816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,13 +21,12 @@\n }\n \n body{\n     font-family: Montserrat;\n-    //font-size: 12px;\n+    font-size: 12px;\n     font-family: var(--ff-body);\n     font-size: var(--fs-400);\n     line-height: 1.6;\n-    //margin: 50px 100px;\n     \n }\n h1{\n     \n"
+                },
+                {
+                    "date": 1682610258622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n \n- \n+\n+  \n   /* font sizes */\n   --font-size-5xl: 24px;\n   --font-size-lg: 18px;\n   --font-size-sm: 14px;\n@@ -9,24 +10,41 @@\n   --font-size-xs: 12px;\n   --font-size-17xl: 36px;\n   --font-size-3xs: 10px;\n \n- \n+  /* Colors */\n+  --color-red: #ff0000;\n+  --color-white: #fff;\n+  --color-tomato: #ff6060;\n+  --color-whitesmoke: #f6f6f6;\n+  --color-dimgray: #666;\n+  --color-black: #000;\n \n+  /* border radiuses */\n+  --br-3xs: 10px;\n+  --br-6xl: 25px;\n+  --br-8xs: 5px;\n+}\n \n+  \n+\n+\n+\n+\n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n    border: 1px solid red;\n    \n }\n \n body{\n-    font-family: Montserrat;\n-    font-size: 12px;\n+    //font-family: Montserrat;\n+    //font-size: 12px;\n     font-family: var(--ff-body);\n     font-size: var(--fs-400);\n     line-height: 1.6;\n+    //margin: 50px 100px;\n     \n }\n h1{\n     \n"
+                },
+                {
+                    "date": 1682610277498,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,23 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n \n-\n+:root {\n+    --ff-body: \"Montserrat\", sans-serif;\n+    --ff-heading: \"Oswald\", sans-serif;\n   \n+   // --clr-primary-400: hsl(60 100% 50%);\n+  //  --clr-neutral-900: hsl(0 0% 0%);\n+  //  --clr-neutral-100: hsl(0 0% 100%);\n+  \n+    //--fs-400: 1rem;\n+   // --fs-400: 0.75rem;\n+   // --fs-600: 1rem;\n+   // --fs-600: 2.5rem;\n+   // --fs-xl: clamp(1rem, 12vw + 1rem, 1.5rem);\n+   // --fs-xl: 2.5rem;\n+}\n+   \n+  \n   /* font sizes */\n   --font-size-5xl: 24px;\n   --font-size-lg: 18px;\n   --font-size-sm: 14px;\n"
+                },
+                {
+                    "date": 1682610288826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n \n :root {\n-    --ff-body: \"Montserrat\", sans-serif;\n-    --ff-heading: \"Oswald\", sans-serif;\n+   \n   \n    // --clr-primary-400: hsl(60 100% 50%);\n   //  --clr-neutral-900: hsl(0 0% 0%);\n   //  --clr-neutral-100: hsl(0 0% 100%);\n"
+                },
+                {
+                    "date": 1682610297992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,16 +15,9 @@\n    // --fs-xl: 2.5rem;\n }\n    \n   \n-  /* font sizes */\n-  --font-size-5xl: 24px;\n-  --font-size-lg: 18px;\n-  --font-size-sm: 14px;\n-  --font-size-smi: 13px;\n-  --font-size-xs: 12px;\n-  --font-size-17xl: 36px;\n-  --font-size-3xs: 10px;\n+  \n \n   /* Colors */\n   --color-red: #ff0000;\n   --color-white: #fff;\n"
+                },
+                {
+                    "date": 1682610312343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,16 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n \n :root {\n    \n-  \n+  /* font sizes */\n+  --font-size-5xl: 24px;\n+  --font-size-lg: 18px;\n+  --font-size-sm: 14px;\n+  --font-size-smi: 13px;\n+  --font-size-xs: 12px;\n+  --font-size-17xl: 36px;\n+  --font-size-3xs: 10px;\n    // --clr-primary-400: hsl(60 100% 50%);\n   //  --clr-neutral-900: hsl(0 0% 0%);\n   //  --clr-neutral-100: hsl(0 0% 100%);\n   \n@@ -17,27 +24,11 @@\n    \n   \n   \n \n-  /* Colors */\n-  --color-red: #ff0000;\n-  --color-white: #fff;\n-  --color-tomato: #ff6060;\n-  --color-whitesmoke: #f6f6f6;\n-  --color-dimgray: #666;\n-  --color-black: #000;\n \n-  /* border radiuses */\n-  --br-3xs: 10px;\n-  --br-6xl: 25px;\n-  --br-8xs: 5px;\n-}\n \n-  \n \n-\n-\n-\n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n    border: 1px solid red;\n"
+                },
+                {
+                    "date": 1682610319311,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,11 +20,9 @@\n    // --fs-600: 2.5rem;\n    // --fs-xl: clamp(1rem, 12vw + 1rem, 1.5rem);\n    // --fs-xl: 2.5rem;\n }\n-   \n-  \n-  \n+     \n \n \n \n \n"
+                },
+                {
+                    "date": 1682610325950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,13 +20,9 @@\n    // --fs-600: 2.5rem;\n    // --fs-xl: clamp(1rem, 12vw + 1rem, 1.5rem);\n    // --fs-xl: 2.5rem;\n }\n-     \n \n-\n-\n-\n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n    border: 1px solid red;\n"
+                },
+                {
+                    "date": 1682610377409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,10 @@\n   --font-size-smi: 13px;\n   --font-size-xs: 12px;\n   --font-size-17xl: 36px;\n   --font-size-3xs: 10px;\n+\n+  \n    // --clr-primary-400: hsl(60 100% 50%);\n   //  --clr-neutral-900: hsl(0 0% 0%);\n   //  --clr-neutral-100: hsl(0 0% 100%);\n   \n"
+                },
+                {
+                    "date": 1682610383056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,13 @@\n   --font-size-xs: 12px;\n   --font-size-17xl: 36px;\n   --font-size-3xs: 10px;\n \n-  \n+h1: 24px;\n+$h2: 18px;\n+$h3: 14px;\n+$h4: 13px;\n+$text: 12px;\n    // --clr-primary-400: hsl(60 100% 50%);\n   //  --clr-neutral-900: hsl(0 0% 0%);\n   //  --clr-neutral-100: hsl(0 0% 100%);\n   \n"
+                },
+                {
+                    "date": 1682610389293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,9 @@\n   --font-size-xs: 12px;\n   --font-size-17xl: 36px;\n   --font-size-3xs: 10px;\n \n-h1: 24px;\n-$h2: 18px;\n+--h1: 24px;-h2: 18px;\n $h3: 14px;\n $h4: 13px;\n $text: 12px;\n    // --clr-primary-400: hsl(60 100% 50%);\n"
+                },
+                {
+                    "date": 1682610397532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,10 @@\n   --font-size-xs: 12px;\n   --font-size-17xl: 36px;\n   --font-size-3xs: 10px;\n \n---h1: 24px;-h2: 18px;\n+--h1: 24px;\n+--h2: 18px;\n $h3: 14px;\n $h4: 13px;\n $text: 12px;\n    // --clr-primary-400: hsl(60 100% 50%);\n"
+                },
+                {
+                    "date": 1682610404659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   --font-size-3xs: 10px;\n \n --h1: 24px;\n --h2: 18px;\n-$h3: 14px;\n+$: 14px;\n $h4: 13px;\n $text: 12px;\n    // --clr-primary-400: hsl(60 100% 50%);\n   //  --clr-neutral-900: hsl(0 0% 0%);\n"
+                },
+                {
+                    "date": 1682614236217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,10 @@\n   --font-size-17xl: 36px;\n   --font-size-3xs: 10px;\n \n --h1: 24px;\n---h2: 18px;\n-$: 14px;\n+h2: 18px;\n+$h3: 14px;\n $h4: 13px;\n $text: 12px;\n    // --clr-primary-400: hsl(60 100% 50%);\n   //  --clr-neutral-900: hsl(0 0% 0%);\n"
+                },
+                {
+                    "date": 1682614246444,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   --font-size-17xl: 36px;\n   --font-size-3xs: 10px;\n \n --h1: 24px;\n-h2: 18px;\n+$h2: 18px;\n $h3: 14px;\n $h4: 13px;\n $text: 12px;\n    // --clr-primary-400: hsl(60 100% 50%);\n"
+                },
+                {
+                    "date": 1682614252809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   --font-size-xs: 12px;\n   --font-size-17xl: 36px;\n   --font-size-3xs: 10px;\n \n---h1: 24px;\n+$h1: 24px;\n $h2: 18px;\n $h3: 14px;\n $h4: 13px;\n $text: 12px;\n"
+                },
+                {
+                    "date": 1682614487906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n     \n }\n h1{\n     \n-    font-size: 48px;\n+    font-size: h;\n     font-weight: 500;\n     font-size: var(--fs-xl);\n   line-height: 1;\n }\n"
+                },
+                {
+                    "date": 1682614493819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n     \n }\n h1{\n     \n-    font-size: h;\n+    font-size: $h11;\n     font-weight: 500;\n     font-size: var(--fs-xl);\n   line-height: 1;\n }\n"
+                },
+                {
+                    "date": 1682614505864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,11 +45,11 @@\n     \n }\n h1{\n     \n-    font-size: $h11;\n+    font-size: $h1;\n     font-weight: 500;\n-    font-size: var(--fs-xl);\n+   \n   line-height: 1;\n }\n a{\n     text-decoration: none;\n"
+                },
+                {
+                    "date": 1682614638298,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n-\n+import \n :root {\n    \n   /* font sizes */\n   --font-size-5xl: 24px;\n"
+                },
+                {
+                    "date": 1682614644650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n-import \n+import './s'\n :root {\n    \n   /* font sizes */\n   --font-size-5xl: 24px;\n"
+                },
+                {
+                    "date": 1682614653460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n-import './s'\n+import ''\n :root {\n    \n   /* font sizes */\n   --font-size-5xl: 24px;\n"
+                },
+                {
+                    "date": 1682614659362,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n-import ''\n+@\n :root {\n    \n   /* font sizes */\n   --font-size-5xl: 24px;\n"
+                },
+                {
+                    "date": 1682614669803,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n-@\n+\n :root {\n    \n   /* font sizes */\n   --font-size-5xl: 24px;\n"
+                },
+                {
+                    "date": 1682614834530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n }\n h1{\n     \n     font-size: $h1;\n-    font-weight: 500;\n+    //font-weight: 500;\n    \n   line-height: 1;\n }\n a{\n"
+                },
+                {
+                    "date": 1682614844382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n     \n }\n h1{\n     \n-    font-size: $h1;\n+    font-size: 12;\n     //font-weight: 500;\n    \n   line-height: 1;\n }\n"
+                },
+                {
+                    "date": 1682614850281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n     \n }\n h1{\n     \n-    font-size: 12;\n+    font-size: 24px ;\n     //font-weight: 500;\n    \n   line-height: 1;\n }\n"
+                },
+                {
+                    "date": 1682614943932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n \n :root {\n-   \n+       //font-family: Montserrat;\n+\n   /* font sizes */\n   --font-size-5xl: 24px;\n   --font-size-lg: 18px;\n   --font-size-sm: 14px;\n@@ -45,9 +46,9 @@\n     \n }\n h1{\n     \n-    font-size: 24px ;\n+    font-size: 24px 500;\n     //font-weight: 500;\n    \n   line-height: 1;\n }\n"
+                },
+                {
+                    "date": 1682615060657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n \n :root {\n-       //font-family: Montserrat;\n+       font-family: Montserrat;\n \n   /* font sizes */\n   --font-size-5xl: 24px;\n   --font-size-lg: 18px;\n@@ -11,13 +11,9 @@\n   --font-size-xs: 12px;\n   --font-size-17xl: 36px;\n   --font-size-3xs: 10px;\n \n-$h1: 24px;\n-$h2: 18px;\n-$h3: 14px;\n-$h4: 13px;\n-$text: 12px;\n+\n    // --clr-primary-400: hsl(60 100% 50%);\n   //  --clr-neutral-900: hsl(0 0% 0%);\n   //  --clr-neutral-100: hsl(0 0% 100%);\n   \n"
+                },
+                {
+                    "date": 1682615067464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,12 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n \n+$h1: 24px;\n+$h2: 18px;\n+$h3: 14px;\n+$h4: 13px;\n+$text: 12px;\n+\n :root {\n        font-family: Montserrat;\n \n   /* font sizes */\n"
+                },
+                {
+                    "date": 1682615088398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n     \n }\n h1{\n     \n-    font-size: 24px 500;\n+    font-size: $h1;\n     //font-weight: 500;\n    \n   line-height: 1;\n }\n"
+                },
+                {
+                    "date": 1682615112463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n :root {\n        font-family: Montserrat;\n \n   /* font sizes */\n-  --font-size-5xl: 24px;\n+  --font-size-5xl: 24px ;\n   --font-size-lg: 18px;\n   --font-size-sm: 14px;\n   --font-size-smi: 13px;\n   --font-size-xs: 12px;\n"
+                },
+                {
+                    "date": 1682615121285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n :root {\n        font-family: Montserrat;\n \n   /* font sizes */\n-  --font-size-5xl: 24px ;\n+  --font-size-5xl: 24px 00;\n   --font-size-lg: 18px;\n   --font-size-sm: 14px;\n   --font-size-smi: 13px;\n   --font-size-xs: 12px;\n"
+                },
+                {
+                    "date": 1682615141451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n :root {\n        font-family: Montserrat;\n \n   /* font sizes */\n-  --font-size-5xl: 24px 00;\n+  --font-size-5xl: 24px 200;\n   --font-size-lg: 18px;\n   --font-size-sm: 14px;\n   --font-size-smi: 13px;\n   --font-size-xs: 12px;\n"
+                },
+                {
+                    "date": 1682615149355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n :root {\n        font-family: Montserrat;\n \n   /* font sizes */\n-  --font-size-5xl: 24px 200;\n+  --font-size-5xl: 24px, 200;\n   --font-size-lg: 18px;\n   --font-size-sm: 14px;\n   --font-size-smi: 13px;\n   --font-size-xs: 12px;\n"
+                },
+                {
+                    "date": 1682615155528,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n \n-$h1: 24px;\n+$h1: 24px ;\n $h2: 18px;\n $h3: 14px;\n $h4: 13px;\n $text: 12px;\n"
+                },
+                {
+                    "date": 1682615235266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n \n-$h1: 24px ;\n+$h1: 24px 500;\n $h2: 18px;\n $h3: 14px;\n $h4: 13px;\n-$text: 12px;\n+$text: 12px 400;\n \n :root {\n        font-family: Montserrat;\n \n"
+                },
+                {
+                    "date": 1682615241419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n \n $h1: 24px 500;\n-$h2: 18px;\n+$h2: 18px 500;\n $h3: 14px;\n $h4: 13px;\n $text: 12px 400;\n \n"
+                },
+                {
+                    "date": 1682615248611,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n \n $h1: 24px 500;\n $h2: 18px 500;\n-$h3: 14px;\n-$h4: 13px;\n+$h3: 14px 500;\n+$h4: 13px 500;\n $text: 12px 400;\n \n :root {\n        font-family: Montserrat;\n"
+                },
+                {
+                    "date": 1682615280095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,10 +38,8 @@\n    \n }\n \n body{\n-    //font-family: Montserrat;\n-    //font-size: 12px;\n     font-family: var(--ff-body);\n     font-size: var(--fs-400);\n     line-height: 1.6;\n     //margin: 50px 100px;\n"
+                },
+                {
+                    "date": 1682615288350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,10 +38,8 @@\n    \n }\n \n body{\n-    font-family: var(--ff-body);\n-    font-size: var(--fs-400);\n     line-height: 1.6;\n     //margin: 50px 100px;\n     \n }\n"
+                },
+                {
+                    "date": 1682615298801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,15 +39,13 @@\n }\n \n body{\n     line-height: 1.6;\n-    //margin: 50px 100px;\n     \n }\n h1{\n     \n     font-size: $h1;\n-    //font-weight: 500;\n    \n   line-height: 1;\n }\n a{\n"
+                },
+                {
+                    "date": 1682615306317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,8 @@\n }\n h1{\n     \n     font-size: $h1;\n-   \n   line-height: 1;\n }\n a{\n     text-decoration: none;\n"
+                },
+                {
+                    "date": 1682615314162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,15 +38,14 @@\n    \n }\n \n body{\n-    line-height: 1.6;\n+   // line-height: 1.6;\n     \n }\n h1{\n     \n     font-size: $h1;\n-  line-height: 1;\n }\n a{\n     text-decoration: none;\n }\n"
+                },
+                {
+                    "date": 1682615323085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,12 +37,12 @@\n    border: 1px solid red;\n    \n }\n \n-body{\n+//body{\n    // line-height: 1.6;\n     \n-}\n+//}\n h1{\n     \n     font-size: $h1;\n }\n"
+                },
+                {
+                    "date": 1682615335669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,12 +37,12 @@\n    border: 1px solid red;\n    \n }\n \n-//body{\n+body{\n    // line-height: 1.6;\n     \n-//}\n+}\n h1{\n     \n     font-size: $h1;\n }\n"
+                },
+                {
+                    "date": 1682615384008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n \n-$h1: 24px 500;\n+$h1: 24px;\n $h2: 18px 500;\n $h3: 14px 500;\n $h4: 13px 500;\n $text: 12px 400;\n@@ -38,14 +38,15 @@\n    \n }\n \n body{\n-   // line-height: 1.6;\n+    line-height: 1.6;\n     \n }\n h1{\n     \n     font-size: $h1;\n+  line-height: 1;\n }\n a{\n     text-decoration: none;\n }\n"
+                },
+                {
+                    "date": 1682615413463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n    \n }\n \n body{\n-    line-height: 1.6;\n+   // line-height: 1.6;\n     \n }\n h1{\n     \n"
+                },
+                {
+                    "date": 1682615434816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n }\n h1{\n     \n     font-size: $h1;\n-  line-height: 1;\n+ // line-height: 1;\n }\n a{\n     text-decoration: none;\n }\n"
+                },
+                {
+                    "date": 1682615605807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n $text: 12px 400;\n \n :root {\n        font-family: Montserrat;\n+       \n \n   /* font sizes */\n   --font-size-5xl: 24px, 200;\n   --font-size-lg: 18px;\n"
+                },
+                {
+                    "date": 1682615617940,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n $text: 12px 400;\n \n :root {\n        font-family: Montserrat;\n-       \n+       font-size: $;\n \n   /* font sizes */\n   --font-size-5xl: 24px, 200;\n   --font-size-lg: 18px;\n"
+                },
+                {
+                    "date": 1682615654873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,9 @@\n $h4: 13px 500;\n $text: 12px 400;\n \n :root {\n-       font-family: Montserrat;\n-       font-size: $;\n+       \n \n   /* font sizes */\n   --font-size-5xl: 24px, 200;\n   --font-size-lg: 18px;\n"
+                },
+                {
+                    "date": 1682615666494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,10 @@\n    \n }\n \n body{\n-   // line-height: 1.6;\n+  font-family: Montserrat;\n+  font-size: $text;\n     \n }\n h1{\n     \n"
+                },
+                {
+                    "date": 1682615711860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n :root {\n        \n \n   /* font sizes */\n-  --font-size-5xl: 24px, 200;\n+  --font-size-5xl: 24px;\n   --font-size-lg: 18px;\n   --font-size-sm: 14px;\n   --font-size-smi: 13px;\n   --font-size-xs: 12px;\n"
+                },
+                {
+                    "date": 1682615819885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,9 @@\n \n body{\n   font-family: Montserrat;\n   font-size: $text;\n+  \n     \n }\n h1{\n     \n"
+                },
+                {
+                    "date": 1682615839230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,8 @@\n \n body{\n   font-family: Montserrat;\n   font-size: $text;\n-  \n     \n }\n h1{\n     \n"
+                },
+                {
+                    "date": 1682615880577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n    border: 1px solid red;\n    \n }\n \n-body{\n+body li{\n   font-family: Montserrat;\n   font-size: $text;\n     \n }\n"
+                },
+                {
+                    "date": 1682615889951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n    border: 1px solid red;\n    \n }\n \n-body li{\n+body, li{\n   font-family: Montserrat;\n   font-size: $text;\n     \n }\n"
+                },
+                {
+                    "date": 1682615948325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,10 @@\n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n    border: 1px solid red;\n+   font-family: Montserrat;\n+   font-size: $text;\n    \n }\n \n body, li{\n"
+                },
+                {
+                    "date": 1682615999753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n $h1: 24px;\n $h2: 18px 500;\n $h3: 14px 500;\n $h4: 13px 500;\n-$text: 12px 400;\n+$text: 12px;\n \n :root {\n        \n \n"
+                },
+                {
+                    "date": 1682616006449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n \n $h1: 24px;\n $h2: 18px 500;\n-$h3: 14px 500;\n-$h4: 13px 500;\n+$h3: 14px;\n+$h4: 13px;\n $text: 12px;\n \n :root {\n        \n"
+                },
+                {
+                    "date": 1682616071846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n \n $h1: 24px;\n-$h2: 18px 500;\n+$h2: 18px;\n $h3: 14px;\n $h4: 13px;\n $text: 12px;\n \n@@ -39,9 +39,9 @@\n    font-size: $text;\n    \n }\n \n-body, li{\n+body{\n   font-family: Montserrat;\n   font-size: $text;\n     \n }\n"
+                },
+                {
+                    "date": 1682616090028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n    font-size: $text;\n    \n }\n \n-body{\n+body, li{\n   font-family: Montserrat;\n   font-size: $text;\n     \n }\n"
+                },
+                {
+                    "date": 1682616110153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n    font-size: $text;\n    \n }\n \n-body, li{\n+body{\n   font-family: Montserrat;\n   font-size: $text;\n     \n }\n"
+                },
+                {
+                    "date": 1682616334589,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n \n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n-   border: 1px solid red;\n+  // border: 1px solid red;\n    font-family: Montserrat;\n    font-size: $text;\n    \n }\n"
+                },
+                {
+                    "date": 1682616411636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n    // --fs-xl: 2.5rem;\n }\n \n *{ box-sizing: border-box;\n-    margin: 0;\n+    margin: 0 ;\n     padding: 0;\n   // border: 1px solid red;\n    font-family: Montserrat;\n    font-size: $text;\n"
+                },
+                {
+                    "date": 1682616418194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n    // --fs-xl: 2.5rem;\n }\n \n *{ box-sizing: border-box;\n-    margin: 0 ;\n+    margin: 0 5%;\n     padding: 0;\n   // border: 1px solid red;\n    font-family: Montserrat;\n    font-size: $text;\n"
+                },
+                {
+                    "date": 1682616424139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n    // --fs-xl: 2.5rem;\n }\n \n *{ box-sizing: border-box;\n-    margin: 0 5%;\n+    margin: 0 2%;\n     padding: 0;\n   // border: 1px solid red;\n    font-family: Montserrat;\n    font-size: $text;\n"
+                },
+                {
+                    "date": 1682616434820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n    // --fs-xl: 2.5rem;\n }\n \n *{ box-sizing: border-box;\n-    margin: 0 2%;\n+    margin: 0 1;\n     padding: 0;\n   // border: 1px solid red;\n    font-family: Montserrat;\n    font-size: $text;\n"
+                },
+                {
+                    "date": 1682616443624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n    // --fs-xl: 2.5rem;\n }\n \n *{ box-sizing: border-box;\n-    margin: 0 1;\n+    margin: 0 px;\n     padding: 0;\n   // border: 1px solid red;\n    font-family: Montserrat;\n    font-size: $text;\n"
+                },
+                {
+                    "date": 1682616454514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n    // --fs-xl: 2.5rem;\n }\n \n *{ box-sizing: border-box;\n-    margin: 0 px;\n+    margin: 0;\n     padding: 0;\n   // border: 1px solid red;\n    font-family: Montserrat;\n    font-size: $text;\n"
+                },
+                {
+                    "date": 1682617808965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n \n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n-  // border: 1px solid red;\n+   border: 1px solid red;\n    font-family: Montserrat;\n    font-size: $text;\n    \n }\n"
+                },
+                {
+                    "date": 1682618065252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n \n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n-   border: 1px solid red;\n+  // border: 1px solid red;\n    font-family: Montserrat;\n    font-size: $text;\n    \n }\n"
+                },
+                {
+                    "date": 1682618076915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n \n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n-  // border: 1px solid red;\n+  // border: 0.px solid red;\n    font-family: Montserrat;\n    font-size: $text;\n    \n }\n"
+                },
+                {
+                    "date": 1682618082983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n \n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n-  // border: 0.px solid red;\n+   border: 0.5px solid red;\n    font-family: Montserrat;\n    font-size: $text;\n    \n }\n"
+                },
+                {
+                    "date": 1682618130683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n \n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n-   border: 0.5px solid red;\n+  // border: 0.5px solid red;\n    font-family: Montserrat;\n    font-size: $text;\n    \n }\n"
+                },
+                {
+                    "date": 1682688816460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n $h4: 13px;\n $text: 12px;\n \n :root {\n+  \n        \n \n   /* font sizes */\n   --font-size-5xl: 24px;\n"
+                },
+                {
+                    "date": 1682688834919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n $h4: 13px;\n $text: 12px;\n \n :root {\n-  \n+  html\n        \n \n   /* font sizes */\n   --font-size-5xl: 24px;\n"
+                },
+                {
+                    "date": 1682688840613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n $h4: 13px;\n $text: 12px;\n \n :root {\n-  html\n+  html{}\n        \n \n   /* font sizes */\n   --font-size-5xl: 24px;\n"
+                },
+                {
+                    "date": 1682688849135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,11 @@\n $h4: 13px;\n $text: 12px;\n \n :root {\n-  html{}\n+  html{\n+    margin\n+  }\n        \n \n   /* font sizes */\n   --font-size-5xl: 24px;\n"
+                },
+                {
+                    "date": 1682688856086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n $text: 12px;\n \n :root {\n   html{\n-    margin\n+    margin: 1rem\n   }\n        \n \n   /* font sizes */\n"
+                },
+                {
+                    "date": 1682688896192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,9 @@\n $h4: 13px;\n $text: 12px;\n \n :root {\n-  html{\n-    margin: 1rem\n-  }\n+ \n        \n \n   /* font sizes */\n   --font-size-5xl: 24px;\n"
+                },
+                {
+                    "date": 1682688902933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,8 +39,11 @@\n    font-family: Montserrat;\n    font-size: $text;\n    \n }\n+html{\n+  margin: 1rem;\n+}\n \n body{\n   font-family: Montserrat;\n   font-size: $text;\n"
+                },
+                {
+                    "date": 1682689237365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n $h1: 24px;\n $h2: 18px;\n $h3: 14px;\n-$h4: 13px;\n+$h4: 15px;\n $text: 12px;\n \n :root {\n  \n"
+                },
+                {
+                    "date": 1682689271789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n $h1: 24px;\n $h2: 18px;\n $h3: 14px;\n-$h4: 15px;\n+$h4: 1px;\n $text: 12px;\n \n :root {\n  \n"
+                },
+                {
+                    "date": 1682689325909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n $h1: 24px;\n $h2: 18px;\n $h3: 14px;\n-$h4: 1px;\n+$h4: 13px;\n $text: 12px;\n \n :root {\n  \n@@ -46,8 +46,9 @@\n \n body{\n   font-family: Montserrat;\n   font-size: $text;\n+  font\n     \n }\n h1{\n     \n"
+                },
+                {
+                    "date": 1682689332904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n \n body{\n   font-family: Montserrat;\n   font-size: $text;\n-  font\n+  font-weight:\n     \n }\n h1{\n     \n"
+                },
+                {
+                    "date": 1682689338919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n \n body{\n   font-family: Montserrat;\n   font-size: $text;\n-  font-weight:\n+  font-weight: 400\n     \n }\n h1{\n     \n"
+                },
+                {
+                    "date": 1682689720461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,15 +10,15 @@\n  \n        \n \n   /* font sizes */\n-  --font-size-5xl: 24px;\n-  --font-size-lg: 18px;\n-  --font-size-sm: 14px;\n-  --font-size-smi: 13px;\n-  --font-size-xs: 12px;\n-  --font-size-17xl: 36px;\n-  --font-size-3xs: 10px;\n+  // --font-size-5xl: 24px;\n+  // --font-size-lg: 18px;\n+  // --font-size-sm: 14px;\n+  // --font-size-smi: 13px;\n+  // --font-size-xs: 12px;\n+  // --font-size-17xl: 36px;\n+  // --font-size-3xs: 10px;\n \n \n    // --clr-primary-400: hsl(60 100% 50%);\n   //  --clr-neutral-900: hsl(0 0% 0%);\n@@ -46,9 +46,9 @@\n \n body{\n   font-family: Montserrat;\n   font-size: $text;\n-  font-weight: 400\n+  font-weight: 400;\n     \n }\n h1{\n     \n"
+                },
+                {
+                    "date": 1682689731162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n $h3: 14px;\n $h4: 13px;\n $text: 12px;\n \n-:root {\n+//:root {\n  \n        \n \n   /* font sizes */\n"
+                },
+                {
+                    "date": 1682689738060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n    // --fs-600: 1rem;\n    // --fs-600: 2.5rem;\n    // --fs-xl: clamp(1rem, 12vw + 1rem, 1.5rem);\n    // --fs-xl: 2.5rem;\n-}\n+//}\n \n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n"
+                },
+                {
+                    "date": 1682689772494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n $h1: 24px;\n $h2: 18px;\n $h3: 14px;\n-$h4: 13px;\n+$h4: 43px;\n $text: 12px;\n \n //:root {\n  \n"
+                },
+                {
+                    "date": 1682689789231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n $h1: 24px;\n $h2: 18px;\n $h3: 14px;\n-$h4: 43px;\n+$fh4: 43px;\n $text: 12px;\n \n //:root {\n  \n"
+                },
+                {
+                    "date": 1682689800740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n $h1: 24px;\n $h2: 18px;\n $h3: 14px;\n-$fh4: 43px;\n+$h4: 43px;\n $text: 12px;\n \n //:root {\n  \n"
+                },
+                {
+                    "date": 1682690929906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n     margin: 0;\n     padding: 0;\n   // border: 0.5px solid red;\n    font-family: Montserrat;\n-   font-size: $text;\n+   //font-size: $text;\n    \n }\n html{\n   margin: 1rem;\n"
+                },
+                {
+                    "date": 1682693937759,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,8 @@\n   font-weight: 400;\n     \n }\n h1{\n-    \n     font-size: $h1;\n  // line-height: 1;\n }\n a{\n"
+                },
+                {
+                    "date": 1682693943815,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,7 +53,8 @@\n h1{\n     font-size: $h1;\n  // line-height: 1;\n }\n+h\n a{\n     text-decoration: none;\n }\n"
+                },
+                {
+                    "date": 1682693948967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,8 +53,10 @@\n h1{\n     font-size: $h1;\n  // line-height: 1;\n }\n-h\n+h2{\n+  \n+}\n a{\n     text-decoration: none;\n }\n"
+                },
+                {
+                    "date": 1682693960174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n     font-size: $h1;\n  // line-height: 1;\n }\n h2{\n-  \n+  font-size: $h1\n }\n a{\n     text-decoration: none;\n }\n"
+                },
+                {
+                    "date": 1682693967615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n     font-size: $h1;\n  // line-height: 1;\n }\n h2{\n-  font-size: $h1\n+  font-size: $h2;\n }\n a{\n     text-decoration: none;\n }\n"
+                },
+                {
+                    "date": 1682693979866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,7 +56,8 @@\n }\n h2{\n   font-size: $h2;\n }\n+\n a{\n     text-decoration: none;\n }\n"
+                },
+                {
+                    "date": 1682693985237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,8 +56,14 @@\n }\n h2{\n   font-size: $h2;\n }\n-\n+h1{\n+  font-size: $h1;\n+// line-height: 1;\n+}\n+h{\n+font-size: $h2;\n+}\n a{\n     text-decoration: none;\n }\n"
+                },
+                {
+                    "date": 1682693991119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,10 +60,10 @@\n h1{\n   font-size: $h1;\n // line-height: 1;\n }\n-h{\n-font-size: $h2;\n+h3{\n+font-size: $h;\n }\n a{\n     text-decoration: none;\n }\n"
+                },
+                {
+                    "date": 1682694001584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,14 +56,14 @@\n }\n h2{\n   font-size: $h2;\n }\n-h1{\n+h{\n   font-size: $h1;\n // line-height: 1;\n }\n h3{\n-font-size: $h;\n+font-size: $h3;\n }\n a{\n     text-decoration: none;\n }\n"
+                },
+                {
+                    "date": 1682694008778,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,69 @@\n+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n+\n+$h1: 24px;\n+$h2: 18px;\n+$h3: 14px;\n+$h4: 43px;\n+$text: 12px;\n+\n+//:root {\n+ \n+       \n+\n+  /* font sizes */\n+  // --font-size-5xl: 24px;\n+  // --font-size-lg: 18px;\n+  // --font-size-sm: 14px;\n+  // --font-size-smi: 13px;\n+  // --font-size-xs: 12px;\n+  // --font-size-17xl: 36px;\n+  // --font-size-3xs: 10px;\n+\n+\n+   // --clr-primary-400: hsl(60 100% 50%);\n+  //  --clr-neutral-900: hsl(0 0% 0%);\n+  //  --clr-neutral-100: hsl(0 0% 100%);\n+  \n+    //--fs-400: 1rem;\n+   // --fs-400: 0.75rem;\n+   // --fs-600: 1rem;\n+   // --fs-600: 2.5rem;\n+   // --fs-xl: clamp(1rem, 12vw + 1rem, 1.5rem);\n+   // --fs-xl: 2.5rem;\n+//}\n+\n+*{ box-sizing: border-box;\n+    margin: 0;\n+    padding: 0;\n+  // border: 0.5px solid red;\n+   font-family: Montserrat;\n+   //font-size: $text;\n+   \n+}\n+html{\n+  margin: 1rem;\n+}\n+\n+body{\n+  font-family: Montserrat;\n+  font-size: $text;\n+  font-weight: 400;\n+    \n+}\n+h1{\n+    font-size: $h1;\n+ // line-height: 1;\n+}\n+h2{\n+  font-size: $h2;\n+}\n+h4{\n+  font-size: $h;\n+// line-height: 1;\n+}\n+h3{\n+font-size: $h3;\n+}\n+a{\n+    text-decoration: none;\n+}\n"
+                },
+                {
+                    "date": 1682694022657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n $h1: 24px;\n $h2: 18px;\n $h3: 14px;\n-$h4: 43px;\n+$h4: 13px;\n $text: 12px;\n \n //:root {\n  \n@@ -57,82 +57,13 @@\n h2{\n   font-size: $h2;\n }\n h4{\n-  font-size: $h;\n+  font-size: $h4;\n // line-height: 1;\n }\n h3{\n font-size: $h3;\n }\n a{\n     text-decoration: none;\n }\n-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n-\n-$h1: 24px;\n-$h2: 18px;\n-$h3: 14px;\n-$h4: 43px;\n-$text: 12px;\n-\n-//:root {\n- \n-       \n-\n-  /* font sizes */\n-  // --font-size-5xl: 24px;\n-  // --font-size-lg: 18px;\n-  // --font-size-sm: 14px;\n-  // --font-size-smi: 13px;\n-  // --font-size-xs: 12px;\n-  // --font-size-17xl: 36px;\n-  // --font-size-3xs: 10px;\n-\n-\n-   // --clr-primary-400: hsl(60 100% 50%);\n-  //  --clr-neutral-900: hsl(0 0% 0%);\n-  //  --clr-neutral-100: hsl(0 0% 100%);\n-  \n-    //--fs-400: 1rem;\n-   // --fs-400: 0.75rem;\n-   // --fs-600: 1rem;\n-   // --fs-600: 2.5rem;\n-   // --fs-xl: clamp(1rem, 12vw + 1rem, 1.5rem);\n-   // --fs-xl: 2.5rem;\n-//}\n-\n-*{ box-sizing: border-box;\n-    margin: 0;\n-    padding: 0;\n-  // border: 0.5px solid red;\n-   font-family: Montserrat;\n-   //font-size: $text;\n-   \n-}\n-html{\n-  margin: 1rem;\n-}\n-\n-body{\n-  font-family: Montserrat;\n-  font-size: $text;\n-  font-weight: 400;\n-    \n-}\n-h1{\n-    font-size: $h1;\n- // line-height: 1;\n-}\n-h2{\n-  font-size: $h2;\n-}\n-h{\n-  font-size: $h1;\n-// line-height: 1;\n-}\n-h3{\n-font-size: $h3;\n-}\n-a{\n-    text-decoration: none;\n-}\n"
+                },
+                {
+                    "date": 1682694095129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,11 +35,10 @@\n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n   // border: 0.5px solid red;\n-   font-family: Montserrat;\n-   //font-size: $text;\n    \n+   \n }\n html{\n   margin: 1rem;\n }\n"
+                },
+                {
+                    "date": 1682694130925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,8 @@\n     margin: 0;\n     padding: 0;\n   // border: 0.5px solid red;\n    \n-   \n }\n html{\n   margin: 1rem;\n }\n@@ -57,8 +56,9 @@\n   font-size: $h2;\n }\n h4{\n   font-size: $h4;\n+  f\n // line-height: 1;\n }\n h3{\n font-size: $h3;\n"
+                },
+                {
+                    "date": 1682694137862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n   font-size: $h2;\n }\n h4{\n   font-size: $h4;\n-  f\n+  font-weight: 500;\n // line-height: 1;\n }\n h3{\n font-size: $h3;\n"
+                },
+                {
+                    "date": 1682694170216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n   font-size: $h2;\n }\n h4{\n   font-size: $h4;\n-  font-weight: 500;\n+ // font-weight: 500;\n // line-height: 1;\n }\n h3{\n font-size: $h3;\n"
+                },
+                {
+                    "date": 1682694187653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n   font-size: $h2;\n }\n h4{\n   font-size: $h4;\n- // font-weight: 500;\n+  font-weight: 500;\n // line-height: 1;\n }\n h3{\n font-size: $h3;\n"
+                },
+                {
+                    "date": 1682869042459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,68 @@\n+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n+\n+$h1: 24px;\n+$h2: 18px;\n+$h3: 14px;\n+$h4: 13px;\n+$text: 12px;\n+\n+//:root {\n+ \n+       \n+\n+  /* font sizes */\n+  // --font-size-5xl: 24px;\n+  // --font-size-lg: 18px;\n+  // --font-size-sm: 14px;\n+  // --font-size-smi: 13px;\n+  // --font-size-xs: 12px;\n+  // --font-size-17xl: 36px;\n+  // --font-size-3xs: 10px;\n+\n+\n+   // --clr-primary-400: hsl(60 100% 50%);\n+  //  --clr-neutral-900: hsl(0 0% 0%);\n+  //  --clr-neutral-100: hsl(0 0% 100%);\n+  \n+    //--fs-400: 1rem;\n+   // --fs-400: 0.75rem;\n+   // --fs-600: 1rem;\n+   // --fs-600: 2.5rem;\n+   // --fs-xl: clamp(1rem, 12vw + 1rem, 1.5rem);\n+   // --fs-xl: 2.5rem;\n+//}\n+\n+*{ box-sizing: border-box;\n+    margin: 0;\n+    padding: 0;\n+  border: 0.5px solid red;\n+   \n+}\n+html{\n+  margin: 1rem;\n+}\n+\n+body{\n+  font-family: Montserrat;\n+  font-size: $text;\n+  font-weight: 400;\n+    \n+}\n+h1{\n+    font-size: $h1;\n+ // line-height: 1;\n+}\n+h2{\n+  font-size: $h2;\n+}\n+h4{\n+  font-size: $h4;\n+  font-weight: 500;\n+// line-height: 1;\n+}\n+h3{\n+font-size: $h3;\n+}\n+a{\n+    text-decoration: none;\n+}\n"
+                },
+                {
+                    "date": 1682870112570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n \n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n-  border: 0.5px solid red;\n+  //order: 0.5px solid red;\n    \n }\n html{\n   margin: 1rem;\n@@ -65,72 +65,4 @@\n }\n a{\n     text-decoration: none;\n }\n-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n-\n-$h1: 24px;\n-$h2: 18px;\n-$h3: 14px;\n-$h4: 13px;\n-$text: 12px;\n-\n-//:root {\n- \n-       \n-\n-  /* font sizes */\n-  // --font-size-5xl: 24px;\n-  // --font-size-lg: 18px;\n-  // --font-size-sm: 14px;\n-  // --font-size-smi: 13px;\n-  // --font-size-xs: 12px;\n-  // --font-size-17xl: 36px;\n-  // --font-size-3xs: 10px;\n-\n-\n-   // --clr-primary-400: hsl(60 100% 50%);\n-  //  --clr-neutral-900: hsl(0 0% 0%);\n-  //  --clr-neutral-100: hsl(0 0% 100%);\n-  \n-    //--fs-400: 1rem;\n-   // --fs-400: 0.75rem;\n-   // --fs-600: 1rem;\n-   // --fs-600: 2.5rem;\n-   // --fs-xl: clamp(1rem, 12vw + 1rem, 1.5rem);\n-   // --fs-xl: 2.5rem;\n-//}\n-\n-*{ box-sizing: border-box;\n-    margin: 0;\n-    padding: 0;\n-  // border: 0.5px solid red;\n-   \n-}\n-html{\n-  margin: 1rem;\n-}\n-\n-body{\n-  font-family: Montserrat;\n-  font-size: $text;\n-  font-weight: 400;\n-    \n-}\n-h1{\n-    font-size: $h1;\n- // line-height: 1;\n-}\n-h2{\n-  font-size: $h2;\n-}\n-h4{\n-  font-size: $h4;\n-  font-weight: 500;\n-// line-height: 1;\n-}\n-h3{\n-font-size: $h3;\n-}\n-a{\n-    text-decoration: none;\n-}\n"
+                },
+                {
+                    "date": 1682876738782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n \n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n-  //order: 0.5px solid red;\n+  border: 0.5px solid red;\n    \n }\n html{\n   margin: 1rem;\n"
+                },
+                {
+                    "date": 1682945431773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n \n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n-  border: 0.5px solid red;\n+  //border: 0.5px solid red;\n    \n }\n html{\n   margin: 1rem;\n"
+                },
+                {
+                    "date": 1682945501690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n \n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n-  //border: 0.5px solid red;\n+  border: 0.5px solid red;\n    \n }\n html{\n   margin: 1rem;\n"
+                },
+                {
+                    "date": 1682945676795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n \n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n-  border: 0.5px solid red;\n+ // border: 0.5px solid red;\n    \n }\n html{\n   margin: 1rem;\n"
+                },
+                {
+                    "date": 1682946001493,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,4 +65,5 @@\n }\n a{\n     text-decoration: none;\n }\n+@\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682946007252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,5 +65,5 @@\n }\n a{\n     text-decoration: none;\n }\n-@\n\\ No newline at end of file\n+@inc\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682946014151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,5 +65,5 @@\n }\n a{\n     text-decoration: none;\n }\n-@inc\n\\ No newline at end of file\n+@include media_tablet{}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682946034179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,5 +65,7 @@\n }\n a{\n     text-decoration: none;\n }\n-@include media_tablet{}\n\\ No newline at end of file\n+@include media_tablet{\n+  font\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682946345228,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,6 +66,6 @@\n a{\n     text-decoration: none;\n }\n @include media_tablet{\n-  font\n+  font-size: *;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682946355533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,6 +66,6 @@\n a{\n     text-decoration: none;\n }\n @include media_tablet{\n-  font-size: *;\n+  font-size: 2;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682946447494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n-\n+@import '../settings/settings.scss';\n $h1: 24px;\n $h2: 18px;\n $h3: 14px;\n $h4: 13px;\n@@ -66,6 +66,6 @@\n a{\n     text-decoration: none;\n }\n @include media_tablet{\n-  font-size: 2;\n+  font-size: +2;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682946455747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n-@import '../settings/settings.scss';\n+@import '../settings/va.scss';\n $h1: 24px;\n $h2: 18px;\n $h3: 14px;\n $h4: 13px;\n"
+                },
+                {
+                    "date": 1682946463498,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n-@import '../settings/va.scss';\n+@import '../settings/variables.scss';\n $h1: 24px;\n $h2: 18px;\n $h3: 14px;\n $h4: 13px;\n"
+                },
+                {
+                    "date": 1682946484525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n-@import '../settings/variables.scss';\n+@import '../settings/.scss';\n $h1: 24px;\n $h2: 18px;\n $h3: 14px;\n $h4: 13px;\n"
+                },
+                {
+                    "date": 1682946492484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n-@import '../settings/.scss';\n+@import '../settings/mixins.scss';\n $h1: 24px;\n $h2: 18px;\n $h3: 14px;\n $h4: 13px;\n"
+                },
+                {
+                    "date": 1682946572002,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n-@import '../settings/mixins.scss';\n+@import '../settings/se.scss';\n $h1: 24px;\n $h2: 18px;\n $h3: 14px;\n $h4: 13px;\n"
+                },
+                {
+                    "date": 1682946603933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n-@import '../settings/se.scss';\n+@import '../settings/inde.scss';\n $h1: 24px;\n $h2: 18px;\n $h3: 14px;\n $h4: 13px;\n"
+                },
+                {
+                    "date": 1682946624721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n-@import '../settings/inde.scss';\n+@import './index.scss';\n $h1: 24px;\n $h2: 18px;\n $h3: 14px;\n $h4: 13px;\n"
+                },
+                {
+                    "date": 1682946634969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n-@import './index.scss';\n+@import '../settings/index.scss';\n $h1: 24px;\n $h2: 18px;\n $h3: 14px;\n $h4: 13px;\n"
+                },
+                {
+                    "date": 1682946640232,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n-@import '../settings/index.scss';\n+@import '../settings/ma.scss';\n $h1: 24px;\n $h2: 18px;\n $h3: 14px;\n $h4: 13px;\n"
+                },
+                {
+                    "date": 1682946648086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n-@import '../settings/ma.scss';\n+@import '../settings/maps.scss';\n+\n $h1: 24px;\n $h2: 18px;\n $h3: 14px;\n $h4: 13px;\n"
+                },
+                {
+                    "date": 1682946659341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n @import '../settings/maps.scss';\n+@import '../settings/maps.scss';\n \n $h1: 24px;\n $h2: 18px;\n $h3: 14px;\n"
+                },
+                {
+                    "date": 1682946664740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n @import '../settings/maps.scss';\n-@import '../settings/maps.scss';\n+@import '../settings.scss';\n \n $h1: 24px;\n $h2: 18px;\n $h3: 14px;\n"
+                },
+                {
+                    "date": 1682946670159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n @import '../settings/maps.scss';\n-@import '../settings.scss';\n+@import '../settings/mixins';\n \n $h1: 24px;\n $h2: 18px;\n $h3: 14px;\n"
+                },
+                {
+                    "date": 1682946679346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n @import '../settings/maps.scss';\n-@import '../settings/mixins';\n+@import '../settings/mixins.scss';\n \n $h1: 24px;\n $h2: 18px;\n $h3: 14px;\n"
+                },
+                {
+                    "date": 1682946885379,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,6 +68,6 @@\n a{\n     text-decoration: none;\n }\n @include media_tablet{\n-  font-size: +2;\n+  font-size: calc()\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682946892215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,6 +68,6 @@\n a{\n     text-decoration: none;\n }\n @include media_tablet{\n-  font-size: calc()\n+  font-size: calc($ *)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682946905270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,6 +68,6 @@\n a{\n     text-decoration: none;\n }\n @include media_tablet{\n-  font-size: calc($ *)\n+  font-size: calc( *2)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682946918042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,6 +68,6 @@\n a{\n     text-decoration: none;\n }\n @include media_tablet{\n-  font-size: calc( *2)\n+  font-size: calc(*2)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682946923218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,6 +68,6 @@\n a{\n     text-decoration: none;\n }\n @include media_tablet{\n-  font-size: calc(*2)\n+  font-size: calc( *2)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682946931858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,6 +68,6 @@\n a{\n     text-decoration: none;\n }\n @include media_tablet{\n-  font-size: calc( *2)\n+  font-size: calc( font*2)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682946938030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,6 +68,6 @@\n a{\n     text-decoration: none;\n }\n @include media_tablet{\n-  font-size: calc( font*2)\n+  font-size: calc( f*2)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682946947024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,6 +68,6 @@\n a{\n     text-decoration: none;\n }\n @include media_tablet{\n-  font-size: calc( f*2)\n+  font-size: calc( font-si*2)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682946975730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,7 +67,4 @@\n }\n a{\n     text-decoration: none;\n }\n-@include media_tablet{\n-  font-size: calc( font-si*2)\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682947172840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,8 @@\n     \n }\n h1{\n     font-size: $h1;\n- // line-height: 1;\n }\n h2{\n   font-size: $h2;\n }\n"
+                },
+                {
+                    "date": 1682947180714,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,8 @@\n }\n h4{\n   font-size: $h4;\n   font-weight: 500;\n-// line-height: 1;\n }\n h3{\n font-size: $h3;\n }\n"
+                },
+                {
+                    "date": 1682947382306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,10 @@\n $h3: 14px;\n $h4: 13px;\n $text: 12px;\n \n+\n+\n //:root {\n  \n        \n \n"
+                },
+                {
+                    "date": 1682947399566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,16 @@\n $h3: 14px;\n $h4: 13px;\n $text: 12px;\n \n-\n-\n+@media screen and (min-width: 768px) {\n+  /* Doublez la taille de vos polices */\n+  $h1: $h1 * 2;\n+  $h2: $h2 * 2;\n+  $h3: $h3 * 2;\n+  $h4: $h4 * 2;\n+  $text: $text * 2;\n+}\n //:root {\n  \n        \n \n"
+                },
+                {
+                    "date": 1682948795443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,16 +7,9 @@\n $h3: 14px;\n $h4: 13px;\n $text: 12px;\n \n-@media screen and (min-width: 768px) {\n-  /* Doublez la taille de vos polices */\n-  $h1: $h1 * 2;\n-  $h2: $h2 * 2;\n-  $h3: $h3 * 2;\n-  $h4: $h4 * 2;\n-  $text: $text * 2;\n-}\n+\n //:root {\n  \n        \n \n"
+                },
+                {
+                    "date": 1682948801003,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,16 @@\n $h3: 14px;\n $h4: 13px;\n $text: 12px;\n \n-\n+@media screen and (min-width: 768px) {\n+  /* Doublez la taille de vos polices */\n+  $h1: $h1 * 2;\n+  $h2: $h2 * 2;\n+  $h3: $h3 * 2;\n+  $h4: $h4 * 2;\n+  $text: $text * 2;\n+}\n //:root {\n  \n        \n \n"
+                },
+                {
+                    "date": 1682950091093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n $h3: 14px;\n $h4: 13px;\n $text: 12px;\n \n+\n @media screen and (min-width: 768px) {\n   /* Doublez la taille de vos polices */\n   $h1: $h1 * 2;\n   $h2: $h2 * 2;\n"
+                },
+                {
+                    "date": 1682950101184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n $h3: 14px;\n $h4: 13px;\n $text: 12px;\n \n-\n+@include me\n @media screen and (min-width: 768px) {\n   /* Doublez la taille de vos polices */\n   $h1: $h1 * 2;\n   $h2: $h2 * 2;\n"
+                },
+                {
+                    "date": 1682950112831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,11 +7,9 @@\n $h3: 14px;\n $h4: 13px;\n $text: 12px;\n \n-@include me\n-@media screen and (min-width: 768px) {\n-  /* Doublez la taille de vos polices */\n+@include media_tablet{\n   $h1: $h1 * 2;\n   $h2: $h2 * 2;\n   $h3: $h3 * 2;\n   $h4: $h4 * 2;\n"
+                },
+                {
+                    "date": 1682950139511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n $h4: 13px;\n $text: 12px;\n \n @include media_tablet{\n-  $h1: $h1 * 2;\n+  $h1: h1 * 2;\n   $h2: $h2 * 2;\n   $h3: $h3 * 2;\n   $h4: $h4 * 2;\n   $text: $text * 2;\n"
+                },
+                {
+                    "date": 1682950149578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n $h4: 13px;\n $text: 12px;\n \n @include media_tablet{\n-  $h1: h1 * 2;\n+  $h1: 1 * 2;\n   $h2: $h2 * 2;\n   $h3: $h3 * 2;\n   $h4: $h4 * 2;\n   $text: $text * 2;\n"
+                },
+                {
+                    "date": 1682950161405,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   $h1: 1 * 2;\n   $h2: $h2 * 2;\n   $h3: $h3 * 2;\n   $h4: $h4 * 2;\n-  $text: $text * 2;\n+  $text:  * 2;\n }\n //:root {\n  \n        \n"
+                },
+                {
+                    "date": 1682950178484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,15 +7,9 @@\n $h3: 14px;\n $h4: 13px;\n $text: 12px;\n \n-@include media_tablet{\n-  $h1: 1 * 2;\n-  $h2: $h2 * 2;\n-  $h3: $h3 * 2;\n-  $h4: $h4 * 2;\n-  $text:  * 2;\n-}\n+\n //:root {\n  \n        \n \n"
+                },
+                {
+                    "date": 1682951623283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n \n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n- // border: 0.5px solid red;\n+  border: 0.5px solid red;\n    \n }\n html{\n   margin: 1rem;\n"
+                },
+                {
+                    "date": 1682951706524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n \n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n-  border: 0.5px solid red;\n+ // border: 0.5px solid red;\n    \n }\n html{\n   margin: 1rem;\n"
+                },
+                {
+                    "date": 1682952551527,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,8 +42,9 @@\n    \n }\n html{\n   margin: 1rem;\n+  \n }\n \n body{\n   font-family: Montserrat;\n"
+                },
+                {
+                    "date": 1682952584088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,8 +43,9 @@\n }\n html{\n   margin: 1rem;\n   \n+\n }\n \n body{\n   font-family: Montserrat;\n"
+                },
+                {
+                    "date": 1682952593004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,12 @@\n    \n }\n html{\n   margin: 1rem;\n-  \n+  @include media_desktop{\n+    h\n+      \n+  }\n \n }\n \n body{\n"
+                },
+                {
+                    "date": 1682952599083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n }\n html{\n   margin: 1rem;\n   @include media_desktop{\n-    h\n+    margin: ;\n       \n   }\n \n }\n"
+                },
+                {
+                    "date": 1682952605566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n }\n html{\n   margin: 1rem;\n   @include media_desktop{\n-    margin: ;\n+    margin: 5rem;\n       \n   }\n \n }\n"
+                },
+                {
+                    "date": 1682952681700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n }\n html{\n   margin: 1rem;\n   @include media_desktop{\n-    margin: 5rem;\n+    margin: 15rem;\n       \n   }\n \n }\n"
+                },
+                {
+                    "date": 1682952847225,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n }\n html{\n   margin: 1rem;\n   @include media_desktop{\n-    margin: 15rem;\n+    margin:4;\n       \n   }\n \n }\n"
+                },
+                {
+                    "date": 1682952903004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n }\n html{\n   margin: 1rem;\n   @include media_desktop{\n-    margin:4;\n+    margin:10%;\n       \n   }\n \n }\n"
+                },
+                {
+                    "date": 1683021208334,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,35 +7,8 @@\n $h3: 14px;\n $h4: 13px;\n $text: 12px;\n \n-\n-//:root {\n- \n-       \n-\n-  /* font sizes */\n-  // --font-size-5xl: 24px;\n-  // --font-size-lg: 18px;\n-  // --font-size-sm: 14px;\n-  // --font-size-smi: 13px;\n-  // --font-size-xs: 12px;\n-  // --font-size-17xl: 36px;\n-  // --font-size-3xs: 10px;\n-\n-\n-   // --clr-primary-400: hsl(60 100% 50%);\n-  //  --clr-neutral-900: hsl(0 0% 0%);\n-  //  --clr-neutral-100: hsl(0 0% 100%);\n-  \n-    //--fs-400: 1rem;\n-   // --fs-400: 0.75rem;\n-   // --fs-600: 1rem;\n-   // --fs-600: 2.5rem;\n-   // --fs-xl: clamp(1rem, 12vw + 1rem, 1.5rem);\n-   // --fs-xl: 2.5rem;\n-//}\n-\n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n  // border: 0.5px solid red;\n"
+                },
+                {
+                    "date": 1683021218401,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,13 +10,12 @@\n \n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n- // border: 0.5px solid red;\n    \n }\n html{\n-  margin: 1rem;\n+  margin: 10rem;\n   @include media_desktop{\n     margin:10%;\n       \n   }\n"
+                },
+                {
+                    "date": 1683021224700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     padding: 0;\n    \n }\n html{\n-  margin: 10rem;\n+  margin: 2rem;\n   @include media_desktop{\n     margin:10%;\n       \n   }\n"
+                },
+                {
+                    "date": 1683021232702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     padding: 0;\n    \n }\n html{\n-  margin: 2rem;\n+  margin: rem;\n   @include media_desktop{\n     margin:10%;\n       \n   }\n"
+                },
+                {
+                    "date": 1683021264811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     padding: 0;\n    \n }\n html{\n-  margin: rem;\n+ \n   @include media_desktop{\n     margin:10%;\n       \n   }\n"
+                },
+                {
+                    "date": 1683021269959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n body{\n   font-family: Montserrat;\n   font-size: $text;\n   font-weight: 400;\n+  margin: 1rem;\n     \n }\n h1{\n     font-size: $h1;\n"
+                },
+                {
+                    "date": 1683021284121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,12 +14,9 @@\n    \n }\n html{\n  \n-  @include media_desktop{\n-    margin:10%;\n-      \n-  }\n+  \n \n }\n \n body{\n"
+                },
+                {
+                    "date": 1683021307670,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,19 +12,19 @@\n     margin: 0;\n     padding: 0;\n    \n }\n-html{\n- \n-  \n \n-}\n \n body{\n   font-family: Montserrat;\n   font-size: $text;\n   font-weight: 400;\n   margin: 1rem;\n+  @include media_desktop{\n+    margin:10%;\n+      \n+  }\n     \n }\n h1{\n     font-size: $h1;\n"
+                },
+                {
+                    "date": 1683021591308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,8 @@\n     padding: 0;\n    \n }\n \n-\n body{\n   font-family: Montserrat;\n   font-size: $text;\n   font-weight: 400;\n"
+                },
+                {
+                    "date": 1683021598503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,8 @@\n \n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n-   \n }\n \n body{\n   font-family: Montserrat;\n"
+                },
+                {
+                    "date": 1683021604863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,8 @@\n   font-weight: 400;\n   margin: 1rem;\n   @include media_desktop{\n     margin:10%;\n-      \n   }\n     \n }\n h1{\n"
+                },
+                {
+                    "date": 1683021616707,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,8 @@\n   margin: 1rem;\n   @include media_desktop{\n     margin:10%;\n   }\n-    \n }\n h1{\n     font-size: $h1;\n }\n"
+                },
+                {
+                    "date": 1683022636290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n body{\n   font-family: Montserrat;\n   font-size: $text;\n   font-weight: 400;\n-  margin: 1rem;\n+  margin: 0rem;\n   @include media_desktop{\n     margin:10%;\n   }\n }\n"
+                },
+                {
+                    "date": 1683022649320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n body{\n   font-family: Montserrat;\n   font-size: $text;\n   font-weight: 400;\n-  margin: 0rem;\n+  margin: 1rem;\n   @include media_desktop{\n     margin:10%;\n   }\n }\n"
+                },
+                {
+                    "date": 1683022677851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n   font-size: $text;\n   font-weight: 400;\n   margin: 1rem;\n   @include media_desktop{\n-    margin:10%;\n+    margin: 210%;\n   }\n }\n h1{\n     font-size: $h1;\n"
+                },
+                {
+                    "date": 1683022753349,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n   font-size: $text;\n   font-weight: 400;\n   margin: 1rem;\n   @include media_desktop{\n-    margin: 210%;\n+    margin: 2% 10%;\n   }\n }\n h1{\n     font-size: $h1;\n"
+                },
+                {
+                    "date": 1683024809397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,8 +33,9 @@\n   font-weight: 500;\n }\n h3{\n font-size: $h3;\n+\n }\n a{\n     text-decoration: none;\n }\n"
+                },
+                {
+                    "date": 1683024829234,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,9 @@\n   }\n }\n h1{\n     font-size: $h1;\n+    font-weight: 500;\n }\n h2{\n   font-size: $h2;\n }\n@@ -33,9 +34,9 @@\n   font-weight: 500;\n }\n h3{\n font-size: $h3;\n-\n+font-weight: 500;\n }\n a{\n     text-decoration: none;\n }\n"
+                },
+                {
+                    "date": 1683052153717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,7 +36,7 @@\n h3{\n font-size: $h3;\n font-weight: 500;\n }\n-a{\n+a li{\n     text-decoration: none;\n }\n"
+                },
+                {
+                    "date": 1683052197719,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,7 +36,7 @@\n h3{\n font-size: $h3;\n font-weight: 500;\n }\n-a li{\n+a{\n     text-decoration: none;\n }\n"
+                },
+                {
+                    "date": 1683052204090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,4 +39,6 @@\n }\n a{\n     text-decoration: none;\n }\n+\n+ul\n"
+                },
+                {
+                    "date": 1683052227079,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,6 +39,7 @@\n }\n a{\n     text-decoration: none;\n }\n-\n-ul\n+ul {\n+  list-style-type: none;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683052245762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,7 +39,7 @@\n }\n a{\n     text-decoration: none;\n }\n-ul {\n+li {\n   list-style-type: none;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683110280475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,8 @@\n *{ box-sizing: border-box;\n     margin: 0;\n     padding: 0;\n }\n-\n body{\n   font-family: Montserrat;\n   font-size: $text;\n   font-weight: 400;\n"
+                }
+            ],
+            "date": 1682467365169,
+            "name": "Commit-0",
+            "content": "@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');\n\n\n*{ box-sizing: border-box;\n    margin: 0;\n    padding: 0;\n   //border: 1px solid red;\n   \n}\n\nbody{\n    font-family: Montserrat;\n    font-size: 12px;\n    //margin: 50px 100px;\n    \n}\nh1{\n    \n    font-size: 48px;\n    font-weight: 500;\n}\na{\n    text-decoration: none;\n}\n"
+        }
+    ]
+}

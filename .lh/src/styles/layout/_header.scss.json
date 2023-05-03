@@ -1,0 +1,250 @@
+{
+    "sourceFile": "src/styles/layout/_header.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 58,
+            "patches": [
+                {
+                    "date": 1682447181464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1682447190384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n //@use \"../utils/variables\" as *;\n-@import '../set_variables.scss';\n+@import '../settings/variables';\n header{\n display: flex;\n justify-content: space-between;\n     .navigation{\n"
+                },
+                {
+                    "date": 1682456032722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-//@use \"../utils/variables\" as *;\n @import '../settings/variables';\n header{\n display: flex;\n justify-content: space-between;\n"
+                },
+                {
+                    "date": 1682467649398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     .navigation{\n         display: flex;\n         justify-content: space-between;\n         align-items: center;\n-        font-size: 24px;\n+        //font-size: 24px;\n         padding: 0 2rem;\n         ul{\n             display: flex;\n             align-items: center;   \n"
+                },
+                {
+                    "date": 1682469458821,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n         justify-content: space-between;\n         align-items: center;\n         //font-size: 24px;\n         padding: 0 2rem;\n+        \n         ul{\n             display: flex;\n             align-items: center;   \n             a, li{\n"
+                },
+                {
+                    "date": 1682469467666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n         justify-content: space-between;\n         align-items: center;\n         //font-size: 24px;\n         padding: 0 2rem;\n-        \n+        @include media_tablet\n         ul{\n             display: flex;\n             align-items: center;   \n             a, li{\n"
+                },
+                {
+                    "date": 1682469474723,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,11 @@\n         justify-content: space-between;\n         align-items: center;\n         //font-size: 24px;\n         padding: 0 2rem;\n-        @include media_tablet\n+        @include media_tablet{\n+            \n+        }\n         ul{\n             display: flex;\n             align-items: center;   \n             a, li{\n"
+                },
+                {
+                    "date": 1682469494846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         align-items: center;\n         //font-size: 24px;\n         padding: 0 2rem;\n         @include media_tablet{\n-            \n+               //font-size: 24px;\n         }\n         ul{\n             display: flex;\n             align-items: center;   \n"
+                },
+                {
+                    "date": 1682469690254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-@import '../settings/variables';\n+@import '../settings/s';\n header{\n display: flex;\n justify-content: space-between;\n     .navigation{\n@@ -8,9 +8,9 @@\n         align-items: center;\n         //font-size: 24px;\n         padding: 0 2rem;\n         @include media_tablet{\n-               //font-size: 24px;\n+               font-size: 24px;\n         }\n         ul{\n             display: flex;\n             align-items: center;   \n"
+                },
+                {
+                    "date": 1682470039123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-@import '../settings/s';\n+@import '../settings/settings';\n header{\n display: flex;\n justify-content: space-between;\n     .navigation{\n@@ -8,9 +8,9 @@\n         align-items: center;\n         //font-size: 24px;\n         padding: 0 2rem;\n         @include media_tablet{\n-               font-size: 24px;\n+               font-size: 1;\n         }\n         ul{\n             display: flex;\n             align-items: center;   \n"
+                },
+                {
+                    "date": 1682470457682,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,10 @@\n         justify-content: space-between;\n         align-items: center;\n         //font-size: 24px;\n         padding: 0 2rem;\n-        @include media_tablet{\n-               font-size: 1;\n+        @include media_des{\n+               font-size: 1rem;\n         }\n         ul{\n             display: flex;\n             align-items: center;   \n"
+                },
+                {
+                    "date": 1682470584148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,10 @@\n         justify-content: space-between;\n         align-items: center;\n         //font-size: 24px;\n         padding: 0 2rem;\n-        @include media_des{\n+        \n+        @include media_desktop{\n                font-size: 1rem;\n         }\n         ul{\n             display: flex;\n"
+                },
+                {
+                    "date": 1682470597168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n         justify-content: space-between;\n         align-items: center;\n         //font-size: 24px;\n         padding: 0 2rem;\n-        \n+        img{}\n         @include media_desktop{\n                font-size: 1rem;\n         }\n         ul{\n"
+                },
+                {
+                    "date": 1682470608393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,11 @@\n         justify-content: space-between;\n         align-items: center;\n         //font-size: 24px;\n         padding: 0 2rem;\n-        img{}\n+        img{\n+            height: ;\n+        }\n         @include media_desktop{\n                font-size: 1rem;\n         }\n         ul{\n"
+                },
+                {
+                    "date": 1682470622067,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         align-items: center;\n         //font-size: 24px;\n         padding: 0 2rem;\n         img{\n-            height: ;\n+            height: 50%;\n         }\n         @include media_desktop{\n                font-size: 1rem;\n         }\n"
+                },
+                {
+                    "date": 1682470628440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n         //font-size: 24px;\n         padding: 0 2rem;\n         img{\n             height: 50%;\n+            width: ;\n         }\n         @include media_desktop{\n                font-size: 1rem;\n         }\n"
+                },
+                {
+                    "date": 1682470645283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n         align-items: center;\n         //font-size: 24px;\n         padding: 0 2rem;\n         img{\n-            height: 50%;\n-            width: ;\n+            height: 50;\n+            width: auto;\n         }\n         @include media_desktop{\n                font-size: 1rem;\n         }\n"
+                },
+                {
+                    "date": 1682470853374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,13 +8,13 @@\n         align-items: center;\n         //font-size: 24px;\n         padding: 0 2rem;\n         img{\n-            height: 50;\n+            height: 50px;\n             width: auto;\n         }\n         @include media_desktop{\n-               font-size: 1rem;\n+               font-size: 2rem;\n         }\n         ul{\n             display: flex;\n             align-items: center;   \n"
+                },
+                {
+                    "date": 1682470867648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n             height: 50px;\n             width: auto;\n         }\n         @include media_desktop{\n-               font-size: 2rem;\n+               font-size: 2em;\n         }\n         ul{\n             display: flex;\n             align-items: center;   \n"
+                },
+                {
+                    "date": 1682470886025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     .navigation{\n         display: flex;\n         justify-content: space-between;\n         align-items: center;\n-        //font-size: 24px;\n+        font-size: 24px;\n         padding: 0 2rem;\n         img{\n             height: 50px;\n             width: auto;\n"
+                },
+                {
+                    "date": 1682470893505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     .navigation{\n         display: flex;\n         justify-content: space-between;\n         align-items: center;\n-        font-size: 24px;\n+        font-size: 1;\n         padding: 0 2rem;\n         img{\n             height: 50px;\n             width: auto;\n"
+                },
+                {
+                    "date": 1682470920316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     .navigation{\n         display: flex;\n         justify-content: space-between;\n         align-items: center;\n-        font-size: 1;\n+        font-size: 1rem;\n         padding: 0 2rem;\n         img{\n             height: 50px;\n             width: auto;\n"
+                },
+                {
+                    "date": 1682470954791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n             height: 50px;\n             width: auto;\n         }\n         @include media_desktop{\n-               font-size: 2em;\n+               font-size: 2rem;\n         }\n         ul{\n             display: flex;\n             align-items: center;   \n"
+                },
+                {
+                    "date": 1682470970458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     .navigation{\n         display: flex;\n         justify-content: space-between;\n         align-items: center;\n-        font-size: 1rem;\n+        font-size: 1.rem;\n         padding: 0 2rem;\n         img{\n             height: 50px;\n             width: auto;\n"
+                },
+                {
+                    "date": 1682470980126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     .navigation{\n         display: flex;\n         justify-content: space-between;\n         align-items: center;\n-        font-size: 1.rem;\n+        font-size: 1.5rem;\n         padding: 0 2rem;\n         img{\n             height: 50px;\n             width: auto;\n"
+                },
+                {
+                    "date": 1682470990098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     .navigation{\n         display: flex;\n         justify-content: space-between;\n         align-items: center;\n-        font-size: 1.5rem;\n+        //font-size: 1.5rem;\n         padding: 0 2rem;\n         img{\n             height: 50px;\n             width: auto;\n"
+                },
+                {
+                    "date": 1682471777908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,12 +7,9 @@\n         justify-content: space-between;\n         align-items: center;\n         //font-size: 1.5rem;\n         padding: 0 2rem;\n-        img{\n-            height: 50px;\n-            width: auto;\n-        }\n+        \n         @include media_desktop{\n                font-size: 2rem;\n         }\n         ul{\n"
+                },
+                {
+                    "date": 1682471784915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n         display: flex;\n         justify-content: space-between;\n         align-items: center;\n         //font-size: 1.5rem;\n-        padding: 0 2rem;\n+        padding:  2rem;\n         \n         @include media_desktop{\n                font-size: 2rem;\n         }\n"
+                },
+                {
+                    "date": 1682471790765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n         display: flex;\n         justify-content: space-between;\n         align-items: center;\n         //font-size: 1.5rem;\n-        padding:  2rem;\n+        padding: 0 2rem;\n         \n         @include media_desktop{\n                font-size: 2rem;\n         }\n"
+                },
+                {
+                    "date": 1682471798110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n @import '../settings/settings';\n header{\n display: flex;\n justify-content: space-between;\n+\n     .navigation{\n         display: flex;\n         justify-content: space-between;\n         align-items: center;\n"
+                },
+                {
+                    "date": 1682471809739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n @import '../settings/settings';\n header{\n display: flex;\n justify-content: space-between;\n-\n+margin \n     .navigation{\n         display: flex;\n         justify-content: space-between;\n         align-items: center;\n"
+                },
+                {
+                    "date": 1682471816557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n @import '../settings/settings';\n header{\n display: flex;\n justify-content: space-between;\n-margin \n+margin : 2px\n     .navigation{\n         display: flex;\n         justify-content: space-between;\n         align-items: center;\n"
+                },
+                {
+                    "date": 1682471868075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n @import '../settings/settings';\n header{\n display: flex;\n-justify-content: space-between;\n-margin : 2px\n+//justify-content: space-between;\n+margin : 2px;\n     .navigation{\n         display: flex;\n         justify-content: space-between;\n         align-items: center;\n"
+                },
+                {
+                    "date": 1682471881092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n @import '../settings/settings';\n header{\n display: flex;\n //justify-content: space-between;\n-margin : 2px;\n+margin : 20px;\n     .navigation{\n         display: flex;\n         justify-content: space-between;\n         align-items: center;\n"
+                },
+                {
+                    "date": 1682471887517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n @import '../settings/settings';\n header{\n display: flex;\n //justify-content: space-between;\n-margin : 20px;\n+margin : 20 px;\n     .navigation{\n         display: flex;\n         justify-content: space-between;\n         align-items: center;\n"
+                },
+                {
+                    "date": 1682471897645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n @import '../settings/settings';\n header{\n display: flex;\n //justify-content: space-between;\n-margin : 20 px;\n+margin : 20px 0px;\n     .navigation{\n         display: flex;\n         justify-content: space-between;\n         align-items: center;\n"
+                },
+                {
+                    "date": 1682471915605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n                font-size: 2rem;\n         }\n         ul{\n             display: flex;\n-            align-items: center;   \n+            //align-items: center;   \n             a, li{\n                 color: $primary-color;\n                 padding: 10px;\n                 text-decoration: none;\n"
+                },
+                {
+                    "date": 1682471932256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n             display: flex;\n             //align-items: center;   \n             a, li{\n                 color: $primary-color;\n-                padding: 10px;\n+                padding: px;\n                 text-decoration: none;\n                 list-style: none;\n                 display: flex;\n                 flex-direction: row;\n"
+                },
+                {
+                    "date": 1682471957652,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,12 +17,12 @@\n             display: flex;\n             //align-items: center;   \n             a, li{\n                 color: $primary-color;\n-                padding: px;\n+                padding: 5px;\n                 text-decoration: none;\n                 list-style: none;\n-                display: flex;\n+                //display: flex;\n                 flex-direction: row;\n                 :hover{\n                 text-decoration: underline; \n                 }\n"
+                },
+                {
+                    "date": 1682471963972,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n                 padding: 5px;\n                 text-decoration: none;\n                 list-style: none;\n                 //display: flex;\n-                flex-direction: row;\n+                //flex-direction: row;\n                 :hover{\n                 text-decoration: underline; \n                 }\n             }\n"
+                },
+                {
+                    "date": 1682472023922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n         display: flex;\n         justify-content: space-between;\n         align-items: center;\n         //font-size: 1.5rem;\n-        padding: 0 2rem;\n+        padding: 0 rem;\n         \n         @include media_desktop{\n                font-size: 2rem;\n         }\n"
+                },
+                {
+                    "date": 1682472035236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n         display: flex;\n         justify-content: space-between;\n         align-items: center;\n         //font-size: 1.5rem;\n-        padding: 0 rem;\n+        padding: 0 .0rem;\n         \n         @include media_desktop{\n                font-size: 2rem;\n         }\n"
+                },
+                {
+                    "date": 1682472041534,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n         display: flex;\n         justify-content: space-between;\n         align-items: center;\n         //font-size: 1.5rem;\n-        padding: 0 .0rem;\n+        padding: 0 ;\n         \n         @include media_desktop{\n                font-size: 2rem;\n         }\n"
+                },
+                {
+                    "date": 1682472048357,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n         display: flex;\n         justify-content: space-between;\n         align-items: center;\n         //font-size: 1.5rem;\n-        padding: 0 ;\n+        padding: 0;\n         \n         @include media_desktop{\n                font-size: 2rem;\n         }\n"
+                },
+                {
+                    "date": 1682472262897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n @import '../settings/settings';\n header{\n display: flex;\n-//justify-content: space-between;\n+justify-content: space-between;\n margin : 20px 0px;\n     .navigation{\n         display: flex;\n         justify-content: space-between;\n"
+                },
+                {
+                    "date": 1682472440357,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,8 @@\n                font-size: 2rem;\n         }\n         ul{\n             display: flex;\n-            //align-items: center;   \n             a, li{\n                 color: $primary-color;\n                 padding: 5px;\n                 text-decoration: none;\n"
+                },
+                {
+                    "date": 1682472448308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,8 @@\n                 color: $primary-color;\n                 padding: 5px;\n                 text-decoration: none;\n                 list-style: none;\n-                //display: flex;\n-                //flex-direction: row;\n                 :hover{\n                 text-decoration: underline; \n                 }\n             }\n"
+                },
+                {
+                    "date": 1682472478016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n         align-items: center;\n         //font-size: 1.5rem;\n         padding: 0;\n         \n-        @include media_desktop{\n+        @include media_tablet{\n                font-size: 2rem;\n         }\n         ul{\n             display: flex;\n"
+                },
+                {
+                    "date": 1682472601255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n     .navigation{\n         display: flex;\n         justify-content: space-between;\n         align-items: center;\n+        position: fixe;\n         //font-size: 1.5rem;\n         padding: 0;\n         \n         @include media_tablet{\n"
+                },
+                {
+                    "date": 1682486608729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n margin : 20px 0px;\n     .navigation{\n         display: flex;\n         justify-content: space-between;\n-        align-items: center;\n+       // align-items: center;\n         position: fixe;\n         //font-size: 1.5rem;\n         padding: 0;\n         \n"
+                },
+                {
+                    "date": 1682486627927,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n justify-content: space-between;\n margin : 20px 0px;\n     .navigation{\n         display: flex;\n-        justify-content: space-between;\n+       // justify-content: space-between;\n        // align-items: center;\n         position: fixe;\n         //font-size: 1.5rem;\n         padding: 0;\n"
+                },
+                {
+                    "date": 1682486711604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n         position: fixe;\n         //font-size: 1.5rem;\n         padding: 0;\n         \n+        \n         @include media_tablet{\n                font-size: 2rem;\n         }\n         ul{\n"
+                },
+                {
+                    "date": 1682486716992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,10 @@\n        // align-items: center;\n         position: fixe;\n         //font-size: 1.5rem;\n         padding: 0;\n+        width: st;\n         \n-        \n         @include media_tablet{\n                font-size: 2rem;\n         }\n         ul{\n"
+                },
+                {
+                    "date": 1682486723858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n        // align-items: center;\n         position: fixe;\n         //font-size: 1.5rem;\n         padding: 0;\n-        width: st;\n+        width: strec;\n         \n         @include media_tablet{\n                font-size: 2rem;\n         }\n"
+                },
+                {
+                    "date": 1682486775544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,13 +5,13 @@\n margin : 20px 0px;\n     .navigation{\n         display: flex;\n        // justify-content: space-between;\n-       // align-items: center;\n+       align-items: center;\n         position: fixe;\n         //font-size: 1.5rem;\n         padding: 0;\n-        width: strec;\n+        width: strech;\n         \n         @include media_tablet{\n                font-size: 2rem;\n         }\n"
+                },
+                {
+                    "date": 1682486814978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         position: fixe;\n         //font-size: 1.5rem;\n         padding: 0;\n         width: strech;\n-        \n+        img\n         @include media_tablet{\n                font-size: 2rem;\n         }\n         ul{\n"
+                },
+                {
+                    "date": 1682486840721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,11 @@\n         position: fixe;\n         //font-size: 1.5rem;\n         padding: 0;\n         width: strech;\n-        img\n+        img{\n+           wi \n+        }\n         @include media_tablet{\n                font-size: 2rem;\n         }\n         ul{\n"
+                },
+                {
+                    "date": 1682486847618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         padding: 0;\n         width: strech;\n         img{\n            width: 100%;\n-           a \n+            \n         }\n         @include media_tablet{\n                font-size: 2rem;\n         }\n"
+                },
+                {
+                    "date": 1682487153607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n         //font-size: 1.5rem;\n         padding: 0;\n         width: strech;\n         img{\n-           width: min;\n+           width: min();\n            height: auto; \n         }\n         @include media_tablet{\n                font-size: 2rem;\n"
+                }
+            ],
+            "date": 1682447181464,
+            "name": "Commit-0",
+            "content": "//@use \"../utils/variables\" as *;\n@import '../set_variables.scss';\nheader{\ndisplay: flex;\njustify-content: space-between;\n    .navigation{\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n        font-size: 24px;\n        padding: 0 2rem;\n        ul{\n            display: flex;\n            align-items: center;   \n            a, li{\n                color: $primary-color;\n                padding: 10px;\n                text-decoration: none;\n                list-style: none;\n                display: flex;\n                flex-direction: row;\n                :hover{\n                text-decoration: underline; \n                }\n            }\n        }\n    }\n}"
+        }
+    ]
+}

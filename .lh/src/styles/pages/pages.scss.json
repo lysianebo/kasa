@@ -1,0 +1,74 @@
+{
+    "sourceFile": "src/styles/pages/pages.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 14,
+            "patches": [
+                {
+                    "date": 1682440790525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1682440803372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-@import 'settings/variables';\n\\ No newline at end of file\n+@import 'pages';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682440808923,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-@import 'pages';\n\\ No newline at end of file\n+@import 'pages ';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682440825822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-@import 'pages ';\n\\ No newline at end of file\n+@import ' ';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682440845696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-@import ' ';\n\\ No newline at end of file\n+@import 'pages/ ';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682440858575,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-@import 'pages/ ';\n\\ No newline at end of file\n+@import 'pages/about';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682440871546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n-@import 'pages/about';\n\\ No newline at end of file\n+@import 'pages/about';\n+@import 'pages/about';\n"
+                },
+                {
+                    "date": 1682440881529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n @import 'pages/about';\n-@import 'pages/about';\n+@import 'pages/error';\n"
+                },
+                {
+                    "date": 1682440889480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,3 @@\n @import 'pages/about';\n-@import 'pages/error';\n+@import 'pages/errorPage';\n+@import 'pages/about';\n"
+                },
+                {
+                    "date": 1682440900075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n @import 'pages/about';\n @import 'pages/errorPage';\n-@import 'pages/about';\n+@import 'pages/logem';\n"
+                },
+                {
+                    "date": 1682440907282,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n @import 'pages/about';\n @import 'pages/errorPage';\n-@import 'pages/logem';\n+@import 'pages/logement';\n+@import 'pages/about';\n"
+                },
+                {
+                    "date": 1682440916419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n @import 'pages/about';\n @import 'pages/errorPage';\n @import 'pages/logement';\n-@import 'pages/about';\n+@import 'pages/home';\n"
+                },
+                {
+                    "date": 1682441008507,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n-@import 'pages/about';\n+@import './pages/about';\n @import 'pages/errorPage';\n @import 'pages/logement';\n @import 'pages/home';\n"
+                },
+                {
+                    "date": 1682441021508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n-@import './pages/about';\n+@import './about';\n @import 'pages/errorPage';\n @import 'pages/logement';\n @import 'pages/home';\n"
+                },
+                {
+                    "date": 1682441037273,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n @import './about';\n-@import '/errorPage';\n+@import './errorPage';\n @import 'pages/logement';\n @import 'pages/home';\n"
+                }
+            ],
+            "date": 1682440790525,
+            "name": "Commit-0",
+            "content": "@import 'settings/variables';"
+        }
+    ]
+}

@@ -1,0 +1,194 @@
+{
+    "sourceFile": "src/App.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 44,
+            "patches": [
+                {
+                    "date": 1682438566523,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1682445404120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import logo from './logo.svg';\n-import './App.scss';\n+import '..scss';\n \n function App() {\n   return (\n     <div className=\"App\">\n"
+                },
+                {
+                    "date": 1682445416363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import logo from './logo.svg';\n-import '..scss';\n+import '../src';\n \n function App() {\n   return (\n     <div className=\"App\">\n"
+                },
+                {
+                    "date": 1682445424217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import logo from './logo.svg';\n-import '../src';\n+import '../src/styles';\n \n function App() {\n   return (\n     <div className=\"App\">\n"
+                },
+                {
+                    "date": 1682445430554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import logo from './logo.svg';\n-import '../src/styles';\n+import '../src/styles/inde';\n \n function App() {\n   return (\n     <div className=\"App\">\n"
+                },
+                {
+                    "date": 1682445436182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import logo from './logo.svg';\n-import '../src/styles/inde';\n+import '../src/styles/index.scss';\n \n function App() {\n   return (\n     <div className=\"App\">\n"
+                },
+                {
+                    "date": 1682445446299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import logo from './logo.svg';\n-import '../src/styles/index.scss';\n+import '..//styles/index.scss';\n \n function App() {\n   return (\n     <div className=\"App\">\n"
+                },
+                {
+                    "date": 1682445463242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import logo from './logo.svg';\n-import '..//styles/index.scss';\n+import '../..styles/index.scss';\n \n function App() {\n   return (\n     <div className=\"App\">\n"
+                },
+                {
+                    "date": 1682445473205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import logo from './logo.svg';\n-import '../..styles/index.scss';\n+import '../rcs/styles/index.scss';\n \n function App() {\n   return (\n     <div className=\"App\">\n"
+                },
+                {
+                    "date": 1682445486811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import logo from './logo.svg';\n-import '../rcs/styles/index.scss';\n+import '../s/styles/index.scss';\n \n function App() {\n   return (\n     <div className=\"App\">\n"
+                },
+                {
+                    "date": 1682445740271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n-import logo from './logo.svg';\n-import '../s/styles/index.scss';\n+//import logo from './logo.svg';\n+import '../src/styles/index.scss';\n \n function App() {\n   return (\n     <div className=\"App\">\n"
+                },
+                {
+                    "date": 1682445755483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,25 +1,25 @@\n //import logo from './logo.svg';\n import '../src/styles/index.scss';\n \n-function App() {\n-  return (\n-    <div className=\"App\">\n-      <header className=\"App-header\">\n-        <img src={logo} className=\"App-logo\" alt=\"logo\" />\n-        <p>\n-          Edit <code>src/App.js</code> and save to reload.\n-        </p>\n-        <a\n-          className=\"App-link\"\n-          href=\"https://reactjs.org\"\n-          target=\"_blank\"\n-          rel=\"noopener noreferrer\"\n-        >\n-          Learn React\n-        </a>\n-      </header>\n-    </div>\n-  );\n-}\n+import React from 'react';\n+//import ReactDOM from 'react-dom/client';\n+import {BrowserRouter,Routes, Route} from \"react-router-dom\"\n+import Home from \"./pages/Home\";\n+import Logement from \"./pages/Logement\";\n+import About from \"./pages/About\";\n+import Error from \"./pages/Error\";\n \n+\n+const App = () =>{\n+    <BrowserRouter>\n+    <Routes>\n+      <Route path=\"/home\" element={<Home />} />\n+      <Route path=\"/about\" element={<About />} />\n+      <Route path=\"/error\" element={<Error />} />\n+      <Route path= \"/logements/:id\" element={<Logement />} />\n+\n+    </Routes>\n+    </BrowserRouter>\n+\n+};\n export default App;\n"
+                },
+                {
+                    "date": 1682445793571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n import React from 'react';\n //import ReactDOM from 'react-dom/client';\n import {BrowserRouter,Routes, Route} from \"react-router-dom\"\n-import Home from \"./pages/Home\";\n+import Home from \"./Home\";\n import Logement from \"./pages/Logement\";\n import About from \"./pages/About\";\n import Error from \"./pages/Error\";\n \n"
+                },
+                {
+                    "date": 1682445803328,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n import React from 'react';\n //import ReactDOM from 'react-dom/client';\n import {BrowserRouter,Routes, Route} from \"react-router-dom\"\n-import Home from \"./Home\";\n+import Home from \"..src/Home\";\n import Logement from \"./pages/Logement\";\n import About from \"./pages/About\";\n import Error from \"./pages/Error\";\n \n"
+                },
+                {
+                    "date": 1682445809789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n import React from 'react';\n //import ReactDOM from 'react-dom/client';\n import {BrowserRouter,Routes, Route} from \"react-router-dom\"\n-import Home from \"..src/Home\";\n+import Home from \"..src/p  /Home\";\n import Logement from \"./pages/Logement\";\n import About from \"./pages/About\";\n import Error from \"./pages/Error\";\n \n"
+                },
+                {
+                    "date": 1682445815769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n import React from 'react';\n //import ReactDOM from 'react-dom/client';\n import {BrowserRouter,Routes, Route} from \"react-router-dom\"\n-import Home from \"..src/p  /Home\";\n+import Home from \"..src/pages/Home\";\n import Logement from \"./pages/Logement\";\n import About from \"./pages/About\";\n import Error from \"./pages/Error\";\n \n"
+                },
+                {
+                    "date": 1682445826366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n import React from 'react';\n //import ReactDOM from 'react-dom/client';\n import {BrowserRouter,Routes, Route} from \"react-router-dom\"\n-import Home from \"..src/pages/Home\";\n+import Home from \"../src/pages/Home\";\n import Logement from \"./pages/Logement\";\n import About from \"./pages/About\";\n import Error from \"./pages/Error\";\n \n"
+                },
+                {
+                    "date": 1682445832888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n import React from 'react';\n //import ReactDOM from 'react-dom/client';\n import {BrowserRouter,Routes, Route} from \"react-router-dom\"\n-import Home from \"../src/pages/Home\";\n+import Home from \"../Homesrc/pages/Home\";\n import Logement from \"./pages/Logement\";\n import About from \"./pages/About\";\n import Error from \"./pages/Error\";\n \n"
+                },
+                {
+                    "date": 1682445839679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n import React from 'react';\n //import ReactDOM from 'react-dom/client';\n import {BrowserRouter,Routes, Route} from \"react-router-dom\"\n-import Home from \"../Homesrc/pages/Home\";\n+import Home from \"../src/pages/Home\";\n import Logement from \"./pages/Logement\";\n import About from \"./pages/About\";\n import Error from \"./pages/Error\";\n \n"
+                },
+                {
+                    "date": 1682447989770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,25 +1,25 @@\n //import logo from './logo.svg';\n import '../src/styles/index.scss';\n \n-import React from 'react';\n-//import ReactDOM from 'react-dom/client';\n-import {BrowserRouter,Routes, Route} from \"react-router-dom\"\n-import Home from \"../src/pages/Home\";\n-import Logement from \"./pages/Logement\";\n-import About from \"./pages/About\";\n-import Error from \"./pages/Error\";\n+function App() {\n+  return (\n+    <div className=\"App\">\n+      <header className=\"App-header\">\n+        <img src={logo} className=\"App-logo\" alt=\"logo\" />\n+        <p>\n+          Edit <code>src/App.js</code> and save to reload.\n+        </p>\n+        <a\n+          className=\"App-link\"\n+          href=\"https://reactjs.org\"\n+          target=\"_blank\"\n+          rel=\"noopener noreferrer\"\n+        >\n+          Learn React\n+        </a>\n+      </header>\n+    </div>\n+  );\n+}\n \n-\n-const App = () =>{\n-    <BrowserRouter>\n-    <Routes>\n-      <Route path=\"/home\" element={<Home />} />\n-      <Route path=\"/about\" element={<About />} />\n-      <Route path=\"/error\" element={<Error />} />\n-      <Route path= \"/logements/:id\" element={<Logement />} />\n-\n-    </Routes>\n-    </BrowserRouter>\n-\n-};\n export default App;\n"
+                },
+                {
+                    "date": 1682448003127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-//import logo from './logo.svg';\n+import logo from './logo.svg';\n import '../src/styles/index.scss';\n \n function App() {\n   return (\n"
+                },
+                {
+                    "date": 1682448159037,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n \n function App() {\n   return (\n     <div className=\"App\">\n+      \n       <header className=\"App-header\">\n         <img src={logo} className=\"App-logo\" alt=\"logo\" />\n         <p>\n           Edit <code>src/App.js</code> and save to reload.\n"
+                },
+                {
+                    "date": 1682448172858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n function App() {\n   return (\n     <div className=\"App\">\n-      \n+      <header>>\n       <header className=\"App-header\">\n         <img src={logo} className=\"App-logo\" alt=\"logo\" />\n         <p>\n           Edit <code>src/App.js</code> and save to reload.\n"
+                },
+                {
+                    "date": 1682448178967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n function App() {\n   return (\n     <div className=\"App\">\n-      <header>>\n+      <header />\n       <header className=\"App-header\">\n         <img src={logo} className=\"App-logo\" alt=\"logo\" />\n         <p>\n           Edit <code>src/App.js</code> and save to reload.\n"
+                },
+                {
+                    "date": 1682448290052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,26 +1,22 @@\n-import logo from './logo.svg';\n-import '../src/styles/index.scss';\n+import React from 'react';\n+//import ReactDOM from 'react-dom/client';\n+import {BrowserRouter,Routes, Route} from \"react-router-dom\"\n+import Home from \"./pages/Home\";\n+import Logement from \"./pages/Logement\";\n+import About from \"./pages/About\";\n+import Error from \"./pages/Error\";\n \n-function App() {\n-  return (\n-    <div className=\"App\">\n-      <header />\n-      <header className=\"App-header\">\n-        <img src={logo} className=\"App-logo\" alt=\"logo\" />\n-        <p>\n-          Edit <code>src/App.js</code> and save to reload.\n-        </p>\n-        <a\n-          className=\"App-link\"\n-          href=\"https://reactjs.org\"\n-          target=\"_blank\"\n-          rel=\"noopener noreferrer\"\n-        >\n-          Learn React\n-        </a>\n-      </header>\n-    </div>\n-  );\n-}\n \n-export default App;\n+const App = () =>{\n+    <BrowserRouter>\n+    <Routes>\n+      <Route path=\"/home\" element={<Home />} />\n+      <Route path=\"/about\" element={<About />} />\n+      <Route path=\"/error\" element={<Error />} />\n+      <Route path= \"/logements/:id\" element={<Logement />} />\n+\n+    </Routes>\n+    </BrowserRouter>\n+\n+};\n+export default App;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682448327618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react';\n-//import ReactDOM from 'react-dom/client';\n+import ReactDOM from 'react-dom/client';\n import {BrowserRouter,Routes, Route} from \"react-router-dom\"\n import Home from \"./pages/Home\";\n import Logement from \"./pages/Logement\";\n import About from \"./pages/About\";\n"
+                },
+                {
+                    "date": 1682448345970,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react';\n-import ReactDOM from 'react-dom/client';\n+//import ReactDOM from 'react-dom/client';\n import {BrowserRouter,Routes, Route} from \"react-router-dom\"\n import Home from \"./pages/Home\";\n import Logement from \"./pages/Logement\";\n import About from \"./pages/About\";\n"
+                },
+                {
+                    "date": 1682450376217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,17 +6,18 @@\n import About from \"./pages/About\";\n import Error from \"./pages/Error\";\n \n \n-const App = () =>{\n+const App = () => {\n+  return (\n     <BrowserRouter>\n-    <Routes>\n-      <Route path=\"/home\" element={<Home />} />\n-      <Route path=\"/about\" element={<About />} />\n-      <Route path=\"/error\" element={<Error />} />\n-      <Route path= \"/logements/:id\" element={<Logement />} />\n-\n-    </Routes>\n+      <Routes>\n+        <Route path=\"/home\" element={<Home />} />\n+        <Route path=\"/about\" element={<About />} />\n+        <Route path=\"/error\" element={<Error />} />\n+        <Route path= \"/logements/:id\" element={<Logement />} />\n+      </Routes>\n     </BrowserRouter>\n+  );\n+};\n \n-};\n export default App;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682451494682,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n const App = () => {\n   return (\n     <BrowserRouter>\n       <Routes>\n+        \n         <Route path=\"/home\" element={<Home />} />\n         <Route path=\"/about\" element={<About />} />\n         <Route path=\"/error\" element={<Error />} />\n         <Route path= \"/logements/:id\" element={<Logement />} />\n"
+                },
+                {
+                    "date": 1682451693130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const App = () => {\n   return (\n     <BrowserRouter>\n       <Routes>\n-        \n+        <Route path=\"/\" element={<Home />} />\n         <Route path=\"/home\" element={<Home />} />\n         <Route path=\"/about\" element={<About />} />\n         <Route path=\"/error\" element={<Error />} />\n         <Route path= \"/logements/:id\" element={<Logement />} />\n"
+                },
+                {
+                    "date": 1682451889913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   return (\n     <BrowserRouter>\n       <Routes>\n         <Route path=\"/\" element={<Home />} />\n-        <Route path=\"/home\" element={<Home />} />\n+       \n         <Route path=\"/about\" element={<About />} />\n         <Route path=\"/error\" element={<Error />} />\n         <Route path= \"/logements/:id\" element={<Logement />} />\n       </Routes>\n"
+                },
+                {
+                    "date": 1682451926607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   return (\n     <BrowserRouter>\n       <Routes>\n         <Route path=\"/\" element={<Home />} />\n-       \n+        <Route path=\"/home\" element={<Home />} />\n         <Route path=\"/about\" element={<About />} />\n         <Route path=\"/error\" element={<Error />} />\n         <Route path= \"/logements/:id\" element={<Logement />} />\n       </Routes>\n"
+                },
+                {
+                    "date": 1682451972607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const App = () => {\n   return (\n     <BrowserRouter>\n       <Routes>\n-        <Route path=\"/\" element={<Home />} />\n+      \n         <Route path=\"/home\" element={<Home />} />\n         <Route path=\"/about\" element={<About />} />\n         <Route path=\"/error\" element={<Error />} />\n         <Route path= \"/logements/:id\" element={<Logement />} />\n"
+                },
+                {
+                    "date": 1682451987915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const App = () => {\n   return (\n     <BrowserRouter>\n       <Routes>\n-      \n+        <Route path=\"/\" element={<Home />} />\n         <Route path=\"/home\" element={<Home />} />\n         <Route path=\"/about\" element={<About />} />\n         <Route path=\"/error\" element={<Error />} />\n         <Route path= \"/logements/:id\" element={<Logement />} />\n"
+                },
+                {
+                    "date": 1682452020052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n         <Route path=\"/home\" element={<Home />} />\n         <Route path=\"/about\" element={<About />} />\n         <Route path=\"/error\" element={<Error />} />\n         <Route path= \"/logements/:id\" element={<Logement />} />\n+        <Route path=\"*\" element={<Navigate to=\"/error\" />} />\n       </Routes>\n     </BrowserRouter>\n   );\n };\n"
+                },
+                {
+                    "date": 1682452072388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,14 +10,12 @@\n const App = () => {\n   return (\n     <BrowserRouter>\n       <Routes>\n-        <Route path=\"/\" element={<Home />} />\n-        <Route path=\"/home\" element={<Home />} />\n-        <Route path=\"/about\" element={<About />} />\n-        <Route path=\"/error\" element={<Error />} />\n-        <Route path= \"/logements/:id\" element={<Logement />} />\n-        <Route path=\"*\" element={<Navigate to=\"/error\" />} />\n+      <Route path=\"/\" element={<Home />} />\n+<Route path=\"/about\" element={<About />} />\n+<Route path=\"/error\" element={<Error />} />\n+<Route path= \"/logements/:id\" element={<Logement />} />\n       </Routes>\n     </BrowserRouter>\n   );\n };\n"
+                },
+                {
+                    "date": 1682452091148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const App = () => {\n   return (\n     <BrowserRouter>\n       <Routes>\n-      <Route path=\"/\" element={<Home />} />\n+      <Route path=\"/home\" element={<Home />} />\n <Route path=\"/about\" element={<About />} />\n <Route path=\"/error\" element={<Error />} />\n <Route path= \"/logements/:id\" element={<Logement />} />\n       </Routes>\n"
+                },
+                {
+                    "date": 1682452126828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,10 @@\n const App = () => {\n   return (\n     <BrowserRouter>\n       <Routes>\n-      <Route path=\"/home\" element={<Home />} />\n-<Route path=\"/about\" element={<About />} />\n+      <Route path=\"/\" element={<Home />} />\n+      <Route path=\"/about\" element={<About />} />\n <Route path=\"/error\" element={<Error />} />\n <Route path= \"/logements/:id\" element={<Logement />} />\n       </Routes>\n     </BrowserRouter>\n"
+                },
+                {
+                    "date": 1682452137113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n     <BrowserRouter>\n       <Routes>\n       <Route path=\"/\" element={<Home />} />\n       <Route path=\"/about\" element={<About />} />\n-<Route path=\"/error\" element={<Error />} />\n-<Route path= \"/logements/:id\" element={<Logement />} />\n+      <Route path=\"/error\" element={<Error />} />\n+      <Route path= \"/logements/:id\" element={<Logement />} />\n       </Routes>\n     </BrowserRouter>\n   );\n };\n"
+                },
+                {
+                    "date": 1682452177474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,11 +11,13 @@\n   return (\n     <BrowserRouter>\n       <Routes>\n       <Route path=\"/\" element={<Home />} />\n-      <Route path=\"/about\" element={<About />} />\n-      <Route path=\"/error\" element={<Error />} />\n-      <Route path= \"/logements/:id\" element={<Logement />} />\n+<Route path=\"/home\" element={<Home />} />\n+<Route path=\"/about\" element={<About />} />\n+<Route path=\"/error\" element={<Error />} />\n+<Route path= \"/logements/:id\" element={<Logement />} />\n+<Route path=\"*\" element={<Navigate to=\"/error\" />} />\n       </Routes>\n     </BrowserRouter>\n   );\n };\n"
+                },
+                {
+                    "date": 1682452191564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,8 @@\n <Route path=\"/home\" element={<Home />} />\n <Route path=\"/about\" element={<About />} />\n <Route path=\"/error\" element={<Error />} />\n <Route path= \"/logements/:id\" element={<Logement />} />\n-<Route path=\"*\" element={<Navigate to=\"/error\" />} />\n       </Routes>\n     </BrowserRouter>\n   );\n };\n"
+                },
+                {
+                    "date": 1682452221911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,12 +11,12 @@\n   return (\n     <BrowserRouter>\n       <Routes>\n       <Route path=\"/\" element={<Home />} />\n-<Route path=\"/home\" element={<Home />} />\n-<Route path=\"/about\" element={<About />} />\n-<Route path=\"/error\" element={<Error />} />\n-<Route path= \"/logements/:id\" element={<Logement />} />\n+      <Route path=\"/home\" element={<Home />} />\n+      <Route path=\"/about\" element={<About />} />\n+      <Route path=\"/error\" element={<Error />} />\n+      <Route path= \"/logements/:id\" element={<Logement />} />\n       </Routes>\n     </BrowserRouter>\n   );\n };\n"
+                },
+                {
+                    "date": 1682452581355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n \n const App = () => {\n   return (\n-    <BrowserRouter>\n+    <BrowserRoute r>\n       <Routes>\n       <Route path=\"/\" element={<Home />} />\n       <Route path=\"/home\" element={<Home />} />\n       <Route path=\"/about\" element={<About />} />\n"
+                },
+                {
+                    "date": 1682452588085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n \n const App = () => {\n   return (\n-    <BrowserRoute r>\n+    <BrowserRouter >\n       <Routes>\n       <Route path=\"/\" element={<Home />} />\n       <Route path=\"/home\" element={<Home />} />\n       <Route path=\"/about\" element={<About />} />\n"
+                },
+                {
+                    "date": 1682452599259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n \n const App = () => {\n   return (\n-    <BrowserRouter basename='/'>\n+    <BrowserRouter basename='/K'>\n       <Routes>\n       <Route path=\"/\" element={<Home />} />\n       <Route path=\"/home\" element={<Home />} />\n       <Route path=\"/about\" element={<About />} />\n"
+                }
+            ],
+            "date": 1682438566523,
+            "name": "Commit-0",
+            "content": "import logo from './logo.svg';\nimport './App.scss';\n\nfunction App() {\n  return (\n    <div className=\"App\">\n      <header className=\"App-header\">\n        <img src={logo} className=\"App-logo\" alt=\"logo\" />\n        <p>\n          Edit <code>src/App.js</code> and save to reload.\n        </p>\n        <a\n          className=\"App-link\"\n          href=\"https://reactjs.org\"\n          target=\"_blank\"\n          rel=\"noopener noreferrer\"\n        >\n          Learn React\n        </a>\n      </header>\n    </div>\n  );\n}\n\nexport default App;\n"
+        }
+    ]
+}

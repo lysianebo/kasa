@@ -1,0 +1,35 @@
+@import '../settings/settings';
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    figure{
+        width: calc(0.1px * 1%);
+        max-width: 200px;
+        img {
+            width:80%;
+           height: auto;
+    }}
+    .navigation{
+       align-items: center;
+        ul{
+            display: flex;
+            a, li{
+                color: $primary-color;
+                padding: 5px;
+                text-decoration: none;
+                list-style: none;
+                :hover{
+                text-decoration: underline; 
+                }
+            }
+        }
+    }
+    @include media_tablet{
+        font-size: $text *2;
+        img{
+            width: 100%;
+        }
+    }
+}

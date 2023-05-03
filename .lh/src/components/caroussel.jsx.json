@@ -1,0 +1,38 @@
+{
+    "sourceFile": "src/components/caroussel.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1682446633901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1683109813131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,8 @@\n         <button className=\"btn previous chevron\"  onClick={moveToPrevious}>&#60;</button>\n         <button className=\"btn next chevron\" onClick={moveToNext}>&#62;</button>\n       <span className=\"counter\">{currentPicture +1}/{pictures.length}</span>\n         </div>\n-       \n \n        \n       </div>\n     );\n"
+                },
+                {
+                    "date": 1683109832709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,14 +31,12 @@\n           <img key={i}   src={picture} alt='' className={getClassName(i)} />\n         ))}\n         </div>\n         \n-        <div className=\"btn_container\">\n-        <button className=\"btn previous chevron\"  onClick={moveToPrevious}>&#60;</button>\n-        <button className=\"btn next chevron\" onClick={moveToNext}>&#62;</button>\n-      <span className=\"counter\">{currentPicture +1}/{pictures.length}</span>\n+          <div className=\"btn_container\">\n+          <button className=\"btn previous chevron\"  onClick={moveToPrevious}>&#60;</button>\n+          <button className=\"btn next chevron\" onClick={moveToNext}>&#62;</button>\n+        <span className=\"counter\">{currentPicture +1}/{pictures.length}</span>\n         </div>\n-\n-       \n       </div>\n     );\n   };\n"
+                },
+                {
+                    "date": 1683109839098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,8 @@\n         {pictures.map((picture, i) => (\n           <img key={i}   src={picture} alt='' className={getClassName(i)} />\n         ))}\n         </div>\n-        \n           <div className=\"btn_container\">\n           <button className=\"btn previous chevron\"  onClick={moveToPrevious}>&#60;</button>\n           <button className=\"btn next chevron\" onClick={moveToNext}>&#62;</button>\n         <span className=\"counter\">{currentPicture +1}/{pictures.length}</span>\n"
+                },
+                {
+                    "date": 1683109845627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n         {pictures.map((picture, i) => (\n           <img key={i}   src={picture} alt='' className={getClassName(i)} />\n         ))}\n         </div>\n-          <div className=\"btn_container\">\n+        <div className=\"btn_container\">\n           <button className=\"btn previous chevron\"  onClick={moveToPrevious}>&#60;</button>\n           <button className=\"btn next chevron\" onClick={moveToNext}>&#62;</button>\n         <span className=\"counter\">{currentPicture +1}/{pictures.length}</span>\n         </div>\n"
+                },
+                {
+                    "date": 1683109853619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n         </div>\n         <div className=\"btn_container\">\n           <button className=\"btn previous chevron\"  onClick={moveToPrevious}>&#60;</button>\n           <button className=\"btn next chevron\" onClick={moveToNext}>&#62;</button>\n-        <span className=\"counter\">{currentPicture +1}/{pictures.length}</span>\n+          <span className=\"counter\">{currentPicture +1}/{pictures.length}</span>\n         </div>\n       </div>\n     );\n   };\n"
+                }
+            ],
+            "date": 1682446633901,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\nimport '../styles/components/_caroussel.scss';\nimport { useState } from \"react\";\n\nexport default function Carousel (props) {\nconst pictures = props.pictures\nconst [currentPicture, setCurrentPicture] = useState(0)\nconst getClassName = (i) => {\n  if (i === currentPicture) return \"show\"\n  return \"\"\n}\nconst moveToNext = () =>{\n  setCurrentPicture((currentPicture +1) % pictures.length)\n  //modulo pictures.length\n\n}\nconst moveToPrevious = () =>{\n  const newCurrentPicture = currentPicture -1;\n if (newCurrentPicture < 0) {\nsetCurrentPicture(pictures.length -1)\nreturn\n}\nsetCurrentPicture(currentPicture -1)\n}\n    return (\n      <div className=\"slider\">\n       \n        <div  className=\"=slider_image\">\n       \n        {pictures.map((picture, i) => (\n          <img key={i}   src={picture} alt='' className={getClassName(i)} />\n        ))}\n        </div>\n        \n        <div className=\"btn_container\">\n        <button className=\"btn previous chevron\"  onClick={moveToPrevious}>&#60;</button>\n        <button className=\"btn next chevron\" onClick={moveToNext}>&#62;</button>\n      <span className=\"counter\">{currentPicture +1}/{pictures.length}</span>\n        </div>\n       \n\n       \n      </div>\n    );\n  };\n"
+        }
+    ]
+}

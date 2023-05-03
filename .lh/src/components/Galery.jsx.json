@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/components/Galery.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1682447318506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1682871063167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n  return (\n     <div className='galery'>\n     {logement.map((logement) => {\n           return (\n-              <Card classname='card_logement' key={logement.id} id={logement.id} title={logement.title} cover={logement.cover}  />\n+              <Card classname='card_logement' key={logement.id} id={logement.id} title={logement.title} locationcover={logement.cover}  />\n               \n           )\n       })}\n       <Link to={`/Logement/${logement.id}`}>En savoir plus</Link>\n"
+                },
+                {
+                    "date": 1682871069446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n  return (\n     <div className='galery'>\n     {logement.map((logement) => {\n           return (\n-              <Card classname='card_logement' key={logement.id} id={logement.id} title={logement.title} locationcover={logement.cover}  />\n+              <Card classname='card_logement' key={logement.id} id={logement.id} title={logement.title} cover={logement.cover}  />\n               \n           )\n       })}\n       <Link to={`/Logement/${logement.id}`}>En savoir plus</Link>\n"
+                }
+            ],
+            "date": 1682447318506,
+            "name": "Commit-0",
+            "content": "import React from 'react';\nimport  '../styles/components/_galery.scss';\nimport { Link } from 'react-router-dom'\nimport Card from './Card';\nimport logement from \"../data/logements.json\";\n\n\nexport default function Galery() {\n return (\n    <div className='galery'>\n    {logement.map((logement) => {\n          return (\n              <Card classname='card_logement' key={logement.id} id={logement.id} title={logement.title} cover={logement.cover}  />\n              \n          )\n      })}\n      <Link to={`/Logement/${logement.id}`}>En savoir plus</Link>\n  </div>\n);\n}\n\n"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "sourceFile": "src/styles/settings/settings.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 12,
+            "patches": [
+                {
+                    "date": 1682440239899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1682440264248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n-@import 'settings/settings';\n+@import 'settings/mixin';\n @import 'settings/pages';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682440269833,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n-@import 'settings/mixin';\n+@import 'settings/mixins';\n @import 'settings/pages';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682440274862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n @import 'settings/mixins';\n-@import 'settings/pages';\n\\ No newline at end of file\n+@import 'settings/';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682440281987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n @import 'settings/mixins';\n-@import 'settings/';\n\\ No newline at end of file\n+@import 'settings/variables';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682440305464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,3 @@\n+\n @import 'settings/mixins';\n @import 'settings/variables';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682440310983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n-\n+@import 'settings/ty';\n @import 'settings/mixins';\n @import 'settings/variables';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682440321105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n-@import 'settings/ty';\n+@import 'settings/typograp';\n @import 'settings/mixins';\n @import 'settings/variables';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682440977595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n-@import 'settings/typograp';\n+@import '/typography';\n @import 'settings/mixins';\n @import 'settings/variables';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682440992579,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n-@import '/typography';\n-@import 'settings/mixins';\n+@import './typography';\n+@import './mixins';\n @import 'settings/variables';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682469581843,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n @import './typography';\n @import './mixins';\n-@import 'settings/variables';\n\\ No newline at end of file\n+@import './variables';\n+@import './variables';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682469588751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n @import './typography';\n @import './mixins';\n @import './variables';\n-@import './variables';\n\\ No newline at end of file\n+@import './m';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682469624493,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n @import './typography';\n @import './mixins';\n @import './variables';\n-@import './m';\n\\ No newline at end of file\n+@import './maps';\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1682440239899,
+            "name": "Commit-0",
+            "content": "@import 'settings/settings';\n@import 'settings/pages';"
+        }
+    ]
+}

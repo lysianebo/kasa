@@ -1,0 +1,38 @@
+@import '../settings/settings.scss';
+
+.container_chezvous{
+  margin: 10px 0;
+  height: 111px;
+  display: flex;
+  background-image:
+    linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3)
+      ),
+      url("../../assets/images/containerChezVous.png");
+  background-size: cover; 
+  border-radius: $brxs;
+  h1{
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+    padding: 5% 30px;
+    }
+      @include media_tablet{
+        h1{
+          font-size: $h1*1.5;
+        }
+          height: 223px;
+      }
+      @include media_desktop{
+        h1{
+          font-size: $h1*2;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          margin: auto;
+        }
+        border-radius: $brxl;
+      }
+}
+
+

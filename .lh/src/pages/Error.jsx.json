@@ -1,0 +1,78 @@
+{
+    "sourceFile": "src/pages/Error.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 15,
+            "patches": [
+                {
+                    "date": 1682447561730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1682447579314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react';\n-import Header from '../components/Header';\n+import Header from './components/Header';\n import \"../styles/pages/_errorPage.scss\";\n \n export default function ErrorPage() {\n \treturn (\n"
+                },
+                {
+                    "date": 1682447589784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react';\n-import Header from './components/Header';\n+import Header from './  components/Header';\n import \"../styles/pages/_errorPage.scss\";\n \n export default function ErrorPage() {\n \treturn (\n"
+                },
+                {
+                    "date": 1682447596896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react';\n-import Header from './  components/Header';\n+import Header from './  l/Header';\n import \"../styles/pages/_errorPage.scss\";\n \n export default function ErrorPage() {\n \treturn (\n"
+                },
+                {
+                    "date": 1682447605511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react';\n-import Header from './  l/Header';\n+import Header from './layout/Header';\n import \"../styles/pages/_errorPage.scss\";\n \n export default function ErrorPage() {\n \treturn (\n"
+                },
+                {
+                    "date": 1682447743228,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react';\n-import Header from './layout/Header';\n+import Header from '../co/Header';\n import \"../styles/pages/_errorPage.scss\";\n \n export default function ErrorPage() {\n \treturn (\n"
+                },
+                {
+                    "date": 1682447760124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react';\n-import Header from '../co/Header';\n+import Header from '../components/Header';\n import \"../styles/pages/_errorPage.scss\";\n \n export default function ErrorPage() {\n \treturn (\n"
+                },
+                {
+                    "date": 1683019471024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \t\t<div>\n \t\t\t  <Header />\n \t\t\t  <div className='container_error'>\n \t\t\t\t<h1>404</h1>\n-\t\t\t\t<h2>Oups! La page que vous demandez n'existe pas.</h2>\n+\t\t\t\t<h2>Oups! La page que </h2>\n \t\t\t\t<a className='container_error' href=\"/\">Retourner sur la page d’accueil </a>\n \t\t\t  </div>\n \t\t</div>\n \t\t\n"
+                },
+                {
+                    "date": 1683019477393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \t\t<div>\n \t\t\t  <Header />\n \t\t\t  <div className='container_error'>\n \t\t\t\t<h1>404</h1>\n-\t\t\t\t<h2>Oups! La page que </h2>\n+\t\t\t\t<h2>Oups! La page que span</h2>\n \t\t\t\t<a className='container_error' href=\"/\">Retourner sur la page d’accueil </a>\n \t\t\t  </div>\n \t\t</div>\n \t\t\n"
+                },
+                {
+                    "date": 1683019694663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \t\t<div>\n \t\t\t  <Header />\n \t\t\t  <div className='container_error'>\n \t\t\t\t<h1>404</h1>\n-\t\t\t\t<h2>Oups! La page que span</h2>\n+\t\t\t\t<h2>Oups! La page que <span>&nbsp;vous demandez n'existe pas.</span></h2>\n \t\t\t\t<a className='container_error' href=\"/\">Retourner sur la page d’accueil </a>\n \t\t\t  </div>\n \t\t</div>\n \t\t\n"
+                },
+                {
+                    "date": 1683020222478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n \t\t\t\t<h1>404</h1>\n \t\t\t\t<h2>Oups! La page que <span>&nbsp;vous demandez n'existe pas.</span></h2>\n \t\t\t\t<a className='container_error' href=\"/\">Retourner sur la page d’accueil </a>\n \t\t\t  </div>\n+\t\t\t  \n \t\t</div>\n \t\t\n \t);\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683020244151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n import React from 'react';\n import Header from '../components/Header';\n+\n import \"../styles/pages/_errorPage.scss\";\n \n export default function ErrorPage() {\n \treturn (\n@@ -10,9 +11,9 @@\n \t\t\t\t<h1>404</h1>\n \t\t\t\t<h2>Oups! La page que <span>&nbsp;vous demandez n'existe pas.</span></h2>\n \t\t\t\t<a className='container_error' href=\"/\">Retourner sur la page d’accueil </a>\n \t\t\t  </div>\n-\t\t\t  \n+\n \t\t</div>\n \t\t\n \t);\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683020259413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react';\n import Header from '../components/Header';\n-\n+import Footer from '../components/Footer';\n import \"../styles/pages/_errorPage.scss\";\n \n export default function ErrorPage() {\n \treturn (\n@@ -11,9 +11,9 @@\n \t\t\t\t<h1>404</h1>\n \t\t\t\t<h2>Oups! La page que <span>&nbsp;vous demandez n'existe pas.</span></h2>\n \t\t\t\t<a className='container_error' href=\"/\">Retourner sur la page d’accueil </a>\n \t\t\t  </div>\n-\n+\t\t\t  <Header />\n \t\t</div>\n \t\t\n \t);\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683020266224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \t\t\t\t<h1>404</h1>\n \t\t\t\t<h2>Oups! La page que <span>&nbsp;vous demandez n'existe pas.</span></h2>\n \t\t\t\t<a className='container_error' href=\"/\">Retourner sur la page d’accueil </a>\n \t\t\t  </div>\n-\t\t\t  <Header />\n+\t\t\t  <Footer />\n \t\t</div>\n \t\t\n \t);\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683109252178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from 'react';\n import Header from '../components/Header';\n import Footer from '../components/Footer';\n-import \"../styles/pages/_errorPage.scss\";\n+//import \"../styles/pages/_errorPage.scss\";\n \n export default function ErrorPage() {\n \treturn (\n \t\t<div>\n"
+                },
+                {
+                    "date": 1683118470401,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from 'react';\n import Header from '../components/Header';\n import Footer from '../components/Footer';\n-//import \"../styles/pages/_errorPage.scss\";\n+import \"../styles/pages/_errorPage.scss\";\n \n export default function ErrorPage() {\n \treturn (\n \t\t<div>\n"
+                }
+            ],
+            "date": 1682447561730,
+            "name": "Commit-0",
+            "content": "import React from 'react';\nimport Header from '../components/Header';\nimport \"../styles/pages/_errorPage.scss\";\n\nexport default function ErrorPage() {\n\treturn (\n\t\t<div>\n\t\t\t  <Header />\n\t\t\t  <div className='container_error'>\n\t\t\t\t<h1>404</h1>\n\t\t\t\t<h2>Oups! La page que vous demandez n'existe pas.</h2>\n\t\t\t\t<a className='container_error' href=\"/\">Retourner sur la page d’accueil </a>\n\t\t\t  </div>\n\t\t</div>\n\t\t\n\t);\n}"
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "sourceFile": "src/styles/index.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 15,
+            "patches": [
+                {
+                    "date": 1682439975169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1682439981050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-@import 'settings/settings';\n\\ No newline at end of file\n+@import 'settings/settings';\n"
+                },
+                {
+                    "date": 1682439993422,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n @import 'settings/settings';\n+@import 'settings/pa';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682441080022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n-@import 'settings/settings';\n-@import 'settings/pa';\n\\ No newline at end of file\n+@import '/settings';\n+@import 'settings/pages';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682441086606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n-@import '/settings';\n-@import 'settings/pages';\n\\ No newline at end of file\n+@import './settings';\n+@import './pages';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682441199620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n-@import './settings';\n+@import '.settings/settings';\n @import './pages';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682441205096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n @import '.settings/settings';\n-@import './pages';\n\\ No newline at end of file\n+@import 'pages/pages';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682441220722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n-@import '.settings/settings';\n+@import 'settings/settings';\n @import 'pages/pages';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682442121954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n-@import 'settings/settings';\n+@import '.settings/settings';\n @import 'pages/pages';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682442143475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n-@import '.settings/settings';\n-@import 'pages/pages';\n\\ No newline at end of file\n+@import './settings/settings';\n+@import '.pages/pages';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682443399367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n @import './settings/settings';\n-@import '.pages/pages';\n\\ No newline at end of file\n+@import './pages/pages';\n"
+                },
+                {
+                    "date": 1682443423981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,3 @@\n @import './settings/settings';\n @import './pages/pages';\n+\n"
+                },
+                {
+                    "date": 1682443433857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n @import './settings/settings';\n @import './pages/pages';\n-\n+@\n"
+                },
+                {
+                    "date": 1682443441082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n @import './settings/settings';\n @import './pages/pages';\n-@\n+@import\n"
+                },
+                {
+                    "date": 1682443446772,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n @import './settings/settings';\n @import './pages/pages';\n-@import\n+@import ''\n"
+                },
+                {
+                    "date": 1682443453621,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n @import './settings/settings';\n @import './pages/pages';\n-@import '.'\n+@import '.c'\n"
+                }
+            ],
+            "date": 1682439975169,
+            "name": "Commit-0",
+            "content": "@import 'settings/settings';"
+        }
+    ]
+}

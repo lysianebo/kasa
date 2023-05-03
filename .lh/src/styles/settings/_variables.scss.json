@@ -1,0 +1,226 @@
+{
+    "sourceFile": "src/styles/settings/_variables.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 52,
+            "patches": [
+                {
+                    "date": 1682608995304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1682609028663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,11 @@\n $primary-color : #ff6060;\n $background-color : #f7f7f7;\n \n \n+: 24px;\n+  --font-size-lg: 18px;\n+  --font-size-sm: 14px;\n+  --font-size-smi: 13px;\n+  --font-size-xs: 12px;\n+  --font-size-17xl: 36px;\n+  --font-size-3xs: 10px;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682609034647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n $primary-color : #ff6060;\n $background-color : #f7f7f7;\n \n \n-: 24px;\n+ $h: 24px;\n   --font-size-lg: 18px;\n   --font-size-sm: 14px;\n   --font-size-smi: 13px;\n   --font-size-xs: 12px;\n"
+                },
+                {
+                    "date": 1682609042000,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n $primary-color : #ff6060;\n $background-color : #f7f7f7;\n \n \n- $h: 24px;\n-  --font-size-lg: 18px;\n+ $h1: 24px;\n+  font-size-lg: 18px;\n   --font-size-sm: 14px;\n   --font-size-smi: 13px;\n   --font-size-xs: 12px;\n   --font-size-17xl: 36px;\n"
+                },
+                {
+                    "date": 1682609054863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n $background-color : #f7f7f7;\n \n \n  $h1: 24px;\n-  font-size-lg: 18px;\n+ $h1: 18px;\n   --font-size-sm: 14px;\n   --font-size-smi: 13px;\n   --font-size-xs: 12px;\n   --font-size-17xl: 36px;\n"
+                },
+                {
+                    "date": 1682609061912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n \n  $h1: 24px;\n  $h1: 18px;\n-  --font-size-sm: 14px;\n+ $h1: 14px;\n   --font-size-smi: 13px;\n   --font-size-xs: 12px;\n   --font-size-17xl: 36px;\n   --font-size-3xs: 10px;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682609069217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n \n  $h1: 24px;\n  $h1: 18px;\n  $h1: 14px;\n-  --font-size-smi: 13px;\n-  --font-size-xs: 12px;\n+ $h1: 13px;\n+ $h1: 12px;\n   --font-size-17xl: 36px;\n   --font-size-3xs: 10px;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682609075320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n  $h1: 18px;\n  $h1: 14px;\n  $h1: 13px;\n  $h1: 12px;\n-  --font-size-17xl: 36px;\n-  --font-size-3xs: 10px;\n\\ No newline at end of file\n+ $h1: 36px;\n+ $h1: 10px;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682609080437,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n $background-color : #f7f7f7;\n \n \n  $h1: 24px;\n- $h1: 18px;\n+ $h2: 18px;\n  $h1: 14px;\n  $h1: 13px;\n  $h1: 12px;\n  $h1: 36px;\n"
+                },
+                {
+                    "date": 1682609086432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n \n  $h1: 24px;\n  $h2: 18px;\n- $h1: 14px;\n- $h1: 13px;\n+ $h3: 14px;\n+ $h4: 13px;\n  $h1: 12px;\n  $h1: 36px;\n  $h1: 10px;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682609219973,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,7 @@\n  $h1: 24px;\n  $h2: 18px;\n  $h3: 14px;\n  $h4: 13px;\n- $h1: 12px;\n+ $text: 12px;\n  $h1: 36px;\n  $h1: 10px;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682609243943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,5 @@\n  $h2: 18px;\n  $h3: 14px;\n  $h4: 13px;\n  $text: 12px;\n- $h1: 36px;\n- $h1: 10px;\n\\ No newline at end of file\n+ \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682609258731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n $primary-color : #ff6060;\n $background-color : #f7f7f7;\n \n-\n  $h1: 24px;\n  $h2: 18px;\n  $h3: 14px;\n  $h4: 13px;\n"
+                },
+                {
+                    "date": 1682609296660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n $primary-color : #ff6060;\n $background-color : #f7f7f7;\n \n+\n+\n  $h1: 24px;\n  $h2: 18px;\n  $h3: 14px;\n  $h4: 13px;\n"
+                },
+                {
+                    "date": 1682609320997,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,5 +7,7 @@\n  $h2: 18px;\n  $h3: 14px;\n  $h4: 13px;\n  $text: 12px;\n+\n+ \n  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682609333179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,18 @@\n  $h3: 14px;\n  $h4: 13px;\n  $text: 12px;\n \n- \n+\n+  /* Colors */\n+  -color-red: #ff0000;\n+  --color-white: #fff;\n+  --color-tomato: #ff6060;\n+  --color-whitesmoke: #f6f6f6;\n+  --color-dimgray: #666;\n+  --color-black: #000;\n+\n+  /* border radiuses */\n+  --br-3xs: 10px;\n+  --br-6xl: 25px;\n+  --br-8xs: 5px;\n  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682609340756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n  $text: 12px;\n \n \n   /* Colors */\n-  -color-red: #ff0000;\n+  $color-red: #ff0000;\n   --color-white: #fff;\n   --color-tomato: #ff6060;\n   --color-whitesmoke: #f6f6f6;\n   --color-dimgray: #666;\n"
+                },
+                {
+                    "date": 1682609423403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n-$primary-color : #ff6060;\n-$background-color : #f7f7f7;\n+$primarcolor : #ff6060;\n+$backgrouncolor : #f7f7f7;\n \n \n \n  $h1: 24px;\n@@ -10,14 +10,14 @@\n  $text: 12px;\n \n \n   /* Colors */\n-  $color-red: #ff0000;\n-  --color-white: #fff;\n-  --color-tomato: #ff6060;\n-  --color-whitesmoke: #f6f6f6;\n-  --color-dimgray: #666;\n-  --color-black: #000;\n+color-red: #ff0000;\n+  color-white: #fff;\n+  color-tomato: #ff6060;\n+  color-whitesmoke: #f6f6f6;\n+  color-dimgray: #666;\n+  color-black: #000;\n \n   /* border radiuses */\n   --br-3xs: 10px;\n   --br-6xl: 25px;\n"
+                },
+                {
+                    "date": 1682609433321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n-$primarcolor : #ff6060;\n-$backgrouncolor : #f7f7f7;\n+$primar$color : #ff6060;\n+$backgroun$color : #f7f7f7;\n \n \n \n  $h1: 24px;\n@@ -10,14 +10,14 @@\n  $text: 12px;\n \n \n   /* Colors */\n-color-red: #ff0000;\n-  color-white: #fff;\n-  color-tomato: #ff6060;\n-  color-whitesmoke: #f6f6f6;\n-  color-dimgray: #666;\n-  color-black: #000;\n+    $color-red: #ff0000;\n+  $color-white: #fff;\n+  $color-tomato: #ff6060;\n+  $color-whitesmoke: #f6f6f6;\n+  $color-dimgray: #666;\n+  $color-black: #000;\n \n   /* border radiuses */\n   --br-3xs: 10px;\n   --br-6xl: 25px;\n"
+                },
+                {
+                    "date": 1682609480109,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n  $text: 12px;\n \n \n   /* Colors */\n-    $color-red: #ff0000;\n+  $color-red: #ff0000;\n   $color-white: #fff;\n   $color-tomato: #ff6060;\n   $color-whitesmoke: #f6f6f6;\n   $color-dimgray: #666;\n"
+                },
+                {
+                    "date": 1682609492611,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,8 @@\n   $color-dimgray: #666;\n   $color-black: #000;\n \n   /* border radiuses */\n-  --br-3xs: 10px;\n-  --br-6xl: 25px;\n-  --br-8xs: 5px;\n+  -3xs: 10px;\n+  -6xl: 25px;\n+  -8xs: 5px;\n  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682609497693,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,8 @@\n   $color-dimgray: #666;\n   $color-black: #000;\n \n   /* border radiuses */\n-  -3xs: 10px;\n-  -6xl: 25px;\n-  -8xs: 5px;\n+  $3xs: 10px;\n+  $6xl: 25px;\n+  $8xs: 5px;\n  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682609513155,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,8 @@\n   $color-dimgray: #666;\n   $color-black: #000;\n \n   /* border radiuses */\n-  $3xs: 10px;\n+  $_3xs: 10px;\n   $6xl: 25px;\n   $8xs: 5px;\n  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682609522483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,8 @@\n   $color-dimgray: #666;\n   $color-black: #000;\n \n   /* border radiuses */\n-  $_3xs: 10px;\n+  $3xs: 10px;\n   $6xl: 25px;\n   $8xs: 5px;\n  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682609530720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,8 @@\n   $color-dimgray: #666;\n   $color-black: #000;\n \n   /* border radiuses */\n-  $3xs: 10px;\n+  $brxs: 10px;\n   $6xl: 25px;\n   $8xs: 5px;\n  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682609538588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,7 +19,7 @@\n   $color-black: #000;\n \n   /* border radiuses */\n   $brxs: 10px;\n-  $6xl: 25px;\n-  $8xs: 5px;\n+  $brxl: 25px;\n+  $brxs: 5px;\n  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682609625347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-$primar$color : #ff6060;\n+$primary$color : #ff6060;\n $backgroun$color : #f7f7f7;\n \n \n \n"
+                },
+                {
+                    "date": 1682609641688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-$primary$color : #ff6060;\n+$primarycolor : #ff6060;\n $backgroun$color : #f7f7f7;\n \n \n \n"
+                },
+                {
+                    "date": 1682609658890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n $primarycolor : #ff6060;\n-$backgroun$color : #f7f7f7;\n+$backgrouncolor : #f7f7f7;\n \n \n-\n  $h1: 24px;\n  $h2: 18px;\n  $h3: 14px;\n  $h4: 13px;\n"
+                },
+                {
+                    "date": 1682609667796,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n $primarycolor : #ff6060;\n $backgrouncolor : #f7f7f7;\n \n \n+\n  $h1: 24px;\n  $h2: 18px;\n  $h3: 14px;\n  $h4: 13px;\n  $text: 12px;\n \n-\n   /* Colors */\n   $color-red: #ff0000;\n   $color-white: #fff;\n   $color-tomato: #ff6060;\n"
+                },
+                {
+                    "date": 1682609679477,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n $primarycolor : #ff6060;\n $backgrouncolor : #f7f7f7;\n \n \n-\n+ /* Font size */\n  $h1: 24px;\n  $h2: 18px;\n  $h3: 14px;\n  $h4: 13px;\n"
+                },
+                {
+                    "date": 1682609722967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,16 @@\n-$primarycolor : #ff6060;\n-$backgrouncolor : #f7f7f7;\n+$primar$color : #ff6060;\n+$backgroun$color : #f7f7f7;\n \n \n- /* Font size */\n+\n  $h1: 24px;\n  $h2: 18px;\n  $h3: 14px;\n  $h4: 13px;\n  $text: 12px;\n \n+\n   /* Colors */\n   $color-red: #ff0000;\n   $color-white: #fff;\n   $color-tomato: #ff6060;\n@@ -19,6 +20,6 @@\n \n   /* border radiuses */\n   $brxs: 10px;\n   $brxl: 25px;\n-  $brxs: 5px;\n+  $xs: 5px;\n  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682609730432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,6 +20,6 @@\n \n   /* border radiuses */\n   $brxs: 10px;\n   $brxl: 25px;\n-  $xs: 5px;\n+  $8xs: 5px;\n  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682609740156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n-$primar$color : #ff6060;\n-$backgroun$color : #f7f7f7;\n+$primary-color : #ff6060;\n+$background-color : #f7f7f7;\n \n \n \n  $h1: 24px;\n@@ -11,15 +11,15 @@\n \n \n   /* Colors */\n   $color-red: #ff0000;\n-  $color-white: #fff;\n-  $color-tomato: #ff6060;\n-  $color-whitesmoke: #f6f6f6;\n-  $color-dimgray: #666;\n-  $color-black: #000;\n+  --color-white: #fff;\n+  --color-tomato: #ff6060;\n+  --color-whitesmoke: #f6f6f6;\n+  --color-dimgray: #666;\n+  --color-black: #000;\n \n   /* border radiuses */\n-  $brxs: 10px;\n-  $brxl: 25px;\n-  $8xs: 5px;\n+  --br-3xs: 10px;\n+  --br-6xl: 25px;\n+  --br-8xs: 5px;\n  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682609745911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n  $text: 12px;\n \n \n   /* Colors */\n-  $color-red: #ff0000;\n+  color-red: #ff0000;\n   --color-white: #fff;\n   --color-tomato: #ff6060;\n   --color-whitesmoke: #f6f6f6;\n   --color-dimgray: #666;\n"
+                },
+                {
+                    "date": 1682609751974,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,18 +8,6 @@\n  $h3: 14px;\n  $h4: 13px;\n  $text: 12px;\n \n-\n-  /* Colors */\n-  color-red: #ff0000;\n-  --color-white: #fff;\n-  --color-tomato: #ff6060;\n-  --color-whitesmoke: #f6f6f6;\n-  --color-dimgray: #666;\n-  --color-black: #000;\n-\n-  /* border radiuses */\n-  --br-3xs: 10px;\n-  --br-6xl: 25px;\n-  --br-8xs: 5px;\n+ \n  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682609770998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,11 @@\n $primary-color : #ff6060;\n $background-color : #f7f7f7;\n \n \n-\n- $h1: 24px;\n- $h2: 18px;\n- $h3: 14px;\n- $h4: 13px;\n- $text: 12px;\n-\n- \n- \n\\ No newline at end of file\n+ $: 24px;\n+  --font-size-lg: 18px;\n+  --font-size-sm: 14px;\n+  --font-size-smi: 13px;\n+  --font-size-xs: 12px;\n+  --font-size-17xl: 36px;\n+  --font-size-3xs: 10px;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682609777675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,3 @@\n $primary-color : #ff6060;\n $background-color : #f7f7f7;\n \n-\n- $: 24px;\n-  --font-size-lg: 18px;\n-  --font-size-sm: 14px;\n-  --font-size-smi: 13px;\n-  --font-size-xs: 12px;\n-  --font-size-17xl: 36px;\n-  --font-size-3xs: 10px;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682617283029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,22 @@\n $primary-color : #ff6060;\n $background-color : #f7f7f7;\n \n+/* Font size */\n+// $h1: 24px;\n+// $h2: 18px;\n+// $h3: 14px;\n+// $h4: 13px;\n+// $text: 12px;\n+\n+ /* Colors */\n+ $color-red: #ff0000;\n+ $color-white: #fff;\n+ $color-tomato: #ff6060;\n+ $color-whitesmoke: #f6f6f6;\n+ $color-dimgray: #666;\n+ $color-black: #000;\n+\n+ /* border radiuses */\n+ $brxs: 10px;\n+ $brxl: 25px;\n+ $brxs: 5px;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682688601261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,7 +16,7 @@\n  $color-dimgray: #666;\n  $color-black: #000;\n \n  /* border radiuses */\n- $brxs: 10px;\n+ $brxs: 1px;\n  $brxl: 25px;\n  $brxs: 5px;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682688647103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,7 +16,7 @@\n  $color-dimgray: #666;\n  $color-black: #000;\n \n  /* border radiuses */\n- $brxs: 1px;\n+ $brxs: 10px;\n  $brxl: 25px;\n  $brxs: 5px;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682693138145,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,6 +17,6 @@\n  $color-black: #000;\n \n  /* border radiuses */\n  $brxs: 10px;\n- $brxl: 25px;\n+ $brxl: 10px;\n  $brxs: 5px;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682693171464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,5 +18,5 @@\n \n  /* border radiuses */\n  $brxs: 10px;\n  $brxl: 10px;\n- $brxs: 5px;\n\\ No newline at end of file\n+ $brxxs: 5px;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682693180178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,6 +17,6 @@\n  $color-black: #000;\n \n  /* border radiuses */\n  $brxs: 10px;\n- $brxl: 10px;\n+ $brxl: px;\n  $brxxs: 5px;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682693188695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,6 +17,6 @@\n  $color-black: #000;\n \n  /* border radiuses */\n  $brxs: 10px;\n- $brxl: px;\n+ $brxl: 25px;\n  $brxxs: 5px;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682693560211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n $primary-color : #ff6060;\n $background-color : #f7f7f7;\n \n+\n /* Font size */\n // $h1: 24px;\n // $h2: 18px;\n // $h3: 14px;\n"
+                },
+                {
+                    "date": 1682693571505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n $primary-color : #ff6060;\n $background-color : #f7f7f7;\n+$color-dimgray: #f6f6f6;\n \n-\n /* Font size */\n // $h1: 24px;\n // $h2: 18px;\n // $h3: 14px;\n"
+                },
+                {
+                    "date": 1682693627887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n  $color-red: #ff0000;\n  $color-white: #fff;\n  $color-tomato: #ff6060;\n  $color-whitesmoke: #f6f6f6;\n- $color-dimgray: #666;\n+ //$color-dimgray: #666;\n  $color-black: #000;\n \n  /* border radiuses */\n  $brxs: 10px;\n"
+                },
+                {
+                    "date": 1682693724825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n $primary-color : #ff6060;\n $background-color : #f7f7f7;\n $color-dimgray: #f6f6f6;\n \n+\n /* Font size */\n // $h1: 24px;\n // $h2: 18px;\n // $h3: 14px;\n"
+                },
+                {
+                    "date": 1682693742988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n $primary-color : #ff6060;\n $background-color : #f7f7f7;\n $color-dimgray: #f6f6f6;\n+$color-black: #000;\n+$color-white: #fff;\n \n-\n /* Font size */\n // $h1: 24px;\n // $h2: 18px;\n // $h3: 14px;\n"
+                },
+                {
+                    "date": 1682693783480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n $primary-color : #ff6060;\n $background-color : #f7f7f7;\n-$color-dimgray: #f6f6f6;\n+$color-whitesmoke: #f6f6f6;\n $color-black: #000;\n $color-white: #fff;\n \n /* Font size */\n"
+                },
+                {
+                    "date": 1683024772080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,14 +3,8 @@\n $color-whitesmoke: #f6f6f6;\n $color-black: #000;\n $color-white: #fff;\n \n-/* Font size */\n-// $h1: 24px;\n-// $h2: 18px;\n-// $h3: 14px;\n-// $h4: 13px;\n-// $text: 12px;\n \n  /* Colors */\n  $color-red: #ff0000;\n  $color-white: #fff;\n"
+                },
+                {
+                    "date": 1683024779096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,8 @@\n $color-whitesmoke: #f6f6f6;\n $color-black: #000;\n $color-white: #fff;\n \n-\n  /* Colors */\n  $color-red: #ff0000;\n  $color-white: #fff;\n  $color-tomato: #ff6060;\n"
+                }
+            ],
+            "date": 1682608995304,
+            "name": "Commit-0",
+            "content": "$primary-color : #ff6060;\n$background-color : #f7f7f7;\n\n\n"
+        }
+    ]
+}

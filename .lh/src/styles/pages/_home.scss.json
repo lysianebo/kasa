@@ -1,0 +1,46 @@
+{
+    "sourceFile": "src/styles/pages/_home.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1682454444757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1682455842280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .home{\n     display: flex;\n     flex-direction: column;\n-    //width: 80%;\n+    /width: 80%;\n     margin: auto;\n     \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682455919540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .home{\n     display: flex;\n     flex-direction: column;\n-    /width: 80%;\n+    //width: 80%;\n     margin: auto;\n     \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682455933365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .home{\n     display: flex;\n     flex-direction: column;\n-    //width: 80%;\n+    width: 80%;\n     margin: auto;\n     \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682455972262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .home{\n     display: flex;\n     flex-direction: column;\n-    width: 80%;\n+    //width: 80%;\n     margin: auto;\n     \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682608341768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +0,0 @@\n-.home{\n-    display: flex;\n-    flex-direction: column;\n-    //width: 80%;\n-    margin: auto;\n-    \n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682608347261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,7 @@\n+.home{\n+    display: flex;\n+    flex-direction: column;\n+    //width: 80%;\n+    margin: auto;\n+    \n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682616518444,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,7 @@\n //     display: flex;\n //     flex-direction: column;\n //     //width: 80%;\n //     margin: auto;\n+\n     \n // }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1682454444757,
+            "name": "Commit-0",
+            "content": ".home{\n    display: flex;\n    flex-direction: column;\n    //width: 80%;\n    margin: auto;\n    \n}"
+        }
+    ]
+}

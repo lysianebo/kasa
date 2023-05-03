@@ -1,0 +1,46 @@
+{
+    "sourceFile": "src/components/Card.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1682446608549,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1683109562172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n import React from 'react';\n import { Link } from 'react-router-dom'\n-import  '../style/components/_galery.scss';\n+import  '../styles/components/_galery.scss';\n \n \n-function Card ({ id, title, cover }) {\n+export default function Card ({ id, title, cover }) {\n   return (\n     <div className=\"card_logement\">\n         <Link to={`/logements/${id}`}>\n             <div>\n"
+                },
+                {
+                    "date": 1683109569635,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,7 +17,7 @@\n     </div>\n );\n }\n \n-export default Card;\n+\n        \n    \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683109587761,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,7 +17,6 @@\n     </div>\n );\n }\n \n-\n        \n    \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683109611040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react';\n import { Link } from 'react-router-dom'\n-import  '../styles/components/_galery.scss';\n+//import  '../styles/components/_galery.scss';\n \n \n export default function Card ({ id, title, cover }) {\n   return (\n"
+                },
+                {
+                    "date": 1683109653935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react';\n import { Link } from 'react-router-dom'\n-//import  '../styles/components/_galery.scss';\n+import  '../styles/components/_galery.scss';\n \n \n export default function Card ({ id, title, cover }) {\n   return (\n"
+                },
+                {
+                    "date": 1683109672854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react';\n import { Link } from 'react-router-dom'\n-import  '../styles/components/_galery.scss';\n+//import  '../styles/components/_galery.scss';\n \n \n export default function Card ({ id, title, cover }) {\n   return (\n"
+                },
+                {
+                    "date": 1683109768379,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n import React from 'react';\n import { Link } from 'react-router-dom'\n-//import  '../styles/components/_galery.scss';\n \n \n export default function Card ({ id, title, cover }) {\n   return (\n"
+                }
+            ],
+            "date": 1682446608549,
+            "name": "Commit-0",
+            "content": "import React from 'react';\nimport { Link } from 'react-router-dom'\nimport  '../style/components/_galery.scss';\n\n\nfunction Card ({ id, title, cover }) {\n  return (\n    <div className=\"card_logement\">\n        <Link to={`/logements/${id}`}>\n            <div>\n                <img src={cover} alt=\"{title}\" />\n            </div>\n            <div className=\"background_title\">\n                <h2 className='logement_title'>{title}</h2>\n            </div>\n        </Link>\n    </div>\n);\n}\n\nexport default Card;\n       \n   "
+        }
+    ]
+}

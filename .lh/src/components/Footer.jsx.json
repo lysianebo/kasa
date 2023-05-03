@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/Footer.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1682447307223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1682447307223,
+            "name": "Commit-0",
+            "content": "import React from 'react';\nimport '../styles/layout/_footer.scss'\nimport logo from \"../assets/images/logo9.svg\";\n\nconst Footer = () => {\n    return (\n        <div className='footer'>\n       <figure className=\"navbar__logo\">\n\t\t\t\t<img className=\"logo\" src={logo} alt=\"logo de kasa\" />\n\t\t\t</figure>\n            <p>© 2020 Kasa. All rights reserved</p>\n        </div>\n    );\n};\n\nexport default Footer;"
+        }
+    ]
+}

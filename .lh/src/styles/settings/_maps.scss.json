@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/styles/settings/_maps.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1682454192722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1682454192722,
+            "name": "Commit-0",
+            "content": "$breakpoints: (\n        tablet: 768px,\n        desktop: 992px,\n        large: 1200px,\n)"
+        }
+    ]
+}

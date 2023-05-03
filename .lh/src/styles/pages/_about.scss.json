@@ -1,0 +1,510 @@
+{
+    "sourceFile": "src/styles/pages/_about.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 123,
+            "patches": [
+                {
+                    "date": 1682443275171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1682443294095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n //@import '../utils/_variables.scss';\n-@import '.. _mixins.scss';\n+@import '../settings/ _mixins.scss';\n \n .container_about{\n    \n     display: flex;\n"
+                },
+                {
+                    "date": 1682443309873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n //@import '../utils/_variables.scss';\n-@import '../settings/ _mixins.scss';\n+@import '../settings/settings.scss _mixins.scss';\n \n .container_about{\n    \n     display: flex;\n"
+                },
+                {
+                    "date": 1682453193805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n //@import '../utils/_variables.scss';\n-@import '../settings/settings.scss _mixins.scss';\n+@import '../settings/settings.scss';\n \n .container_about{\n    \n     display: flex;\n"
+                },
+                {
+                    "date": 1682688248027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,25 @@\n+\n+\n+//@import '../utils/_variables.scss';\n+@import '../settings/settings.scss';\n+\n+.container_about{\n+   \n+    display: flex;\n+    flex-direction: column;\n+      width: 100%; \n+    //  height: 400px;\n+      border-radius: var(--br-6xl);\n+      background-image:  url(\"../../assets/images/-section-1@2x.png\");\n+     // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n+      background-repeat: no-repeat;\n+      background-size: 100%;\n+     \n+  }\n+\n+.informations{\n+@include dropdown ;\n+display: flex;\n+flex-direction: column;\n+font-size: 24px;\n+}\n"
+                },
+                {
+                    "date": 1682688253362,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,33 +7,8 @@\n    \n     display: flex;\n     flex-direction: column;\n       width: 100%; \n-    //  height: 400px;\n-      border-radius: var(--br-6xl);\n-      background-image:  url(\"../../assets/images/-section-1@2x.png\");\n-     // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n-      background-repeat: no-repeat;\n-      background-size: 100%;\n-     \n-  }\n-\n-.informations{\n-@include dropdown ;\n-display: flex;\n-flex-direction: column;\n-font-size: 24px;\n-}\n-\n-\n-//@import '../utils/_variables.scss';\n-@import '../settings/settings.scss';\n-\n-.container_about{\n-   \n-    display: flex;\n-    flex-direction: column;\n-      width: 100%; \n       height: 400px;\n       border-radius: var(--br-6xl);\n       background-image:  url(\"../../assets/images/-section-1@2x.png\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n"
+                },
+                {
+                    "date": 1682688302690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n    \n     display: flex;\n     flex-direction: column;\n       width: 100%; \n-      height: 400px;\n+      height: px;\n       border-radius: var(--br-6xl);\n       background-image:  url(\"../../assets/images/-section-1@2x.png\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n"
+                },
+                {
+                    "date": 1682688321907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,12 +4,12 @@\n @import '../settings/settings.scss';\n \n .container_about{\n    \n-    display: flex;\n+   // display: flex;\n     flex-direction: column;\n       width: 100%; \n-      height: px;\n+      height: 223px;\n       border-radius: var(--br-6xl);\n       background-image:  url(\"../../assets/images/-section-1@2x.png\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n"
+                },
+                {
+                    "date": 1682688327948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \n .container_about{\n    \n    // display: flex;\n-    flex-direction: column;\n+   // flex-direction: column;\n       width: 100%; \n       height: 223px;\n       border-radius: var(--br-6xl);\n       background-image:  url(\"../../assets/images/-section-1@2x.png\");\n"
+                },
+                {
+                    "date": 1682688447198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n    // display: flex;\n    // flex-direction: column;\n       width: 100%; \n       height: 223px;\n-      border-radius: var(--br-6xl);\n+      border-radius:  $brxs;\n       background-image:  url(\"../../assets/images/-section-1@2x.png\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n       background-size: 100%;\n"
+                },
+                {
+                    "date": 1682688544091,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n    // display: flex;\n    // flex-direction: column;\n       width: 100%; \n       height: 223px;\n-      border-radius:  $brxs;\n+      border-radius:  $brx;\n       background-image:  url(\"../../assets/images/-section-1@2x.png\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n       background-size: 100%;\n"
+                },
+                {
+                    "date": 1682688571512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n    // display: flex;\n    // flex-direction: column;\n       width: 100%; \n       height: 223px;\n-      border-radius:  $brx;\n+      border-radius:  $brxs;\n       background-image:  url(\"../../assets/images/-section-1@2x.png\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n       background-size: 100%;\n"
+                },
+                {
+                    "date": 1682689052984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,6 +20,6 @@\n .informations{\n @include dropdown ;\n display: flex;\n flex-direction: column;\n-font-size: 24px;\n+//font-size: 24px;\n }\n"
+                },
+                {
+                    "date": 1682690850314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n       background-image:  url(\"../../assets/images/-section-1@2x.png\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n       background-size: 100%;\n+      \n      \n   }\n \n .informations{\n"
+                },
+                {
+                    "date": 1682690856004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n       background-image:  url(\"../../assets/images/-section-1@2x.png\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n       background-size: 100%;\n-      \n+      h\n      \n   }\n \n .informations{\n"
+                },
+                {
+                    "date": 1682690862590,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,11 @@\n       background-image:  url(\"../../assets/images/-section-1@2x.png\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n       background-size: 100%;\n-      h\n+      h2{\n+        font\n+      }\n      \n   }\n \n .informations{\n"
+                },
+                {
+                    "date": 1682690877872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n       background-size: 100%;\n       h2{\n-        font\n+        font-size: $h\n       }\n      \n   }\n \n"
+                },
+                {
+                    "date": 1682691027460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,12 +13,10 @@\n       background-image:  url(\"../../assets/images/-section-1@2x.png\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n       background-size: 100%;\n-      h2{\n-        font-size: $h\n-      }\n      \n+     \n   }\n \n .informations{\n @include dropdown ;\n"
+                },
+                {
+                    "date": 1682691764376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n    \n    // display: flex;\n    // flex-direction: column;\n       width: 100%; \n-      height: 223px;\n+    \n       border-radius:  $brxs;\n       background-image:  url(\"../../assets/images/-section-1@2x.png\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n"
+                },
+                {
+                    "date": 1682691772700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n       background-image:  url(\"../../assets/images/-section-1@2x.png\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n       background-size: 100%;\n+      ba\n      \n      \n   }\n \n"
+                },
+                {
+                    "date": 1682691794862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n       background-image:  url(\"../../assets/images/-section-1@2x.png\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n       background-size: 100%;\n-      ba\n+      \n      \n      \n   }\n \n"
+                },
+                {
+                    "date": 1682691805425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n    \n    // display: flex;\n    // flex-direction: column;\n       width: 100%; \n-    \n+    ba\n       border-radius:  $brxs;\n       background-image:  url(\"../../assets/images/-section-1@2x.png\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n"
+                },
+                {
+                    "date": 1682691810965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n    \n    // display: flex;\n    // flex-direction: column;\n       width: 100%; \n-    ba\n+    hei\n       border-radius:  $brxs;\n       background-image:  url(\"../../assets/images/-section-1@2x.png\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n"
+                },
+                {
+                    "date": 1682691826335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n    \n    // display: flex;\n    // flex-direction: column;\n       width: 100%; \n-    hei\n+    height: auto;\n       border-radius:  $brxs;\n       background-image:  url(\"../../assets/images/-section-1@2x.png\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n"
+                },
+                {
+                    "date": 1682691845262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n    \n    // display: flex;\n    // flex-direction: column;\n       width: 100%; \n-    height: auto;\n+    height: 100;\n       border-radius:  $brxs;\n       background-image:  url(\"../../assets/images/-section-1@2x.png\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n"
+                },
+                {
+                    "date": 1682691863194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n    \n    // display: flex;\n    // flex-direction: column;\n       width: 100%; \n-    height: 100;\n+    height: 200px;\n       border-radius:  $brxs;\n       background-image:  url(\"../../assets/images/-section-1@2x.png\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n"
+                },
+                {
+                    "date": 1682691870911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n    \n    // display: flex;\n    // flex-direction: column;\n       width: 100%; \n-    height: 200px;\n+    height: 20px;\n       border-radius:  $brxs;\n       background-image:  url(\"../../assets/images/-section-1@2x.png\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n"
+                },
+                {
+                    "date": 1682691886049,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n    \n    // display: flex;\n    // flex-direction: column;\n       width: 100%; \n-    height: 20px;\n+    height: 0px;\n       border-radius:  $brxs;\n       background-image:  url(\"../../assets/images/-section-1@2x.png\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n"
+                },
+                {
+                    "date": 1682692268799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,11 +7,11 @@\n    \n    // display: flex;\n    // flex-direction: column;\n       width: 100%; \n-    height: 0px;\n+    height: 70px;\n       border-radius:  $brxs;\n-      background-image:  url(\"../../assets/images/-section-1@2x.png\");\n+      background-image:  url(\"../../assets/images/a.png\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n       background-size: 100%;\n       \n"
+                },
+                {
+                    "date": 1682692325138,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n    // flex-direction: column;\n       width: 100%; \n     height: 70px;\n       border-radius:  $brxs;\n-      background-image:  url(\"../../assets/images/a.png\");\n+      background-image:  url(\"../../assets/images/apropos.\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n       background-size: 100%;\n       \n"
+                },
+                {
+                    "date": 1682692338122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n    // flex-direction: column;\n       width: 100%; \n     height: 70px;\n       border-radius:  $brxs;\n-      background-image:  url(\"../../assets/images/apropos.\");\n+      background-image:  url(\"../../assets/images/apropo\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n       background-size: 100%;\n       \n"
+                },
+                {
+                    "date": 1682692344675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n    // flex-direction: column;\n       width: 100%; \n     height: 70px;\n       border-radius:  $brxs;\n-      background-image:  url(\"../../assets/images/apropo\");\n+      background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n       background-size: 100%;\n       \n"
+                },
+                {
+                    "date": 1682692353065,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n    \n    // display: flex;\n    // flex-direction: column;\n       width: 100%; \n-    height: 70px;\n+    //height: 70px;\n       border-radius:  $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n"
+                },
+                {
+                    "date": 1682692361052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n    \n    // display: flex;\n    // flex-direction: column;\n       width: 100%; \n-    //height: 70px;\n+    height: px;\n       border-radius:  $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n"
+                },
+                {
+                    "date": 1682692376282,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,11 @@\n \n .container_about{\n    \n    // display: flex;\n-   // flex-direction: column;\n+   flex-direction: column;\n       width: 100%; \n-    height: px;\n+    height: 223px;\n       border-radius:  $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n"
+                },
+                {
+                    "date": 1682692384955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,11 @@\n @import '../settings/settings.scss';\n \n .container_about{\n    \n-   // display: flex;\n+   display: flex;\n    flex-direction: column;\n+   \n       width: 100%; \n     height: 223px;\n       border-radius:  $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n"
+                },
+                {
+                    "date": 1682692392884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n .container_about{\n    \n    display: flex;\n    flex-direction: column;\n-   \n+   justify-content: space-between;\n       width: 100%; \n     height: 223px;\n       border-radius:  $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n"
+                },
+                {
+                    "date": 1682692405284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n .container_about{\n    \n    display: flex;\n    flex-direction: column;\n-   justify-content: space-between;\n+   gap ;\n       width: 100%; \n     height: 223px;\n       border-radius:  $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n"
+                },
+                {
+                    "date": 1682692412038,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n .container_about{\n    \n    display: flex;\n    flex-direction: column;\n-   gap ;\n+   gap: 30px;\n       width: 100%; \n     height: 223px;\n       border-radius:  $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n"
+                },
+                {
+                    "date": 1682692423832,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n .container_about{\n    \n    display: flex;\n    flex-direction: column;\n-   gap: 30px;\n+  \n       width: 100%; \n     height: 223px;\n       border-radius:  $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n"
+                },
+                {
+                    "date": 1682692924056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,13 +4,12 @@\n @import '../settings/settings.scss';\n \n .container_about{\n    \n-   display: flex;\n-   flex-direction: column;\n+   \n   \n       width: 100%; \n-    height: 223px;\n+     height: 223px;\n       border-radius:  $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n"
+                },
+                {
+                    "date": 1682692929648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,8 @@\n @import '../settings/settings.scss';\n \n .container_about{\n    \n-   \n   \n       width: 100%; \n      height: 223px;\n       border-radius:  $brxs;\n"
+                },
+                {
+                    "date": 1682692937247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,9 @@\n \n \n-//@import '../utils/_variables.scss';\n @import '../settings/settings.scss';\n \n .container_about{\n-   \n-  \n       width: 100%; \n      height: 223px;\n       border-radius:  $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n"
+                },
+                {
+                    "date": 1682692943628,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,9 @@\n-\n-\n @import '../settings/settings.scss';\n \n .container_about{\n       width: 100%; \n-     height: 223px;\n+      height: 223px;\n       border-radius:  $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n"
+                },
+                {
+                    "date": 1682692949095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n       background-size: 100%;\n+      mar\n       \n      \n      \n   }\n"
+                },
+                {
+                    "date": 1682692955014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n       background-size: 100%;\n-      mar\n+      margin-bottom: 30px\n       \n      \n      \n   }\n"
+                },
+                {
+                    "date": 1682693095947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n .container_about{\n       width: 100%; \n       height: 223px;\n-      border-radius:  $brxs;\n+      border-radius: $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n       background-size: 100%;\n"
+                },
+                {
+                    "date": 1682693113701,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n .container_about{\n       width: 100%; \n       height: 223px;\n-      border-radius: $brxs;\n+      border-radius: $brxl;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n       background-size: 100%;\n"
+                },
+                {
+                    "date": 1682693230361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n .container_about{\n       width: 100%; \n       height: 223px;\n-      border-radius: $brxl;\n+      border-radius: $brx;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n       background-size: 100%;\n"
+                },
+                {
+                    "date": 1682693320352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,14 +2,14 @@\n \n .container_about{\n       width: 100%; \n       height: 223px;\n-      border-radius: $brx;\n+      border-radius: $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n       background-size: 100%;\n-      margin-bottom: 30px\n+      margin-bottom: 30px;\n       \n      \n      \n   }\n"
+                },
+                {
+                    "date": 1682694759065,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n       border-radius: $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n       background-repeat: no-repeat;\n-      background-size: 100%;\n+      background-size: cov;\n       margin-bottom: 30px;\n       \n      \n      \n"
+                },
+                {
+                    "date": 1682694805436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,10 @@\n       height: 223px;\n       border-radius: $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n-      background-repeat: no-repeat;\n-      background-size: cov;\n+     // background-repeat: no-repeat;\n+      background-size: cover;\n       margin-bottom: 30px;\n       \n      \n      \n"
+                },
+                {
+                    "date": 1682694968141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n      // background-repeat: no-repeat;\n       background-size: cover;\n       margin-bottom: 30px;\n       \n+      \n      \n      \n   }\n \n"
+                },
+                {
+                    "date": 1682694986844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,12 @@\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n      // background-repeat: no-repeat;\n       background-size: cover;\n       margin-bottom: 30px;\n+     \n+width:auto;\n+height:auto;\n       \n-      \n      \n      \n   }\n \n"
+                },
+                {
+                    "date": 1682694997951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,11 @@\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n      // background-repeat: no-repeat;\n       background-size: cover;\n       margin-bottom: 30px;\n-     \n-width:auto;\n-height:auto;\n+      min-width:100%;\n+min-height:100%;\n+\n       \n      \n      \n   }\n"
+                },
+                {
+                    "date": 1682695013999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n       border-radius: $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n      // background-repeat: no-repeat;\n-      background-size: cover;\n+      //background-size: cover;\n       margin-bottom: 30px;\n       min-width:100%;\n min-height:100%;\n \n"
+                },
+                {
+                    "date": 1682695020482,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n       border-radius: $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n      // background-repeat: no-repeat;\n-      //background-size: cover;\n+      background-size: cover;\n       margin-bottom: 30px;\n       min-width:100%;\n min-height:100%;\n \n"
+                },
+                {
+                    "date": 1682695028518,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,13 +6,14 @@\n       border-radius: $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n      // background-repeat: no-repeat;\n-      background-size: cover;\n+      //background-size: cover;\n       margin-bottom: 30px;\n       min-width:100%;\n min-height:100%;\n-\n+width:auto;\n+height:auto;\n       \n      \n      \n   }\n"
+                },
+                {
+                    "date": 1682695038473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,9 @@\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n      // background-repeat: no-repeat;\n       //background-size: cover;\n       margin-bottom: 30px;\n-      min-width:100%;\n-min-height:100%;\n+     ;\n width:auto;\n height:auto;\n       \n      \n"
+                },
+                {
+                    "date": 1682695047867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,11 @@\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n      // background-repeat: no-repeat;\n       //background-size: cover;\n       margin-bottom: 30px;\n-     ;\n-width:auto;\n-height:auto;\n+      min-width:100%;\n+min-height:100%;\n+\n       \n      \n      \n   }\n"
+                },
+                {
+                    "date": 1682695059411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n       border-radius: $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n      // background-repeat: no-repeat;\n-      //background-size: cover;\n+      //background-size: 100;\n       margin-bottom: 30px;\n       min-width:100%;\n min-height:100%;\n \n"
+                },
+                {
+                    "date": 1682695068632,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n       border-radius: $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n      // background-repeat: no-repeat;\n-      //background-size: 100;\n+      background-size: 100%;\n       margin-bottom: 30px;\n       min-width:100%;\n min-height:100%;\n \n"
+                },
+                {
+                    "date": 1682695182615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n       border-radius: $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n      // background-repeat: no-repeat;\n-      background-size: 100%;\n+      background-size: ;\n       margin-bottom: 30px;\n       min-width:100%;\n min-height:100%;\n \n"
+                },
+                {
+                    "date": 1682695199944,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,10 @@\n       height: 223px;\n       border-radius: $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n-     // background-repeat: no-repeat;\n-      background-size: ;\n+     background-repeat: no-repeat;\n+      background-size: contain;\n       margin-bottom: 30px;\n       min-width:100%;\n min-height:100%;\n \n"
+                },
+                {
+                    "date": 1682695209003,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,9 @@\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n      background-repeat: no-repeat;\n       background-size: contain;\n       margin-bottom: 30px;\n-      min-width:100%;\n-min-height:100%;\n+     \n \n       \n      \n      \n"
+                },
+                {
+                    "date": 1682695224215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n       height: 223px;\n       border-radius: $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n-     background-repeat: no-repeat;\n+    // background-repeat: no-repeat;\n       background-size: contain;\n       margin-bottom: 30px;\n      \n \n"
+                },
+                {
+                    "date": 1682695249414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n     // background-repeat: no-repeat;\n       background-size: contain;\n+      wi\n       margin-bottom: 30px;\n      \n \n       \n"
+                },
+                {
+                    "date": 1682695259330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,11 @@\n       height: 223px;\n       border-radius: $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n-    // background-repeat: no-repeat;\n+     background-repeat: no-repeat;\n       background-size: contain;\n-      wi\n+      width: 100%;\n       margin-bottom: 30px;\n      \n \n       \n"
+                },
+                {
+                    "date": 1682695284209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n       border-radius: $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n      background-repeat: no-repeat;\n-      background-size: contain;\n+      background-size: contain ;\n       width: 100%;\n       margin-bottom: 30px;\n      \n \n"
+                },
+                {
+                    "date": 1682695303851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n       border-radius: $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n      background-repeat: no-repeat;\n-      background-size: contain ;\n+      background-size: contain;\n       width: 100%;\n       margin-bottom: 30px;\n      \n \n"
+                },
+                {
+                    "date": 1682695310153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n       border-radius: $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n      background-repeat: no-repeat;\n-      background-size: contain;\n+      background-size: 100% contain;\n       width: 100%;\n       margin-bottom: 30px;\n      \n \n"
+                },
+                {
+                    "date": 1682695317919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n      background-repeat: no-repeat;\n       background-size: 100% contain;\n-      width: 100%;\n+    \n       margin-bottom: 30px;\n      \n \n       \n"
+                },
+                {
+                    "date": 1682695323966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n       border-radius: $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n      background-repeat: no-repeat;\n-      background-size: 100% contain;\n+      background-size: contain;\n     \n       margin-bottom: 30px;\n      \n \n"
+                },
+                {
+                    "date": 1682695419324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n      background-repeat: no-repeat;\n       background-size: contain;\n+      \n     \n       margin-bottom: 30px;\n      \n \n"
+                },
+                {
+                    "date": 1682695438433,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n      background-repeat: no-repeat;\n       background-size: contain;\n-      \n+      background-size: ;\n     \n       margin-bottom: 30px;\n      \n \n"
+                },
+                {
+                    "date": 1682695454419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,11 @@\n       height: 223px;\n       border-radius: $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n-     background-repeat: no-repeat;\n+    \n       background-size: contain;\n-      background-size: ;\n+      background-size: 100%;\n     \n       margin-bottom: 30px;\n      \n \n"
+                },
+                {
+                    "date": 1682695460964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n     \n       background-size: contain;\n       background-size: 100%;\n+      \n     \n       margin-bottom: 30px;\n      \n \n"
+                },
+                {
+                    "date": 1682695467078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,11 @@\n       height: 223px;\n       border-radius: $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n-    \n+     background-repeat: no-repeat;\n       background-size: contain;\n       background-size: 100%;\n-      \n     \n       margin-bottom: 30px;\n      \n \n"
+                },
+                {
+                    "date": 1682695476703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n       height: 223px;\n       border-radius: $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n-     background-repeat: no-repeat;\n+    \n       background-size: contain;\n       background-size: 100%;\n     \n       margin-bottom: 30px;\n"
+                },
+                {
+                    "date": 1682695494850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,11 @@\n       border-radius: $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n     \n-      background-size: contain;\n+      \n       background-size: 100%;\n+      background-repeat: no-repeat;\n     \n       margin-bottom: 30px;\n      \n \n"
+                },
+                {
+                    "date": 1682695589569,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,10 @@\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n     \n       \n       background-size: 100%;\n-      background-repeat: no-repeat;\n+     // background-repeat: no-repeat;\n+      background-size: contain;\n     \n       margin-bottom: 30px;\n      \n \n"
+                },
+                {
+                    "date": 1682695595929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n     \n       \n       background-size: 100%;\n-     // background-repeat: no-repeat;\n+      background-repeat: no-repeat;\n       background-size: contain;\n     \n       margin-bottom: 30px;\n      \n"
+                },
+                {
+                    "date": 1682695602357,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n     \n       \n       background-size: 100%;\n-      background-repeat: no-repeat;\n+      background-repeat: repeat;\n       background-size: contain;\n     \n       margin-bottom: 30px;\n      \n"
+                },
+                {
+                    "date": 1682695608316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n     \n       \n       background-size: 100%;\n-      background-repeat: repeat;\n+      background-repeat: repeat 1;\n       background-size: contain;\n     \n       margin-bottom: 30px;\n      \n"
+                },
+                {
+                    "date": 1682695613695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n     \n       \n       background-size: 100%;\n-      background-repeat: repeat 1;\n+      background-repeat: repeat 0;\n       background-size: contain;\n     \n       margin-bottom: 30px;\n      \n"
+                },
+                {
+                    "date": 1682695645698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n     \n       \n       background-size: 100%;\n-      background-repeat: repeat 0;\n+      background-repeat: repeat;\n       background-size: contain;\n     \n       margin-bottom: 30px;\n      \n"
+                },
+                {
+                    "date": 1682695661895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n     \n       \n       background-size: 100%;\n-      background-repeat: repeat;\n-      background-size: contain;\n+      background-repeat: repeat-y;\n+      //background-size: contain;\n     \n       margin-bottom: 30px;\n      \n \n"
+                },
+                {
+                    "date": 1682695684719,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n     \n       \n       background-size: 100%;\n-      background-repeat: repeat-y;\n+      background-repeat: repeat-x;\n       //background-size: contain;\n     \n       margin-bottom: 30px;\n      \n"
+                },
+                {
+                    "date": 1682695692164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n     \n       \n       background-size: 100%;\n-      background-repeat: repeat-x;\n+      background-repeat:no;\n       //background-size: contain;\n     \n       margin-bottom: 30px;\n      \n"
+                },
+                {
+                    "date": 1682695698616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,10 @@\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n     \n       \n       background-size: 100%;\n-      background-repeat:no;\n+      background-repeat:no-repeat;\n+      \n       //background-size: contain;\n     \n       margin-bottom: 30px;\n      \n"
+                },
+                {
+                    "date": 1682695704032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     \n       \n       background-size: 100%;\n       background-repeat:no-repeat;\n-      \n+      background-position: ;\n       //background-size: contain;\n     \n       margin-bottom: 30px;\n      \n"
+                },
+                {
+                    "date": 1682695714018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     \n       \n       background-size: 100%;\n       background-repeat:no-repeat;\n-      background-position: ;\n+      background-position: 0px;\n       //background-size: contain;\n     \n       margin-bottom: 30px;\n      \n"
+                },
+                {
+                    "date": 1682695746499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,8 @@\n       \n       background-size: 100%;\n       background-repeat:no-repeat;\n       background-position: 0px;\n-      //background-size: contain;\n     \n       margin-bottom: 30px;\n      \n \n"
+                },
+                {
+                    "date": 1682695756322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,14 +5,11 @@\n       height: 223px;\n       border-radius: $brxs;\n       background-image:  url(\"../../assets/images/apropos.jpg\");\n      // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n-    \n-      \n       background-size: 100%;\n       background-repeat:no-repeat;\n       background-position: 0px;\n-    \n       margin-bottom: 30px;\n      \n \n       \n"
+                },
+                {
+                    "date": 1682695779061,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,8 @@\n       background-size: 100%;\n       background-repeat:no-repeat;\n       background-position: 0px;\n       margin-bottom: 30px;\n-     \n \n       \n      \n      \n"
+                },
+                {
+                    "date": 1682695796619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,16 +9,12 @@\n       background-size: 100%;\n       background-repeat:no-repeat;\n       background-position: 0px;\n       margin-bottom: 30px;\n-\n-      \n-     \n-     \n   }\n \n .informations{\n-@include dropdown ;\n-display: flex;\n-flex-direction: column;\n+  @include dropdown ;\n+  display: flex;\n+  flex-direction: column;\n //font-size: 24px;\n }\n"
+                },
+                {
+                    "date": 1682695820385,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       margin-bottom: 30px;\n   }\n \n .informations{\n-  @include dropdown ;\n-  display: flex;\n-  flex-direction: column;\n+@include dropdown ;\n+display: flex;\n+flex-direction: column;\n //font-size: 24px;\n }\n"
+                },
+                {
+                    "date": 1682695831040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       margin-bottom: 30px;\n   }\n \n .informations{\n-@include dropdown ;\n-display: flex;\n-flex-direction: column;\n+  @include dropdown ;\n+  display: flex;\n+  flex-direction: column;\n //font-size: 24px;\n }\n"
+                },
+                {
+                    "date": 1682695840729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,8 @@\n       background-repeat:no-repeat;\n       background-position: 0px;\n       margin-bottom: 30px;\n   }\n-\n .informations{\n   @include dropdown ;\n   display: flex;\n   flex-direction: column;\n"
+                },
+                {
+                    "date": 1682695848832,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,17 @@\n @import '../settings/settings.scss';\n \n .container_about{\n-      width: 100%; \n-      height: 223px;\n-      border-radius: $brxs;\n-      background-image:  url(\"../../assets/images/apropos.jpg\");\n-     // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n-      background-size: 100%;\n-      background-repeat:no-repeat;\n-      background-position: 0px;\n-      margin-bottom: 30px;\n-  }\n+  width: 100%; \n+  height: 223px;\n+  border-radius: $brxs;\n+  background-image:  url(\"../../assets/images/apropos.jpg\");\n+  // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n+  background-size: 100%;\n+  background-repeat:no-repeat;\n+  background-position: 0px;\n+  margin-bottom: 30px;\n+}\n .informations{\n   @include dropdown ;\n   display: flex;\n   flex-direction: column;\n"
+                },
+                {
+                    "date": 1682695855167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,6 +14,5 @@\n .informations{\n   @include dropdown ;\n   display: flex;\n   flex-direction: column;\n-//font-size: 24px;\n }\n"
+                },
+                {
+                    "date": 1682869140939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+@import '../settings/settings.scss';\n+\n+.container_about{\n+  width: 100%; \n+  height: 223px;\n+  border-radius: $brxs;\n+  background-image:  url(\"../../assets/images/apropos.jpg\");\n+  // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n+  background-size: 100%;\n+  background-repeat:no-repeat;\n+  background-position: 0px;\n+  margin-bottom: 30px;\n+}\n+.informations{\n+  @include dropdown ;\n+  display: flex;\n+  flex-direction: column;\n+}\n"
+                },
+                {
+                    "date": 1682958826101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+@import '../settings/settings.scss';\n+\n+.container_about{\n+  width: 100%; \n+  height: 223px;\n+  border-radius: $brxs;\n+  background-image:  url(\"../../assets/images/apropos.jpg\");\n+  background-size: 100%;\n+  background-repeat:no-repeat;\n+  background-position: 0px;\n+  margin-bottom: 30px;\n+}\n+.informations{\n+  @include dropdown ;\n+  display: flex;\n+  flex-direction: column;\n+}\n"
+                },
+                {
+                    "date": 1682958838710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,46 +8,11 @@\n   background-size: 100%;\n   background-repeat:no-repeat;\n   background-position: 0px;\n   margin-bottom: 30px;\n+  \n }\n .informations{\n   @include dropdown ;\n   display: flex;\n   flex-direction: column;\n }\n-@import '../settings/settings.scss';\n-\n-.container_about{\n-  width: 100%; \n-  height: 223px;\n-  border-radius: $brxs;\n-  background-image:  url(\"../../assets/images/apropos.jpg\");\n-  // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n-  background-size: 100%;\n-  background-repeat:no-repeat;\n-  background-position: 0px;\n-  margin-bottom: 30px;\n-}\n-.informations{\n-  @include dropdown ;\n-  display: flex;\n-  flex-direction: column;\n-}\n-@import '../settings/settings.scss';\n-\n-.container_about{\n-  width: 100%; \n-  height: 223px;\n-  border-radius: $brxs;\n-  background-image:  url(\"../../assets/images/apropos.jpg\");\n-  // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n-  background-size: 100%;\n-  background-repeat:no-repeat;\n-  background-position: 0px;\n-  margin-bottom: 30px;\n-}\n-.informations{\n-  @include dropdown ;\n-  display: flex;\n-  flex-direction: column;\n-}\n"
+                },
+                {
+                    "date": 1682958900652,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,7 +12,10 @@\n   \n }\n .informations{\n   @include dropdown ;\n-  display: flex;\n+  //display: flex;\n   flex-direction: column;\n+  @include media_tablet{\n+    font-size: $text *2;\n }\n+}\n"
+                },
+                {
+                    "date": 1682958954630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,11 +11,11 @@\n   margin-bottom: 30px;\n   \n }\n .informations{\n-  @include dropdown ;\n+  //@include dropdown ;\n   //display: flex;\n-  flex-direction: column;\n+  //flex-direction: column;\n   @include media_tablet{\n     font-size: $text *2;\n }\n }\n"
+                },
+                {
+                    "date": 1683022845132,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   margin-bottom: 30px;\n   \n }\n .informations{\n-  //@include dropdown ;\n+  @include dropdown ;\n   //display: flex;\n   //flex-direction: column;\n   @include media_tablet{\n     font-size: $text *2;\n"
+                },
+                {
+                    "date": 1683022951506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,8 @@\n   \n }\n .informations{\n   @include dropdown ;\n-  //display: flex;\n-  //flex-direction: column;\n   @include media_tablet{\n     font-size: $text *2;\n }\n }\n"
+                },
+                {
+                    "date": 1683022966636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,6 +14,7 @@\n .informations{\n   @include dropdown ;\n   @include media_tablet{\n     font-size: $text *2;\n+    \n }\n }\n"
+                },
+                {
+                    "date": 1683022972456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,7 +14,7 @@\n .informations{\n   @include dropdown ;\n   @include media_tablet{\n     font-size: $text *2;\n-    \n+    h3{}\n }\n }\n"
+                },
+                {
+                    "date": 1683022979239,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,7 +14,9 @@\n .informations{\n   @include dropdown ;\n   @include media_tablet{\n     font-size: $text *2;\n-    h3{}\n+    h3{\n+      fon\n+    }\n }\n }\n"
+                },
+                {
+                    "date": 1683022985856,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,8 @@\n   @include dropdown ;\n   @include media_tablet{\n     font-size: $text *2;\n     h3{\n-      fon\n+      font-size: ;\n     }\n }\n }\n"
+                },
+                {
+                    "date": 1683023020039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n }\n .informations{\n   @include dropdown ;\n   @include media_tablet{\n+    \n     font-size: $text *2;\n     h3{\n       font-size: ;\n     }\n"
+                },
+                {
+                    "date": 1683023056502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n }\n .informations{\n   @include dropdown ;\n   @include media_tablet{\n-    \n+    h\"\n     font-size: $text *2;\n     h3{\n       font-size: ;\n     }\n"
+                },
+                {
+                    "date": 1683023062868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n }\n .informations{\n   @include dropdown ;\n   @include media_tablet{\n-    h\"\n+    h3{}\n     font-size: $text *2;\n     h3{\n       font-size: ;\n     }\n"
+                },
+                {
+                    "date": 1683023069506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,11 +13,11 @@\n }\n .informations{\n   @include dropdown ;\n   @include media_tablet{\n-    h3{}\n+    h3{\n     font-size: $text *2;\n-    h3{\n+   \n       font-size: ;\n     }\n }\n }\n"
+                },
+                {
+                    "date": 1683023092441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,11 +13,11 @@\n }\n .informations{\n   @include dropdown ;\n   @include media_tablet{\n-    h3{\n+    h{\n     font-size: $text *2;\n    \n-      font-size: ;\n+   \n     }\n }\n }\n"
+                },
+                {
+                    "date": 1683023109836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n }\n .informations{\n   @include dropdown ;\n   @include media_tablet{\n-    h{\n+    h4 {\n     font-size: $text *2;\n    \n    \n     }\n"
+                },
+                {
+                    "date": 1683023133319,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n }\n .informations{\n   @include dropdown ;\n   @include media_tablet{\n-    h4 {\n+    h4 p{\n     font-size: $text *2;\n    \n    \n     }\n"
+                },
+                {
+                    "date": 1683023246949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,12 +12,6 @@\n   \n }\n .informations{\n   @include dropdown ;\n-  @include media_tablet{\n-    h4 p{\n-    font-size: $text *2;\n-   \n-   \n-    }\n+  \n }\n-}\n"
+                },
+                {
+                    "date": 1683108658460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n   background-size: 100%;\n   background-repeat:no-repeat;\n   background-position: 0px;\n   margin-bottom: 30px;\n-  \n }\n .informations{\n   @include dropdown ;\n   \n"
+                },
+                {
+                    "date": 1683108666489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,6 +11,5 @@\n   margin-bottom: 30px;\n }\n .informations{\n   @include dropdown ;\n-  \n-}\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683110040978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-@import '../settings/settings.scss';\n+//@import '../settings/settings.scss';\n \n .container_about{\n   width: 100%; \n   height: 223px;\n"
+                },
+                {
+                    "date": 1683118417157,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-//@import '../settings/settings.scss';\n+@import '../settings/settings.scss';\n \n .container_about{\n   width: 100%; \n   height: 223px;\n"
+                }
+            ],
+            "date": 1682443275171,
+            "name": "Commit-0",
+            "content": "\n\n//@import '../utils/_variables.scss';\n@import '.. _mixins.scss';\n\n.container_about{\n   \n    display: flex;\n    flex-direction: column;\n      width: 100%; \n      height: 400px;\n      border-radius: var(--br-6xl);\n      background-image:  url(\"../../assets/images/-section-1@2x.png\");\n     // linear-gradient:(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));\n      background-repeat: no-repeat;\n      background-size: 100%;\n     \n  }\n\n.informations{\n@include dropdown ;\ndisplay: flex;\nflex-direction: column;\nfont-size: 24px;\n}\n"
+        }
+    ]
+}

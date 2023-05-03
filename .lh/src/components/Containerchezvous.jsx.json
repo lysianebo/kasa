@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/components/Containerchezvous.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1682446663883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1682508944766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n \n const Containerchezvous = () => {\n     return (\n         <div className='container_chezvous'>\n+            \n             <h1>Chez vous, partout et ailleurs</h1>\n         </div>\n     );\n };\n"
+                },
+                {
+                    "date": 1682508962584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n const Containerchezvous = () => {\n     return (\n         <div className='container_chezvous'>\n-            im\n+            img\n             <h1>Chez vous, partout et ailleurs</h1>\n         </div>\n     );\n };\n"
+                },
+                {
+                    "date": 1682509627106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import '../styles/components/_containerChezVous.scss'\n import'../../assets/images/containerChezVous.png'\n \n import React from 'react';\n-function \n+function i\n \n const Containerchezvous = () => {\n     return (\n         <div className='container_chezvous'>\n"
+                }
+            ],
+            "date": 1682446663883,
+            "name": "Commit-0",
+            "content": "import '../styles/components/_containerChezVous.scss'\n\nimport React from 'react';\n\nconst Containerchezvous = () => {\n    return (\n        <div className='container_chezvous'>\n            <h1>Chez vous, partout et ailleurs</h1>\n        </div>\n    );\n};\n\nexport default Containerchezvous;"
+        }
+    ]
+}

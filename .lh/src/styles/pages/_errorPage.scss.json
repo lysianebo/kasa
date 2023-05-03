@@ -1,0 +1,366 @@
+{
+    "sourceFile": "src/styles/pages/_errorPage.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 87,
+            "patches": [
+                {
+                    "date": 1683018405365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1683018430259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,10 @@\n line-height: 51px;\n \n \n }\n-21/07/2022\n+@include media_tablet{\n+    font-size: $text *2;\n+}\n \n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683018459138,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n \n \n }\n @include media_tablet{\n-    font-size: $text *2;\n+    font-size: 2;\n }\n \n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683018482712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,8 @@\n font-size: 288px;\n font-weight: 700;\n line-height: 411px;\n \n-\n }\n h2{\n font-size: 36px;\n font-weight: 500;\n"
+                },
+                {
+                    "date": 1683018509901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,8 @@\n     \n font-size: 288px;\n font-weight: 700;\n line-height: 411px;\n-\n }\n h2{\n font-size: 36px;\n font-weight: 500;\n"
+                },
+                {
+                    "date": 1683018516355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,10 +23,8 @@\n font-size: 36px;\n font-weight: 500;\n font-size: 36px;\n line-height: 51px;\n-\n-\n }\n @include media_tablet{\n     font-size: 2;\n }\n"
+                },
+                {
+                    "date": 1683018557386,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+@import '../settings/settings.scss';\n \n .container_error{\n     color : #ff6060;\n     display: flex;\n"
+                },
+                {
+                    "date": 1683018584588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,9 @@\n font-size: 36px;\n line-height: 51px;\n }\n @include media_tablet{\n+    \n     font-size: 2;\n }\n \n \n"
+                },
+                {
+                    "date": 1683018591605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n font-size: 36px;\n line-height: 51px;\n }\n @include media_tablet{\n-    \n+    h1{}\n     font-size: 2;\n }\n \n \n"
+                },
+                {
+                    "date": 1683018600156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,10 +26,12 @@\n font-size: 36px;\n line-height: 51px;\n }\n @include media_tablet{\n-    h1{}\n-    font-size: 2;\n+    h1{\n+\n+    }\n+   \n }\n \n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683018609491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,9 @@\n line-height: 51px;\n }\n @include media_tablet{\n     h1{\n+        font-size: 288px;\n \n     }\n    \n }\n"
+                },
+                {
+                    "date": 1683018630377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     }\n \n h1{\n     \n-font-size: 288px;\n+font-size: px;\n font-weight: 700;\n line-height: 411px;\n }\n h2{\n"
+                },
+                {
+                    "date": 1683018653579,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     }\n \n h1{\n     \n-font-size: px;\n+font-size: 96px;\n font-weight: 700;\n line-height: 411px;\n }\n h2{\n@@ -30,8 +30,12 @@\n     h1{\n         font-size: 288px;\n \n     }\n+    h1{\n+        font-size: 288px;\n+\n+    }\n    \n }\n \n \n"
+                },
+                {
+                    "date": 1683018666161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,10 +30,10 @@\n     h1{\n         font-size: 288px;\n \n     }\n-    h1{\n-        font-size: 288px;\n+    h2{\n+        font-size: px;\n \n     }\n    \n }\n"
+                },
+                {
+                    "date": 1683018675231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n font-weight: 700;\n line-height: 411px;\n }\n h2{\n-font-size: 36px;\n+font-size: px;\n font-weight: 500;\n font-size: 36px;\n line-height: 51px;\n }\n@@ -31,9 +31,9 @@\n         font-size: 288px;\n \n     }\n     h2{\n-        font-size: px;\n+        font-size: 36px;\n \n     }\n    \n }\n"
+                },
+                {
+                    "date": 1683018730888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n font-weight: 700;\n line-height: 411px;\n }\n h2{\n-font-size: px;\n+font-size: 18px;\n font-weight: 500;\n font-size: 36px;\n line-height: 51px;\n }\n"
+                },
+                {
+                    "date": 1683018743262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n font-weight: 700;\n line-height: 411px;\n }\n h2{\n-font-size: 18px;\n+font-size: 8px;\n font-weight: 500;\n font-size: 36px;\n line-height: 51px;\n }\n"
+                },
+                {
+                    "date": 1683018803797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n font-weight: 700;\n line-height: 411px;\n }\n h2{\n-font-size: 8px;\n+font-size: 18px;\n font-weight: 500;\n font-size: 36px;\n line-height: 51px;\n }\n"
+                },
+                {
+                    "date": 1683018825009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,8 @@\n }\n h2{\n font-size: 18px;\n font-weight: 500;\n-font-size: 36px;\n line-height: 51px;\n }\n @include media_tablet{\n     h1{\n"
+                },
+                {
+                    "date": 1683018857066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,8 @@\n }\n h2{\n font-size: 18px;\n font-weight: 500;\n-line-height: 51px;\n }\n @include media_tablet{\n     h1{\n         font-size: 288px;\n"
+                },
+                {
+                    "date": 1683018896827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,8 @@\n     line-height: 411px;\n     }\n \n h1{\n-    \n font-size: 96px;\n font-weight: 700;\n line-height: 411px;\n }\n"
+                },
+                {
+                    "date": 1683018902969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,12 +14,12 @@\n     line-height: 411px;\n     }\n \n h1{\n-font-size: 96px;\n-font-weight: 700;\n-line-height: 411px;\n-}\n+    font-size: 96px;\n+    font-weight: 700;\n+    line-height: 411px;\n+    }\n h2{\n font-size: 18px;\n font-weight: 500;\n }\n"
+                },
+                {
+                    "date": 1683018909363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,8 @@\n .container_error{\n     color : #ff6060;\n     display: flex;\n     flex-direction: column;\n-   // flex-wrap: wrap;\n     justify-content: space-between;\n     align-items: center;\n    height: 500px;\n     & a {\n"
+                },
+                {
+                    "date": 1683018923877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     display: flex;\n     flex-direction: column;\n     justify-content: space-between;\n     align-items: center;\n-   height: 500px;\n+   // height: 500px;\n     & a {\n     text-decoration: underline;\n     font-size: 18px;\n     line-height: 411px;\n"
+                },
+                {
+                    "date": 1683018946697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n    // height: 500px;\n     & a {\n     text-decoration: underline;\n     font-size: 18px;\n-    line-height: 411px;\n+    //line-height: 411px;\n     }\n \n h1{\n     font-size: 96px;\n"
+                },
+                {
+                    "date": 1683018956195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n    // height: 500px;\n     & a {\n     text-decoration: underline;\n     font-size: 18px;\n-    //line-height: 411px;\n+    line-height: 411px;\n     }\n \n h1{\n     font-size: 96px;\n"
+                },
+                {
+                    "date": 1683018978971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,11 +18,11 @@\n     font-weight: 700;\n     line-height: 411px;\n     }\n h2{\n-font-size: 18px;\n-font-weight: 500;\n-}\n+    font-size: 18px;\n+    font-weight: 500;\n+    }\n @include media_tablet{\n     h1{\n         font-size: 288px;\n \n"
+                },
+                {
+                    "date": 1683018984554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,8 @@\n     }\n @include media_tablet{\n     h1{\n         font-size: 288px;\n-\n     }\n     h2{\n         font-size: 36px;\n \n"
+                },
+                {
+                    "date": 1683019009537,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,16 +20,16 @@\n     }\n h2{\n     font-size: 18px;\n     font-weight: 500;\n+    text-align: center;\n     }\n @include media_tablet{\n     h1{\n         font-size: 288px;\n     }\n     h2{\n         font-size: 36px;\n-\n     }\n    \n }\n \n"
+                },
+                {
+                    "date": 1683019061549,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,9 @@\n h2{\n     font-size: 18px;\n     font-weight: 500;\n     text-align: center;\n+    \n     }\n @include media_tablet{\n     h1{\n         font-size: 288px;\n"
+                },
+                {
+                    "date": 1683019067522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n h2{\n     font-size: 18px;\n     font-weight: 500;\n     text-align: center;\n-    \n+    width: 260;\n     }\n @include media_tablet{\n     h1{\n         font-size: 288px;\n"
+                },
+                {
+                    "date": 1683019077669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n h2{\n     font-size: 18px;\n     font-weight: 500;\n     text-align: center;\n-    width: 260;\n+    width: 20px;\n     }\n @include media_tablet{\n     h1{\n         font-size: 288px;\n"
+                },
+                {
+                    "date": 1683019116855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n h2{\n     font-size: 18px;\n     font-weight: 500;\n     text-align: center;\n-    width: 20px;\n+    width: 210px;\n     }\n @include media_tablet{\n     h1{\n         font-size: 288px;\n"
+                },
+                {
+                    "date": 1683019125883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n h2{\n     font-size: 18px;\n     font-weight: 500;\n     text-align: center;\n-    width: 210px;\n+    width: 20px;\n     }\n @include media_tablet{\n     h1{\n         font-size: 288px;\n"
+                },
+                {
+                    "date": 1683019516667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,10 @@\n h2{\n     font-size: 18px;\n     font-weight: 500;\n     text-align: center;\n-    width: 20px;\n+    width: 220px;\n+    flex-direction: ;\n     }\n @include media_tablet{\n     h1{\n         font-size: 288px;\n"
+                },
+                {
+                    "date": 1683019534349,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,10 +21,10 @@\n h2{\n     font-size: 18px;\n     font-weight: 500;\n     text-align: center;\n-    width: 220px;\n-    flex-direction: ;\n+  //  width: 220px;\n+    flex-direction: column;\n     }\n @include media_tablet{\n     h1{\n         font-size: 288px;\n"
+                },
+                {
+                    "date": 1683019550613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,9 @@\n     font-size: 18px;\n     font-weight: 500;\n     text-align: center;\n   //  width: 220px;\n+  \n     flex-direction: column;\n     }\n @include media_tablet{\n     h1{\n"
+                },
+                {
+                    "date": 1683019618004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,10 +21,9 @@\n h2{\n     font-size: 18px;\n     font-weight: 500;\n     text-align: center;\n-  //  width: 220px;\n-  \n+  display: flex;\n     flex-direction: column;\n     }\n @include media_tablet{\n     h1{\n"
+                },
+                {
+                    "date": 1683019633106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,17 +21,18 @@\n h2{\n     font-size: 18px;\n     font-weight: 500;\n     text-align: center;\n-  display: flex;\n+    display: flex;\n     flex-direction: column;\n     }\n @include media_tablet{\n     h1{\n         font-size: 288px;\n     }\n     h2{\n         font-size: 36px;\n+        \n     }\n    \n }\n \n"
+                },
+                {
+                    "date": 1683019639015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n         font-size: 288px;\n     }\n     h2{\n         font-size: 36px;\n-        \n+        flex-direction: row;\n     }\n    \n }\n \n"
+                },
+                {
+                    "date": 1683020060352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     display: flex;\n     flex-direction: column;\n     justify-content: space-between;\n     align-items: center;\n-   // height: 500px;\n+    height: 500px;\n     & a {\n     text-decoration: underline;\n     font-size: 18px;\n     line-height: 411px;\n"
+                },
+                {
+                    "date": 1683020066712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     display: flex;\n     flex-direction: column;\n     justify-content: space-between;\n     align-items: center;\n-    height: 500px;\n+   // height: 500px;\n     & a {\n     text-decoration: underline;\n     font-size: 18px;\n     line-height: 411px;\n"
+                },
+                {
+                    "date": 1683020093451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n    // height: 500px;\n     & a {\n     text-decoration: underline;\n     font-size: 18px;\n-    line-height: 411px;\n+    line-height: 41px;\n     }\n \n h1{\n     font-size: 96px;\n"
+                },
+                {
+                    "date": 1683020101065,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n    // height: 500px;\n     & a {\n     text-decoration: underline;\n     font-size: 18px;\n-    line-height: 41px;\n+    line-height: 100px;\n     }\n \n h1{\n     font-size: 96px;\n"
+                },
+                {
+                    "date": 1683021721894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,8 @@\n     display: flex;\n     flex-direction: column;\n     justify-content: space-between;\n     align-items: center;\n-   // height: 500px;\n     & a {\n     text-decoration: underline;\n     font-size: 18px;\n     line-height: 100px;\n"
+                },
+                {
+                    "date": 1683021731376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,8 @@\n     h2{\n         font-size: 36px;\n         flex-direction: row;\n     }\n-   \n }\n \n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683021738035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,5 @@\n     h2{\n         font-size: 36px;\n         flex-direction: row;\n     }\n-}\n-\n-\n-}\n\\ No newline at end of file\n+}}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683021771047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,13 +23,14 @@\n     text-align: center;\n     display: flex;\n     flex-direction: column;\n     }\n-@include media_tablet{\n-    h1{\n-        font-size: 288px;\n-    }\n-    h2{\n-        font-size: 36px;\n-        flex-direction: row;\n-    }\n-}}\n\\ No newline at end of file\n+    @include media_tablet{\n+        h1{\n+            font-size: 288px;\n+        }\n+        h2{\n+            font-size: 36px;\n+            flex-direction: row;\n+        }\n+}\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683021777473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,6 +31,6 @@\n         h2{\n             font-size: 36px;\n             flex-direction: row;\n         }\n-}\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683021798729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n \n h1{\n     font-size: 96px;\n     font-weight: 700;\n-    line-height: 411px;\n+    line-height: 11px;\n     }\n h2{\n     font-size: 18px;\n     font-weight: 500;\n"
+                },
+                {
+                    "date": 1683021816851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n \n h1{\n     font-size: 96px;\n     font-weight: 700;\n-    line-height: 11px;\n+    line-height: 31px;\n     }\n h2{\n     font-size: 18px;\n     font-weight: 500;\n"
+                },
+                {
+                    "date": 1683021826265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n \n h1{\n     font-size: 96px;\n     font-weight: 700;\n-    line-height: 31px;\n+    line-height: 341px;\n     }\n h2{\n     font-size: 18px;\n     font-weight: 500;\n"
+                },
+                {
+                    "date": 1683021859054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     align-items: center;\n     & a {\n     text-decoration: underline;\n     font-size: 18px;\n-    line-height: 100px;\n+    line-height: 10px;\n     }\n \n h1{\n     font-size: 96px;\n"
+                },
+                {
+                    "date": 1683021874636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     align-items: center;\n     & a {\n     text-decoration: underline;\n     font-size: 18px;\n-    line-height: 10px;\n+    line-height: 190px;\n     }\n \n h1{\n     font-size: 96px;\n"
+                },
+                {
+                    "date": 1683021882020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     align-items: center;\n     & a {\n     text-decoration: underline;\n     font-size: 18px;\n-    line-height: 190px;\n+    line-height: 100px;\n     }\n \n h1{\n     font-size: 96px;\n"
+                },
+                {
+                    "date": 1683021914455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n \n h1{\n     font-size: 96px;\n     font-weight: 700;\n-    line-height: 341px;\n+    line-height: 31px;\n     }\n h2{\n     font-size: 18px;\n     font-weight: 500;\n"
+                },
+                {
+                    "date": 1683021923986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n \n h1{\n     font-size: 96px;\n     font-weight: 700;\n-    line-height: 31px;\n+  //  line-height: 31px;\n     }\n h2{\n     font-size: 18px;\n     font-weight: 500;\n"
+                },
+                {
+                    "date": 1683021940213,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     align-items: center;\n     & a {\n     text-decoration: underline;\n     font-size: 18px;\n-    line-height: 100px;\n+    line-height: 200px;\n     }\n \n h1{\n     font-size: 96px;\n"
+                },
+                {
+                    "date": 1683021954553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n \n h1{\n     font-size: 96px;\n     font-weight: 700;\n-  //  line-height: 31px;\n+  line-height: 31px;\n     }\n h2{\n     font-size: 18px;\n     font-weight: 500;\n"
+                },
+                {
+                    "date": 1683021962187,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n \n h1{\n     font-size: 96px;\n     font-weight: 700;\n-  line-height: 31px;\n+  line-height: 200px;\n     }\n h2{\n     font-size: 18px;\n     font-weight: 500;\n"
+                },
+                {
+                    "date": 1683021974345,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n .container_error{\n     color : #ff6060;\n     display: flex;\n     flex-direction: column;\n-    justify-content: space-between;\n+   // justify-content: space-between;\n     align-items: center;\n     & a {\n     text-decoration: underline;\n     font-size: 18px;\n"
+                },
+                {
+                    "date": 1683021982442,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     color : #ff6060;\n     display: flex;\n     flex-direction: column;\n    // justify-content: space-between;\n-    align-items: center;\n+    //align-items: center;\n     & a {\n     text-decoration: underline;\n     font-size: 18px;\n     line-height: 200px;\n"
+                },
+                {
+                    "date": 1683021989642,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     color : #ff6060;\n     display: flex;\n     flex-direction: column;\n    // justify-content: space-between;\n-    //align-items: center;\n+    align-items: center;\n     & a {\n     text-decoration: underline;\n     font-size: 18px;\n     line-height: 200px;\n"
+                },
+                {
+                    "date": 1683021995752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n .container_error{\n     color : #ff6060;\n     display: flex;\n     flex-direction: column;\n-   // justify-content: space-between;\n+   justify-content: space-between;\n     align-items: center;\n     & a {\n     text-decoration: underline;\n     font-size: 18px;\n"
+                },
+                {
+                    "date": 1683022011206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n .container_error{\n     color : #ff6060;\n     display: flex;\n     flex-direction: column;\n-   justify-content: space-between;\n+   justify-content: fle;\n     align-items: center;\n     & a {\n     text-decoration: underline;\n     font-size: 18px;\n"
+                },
+                {
+                    "date": 1683022022252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,8 @@\n .container_error{\n     color : #ff6060;\n     display: flex;\n     flex-direction: column;\n-   justify-content: fle;\n     align-items: center;\n     & a {\n     text-decoration: underline;\n     font-size: 18px;\n"
+                },
+                {
+                    "date": 1683022029116,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n \n h1{\n     font-size: 96px;\n     font-weight: 700;\n-  line-height: 200px;\n+  line-height: 00px;\n     }\n h2{\n     font-size: 18px;\n     font-weight: 500;\n"
+                },
+                {
+                    "date": 1683022039155,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n \n h1{\n     font-size: 96px;\n     font-weight: 700;\n-  line-height: 00px;\n+  line-height: 0px;\n     }\n h2{\n     font-size: 18px;\n     font-weight: 500;\n"
+                },
+                {
+                    "date": 1683022045857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n \n h1{\n     font-size: 96px;\n     font-weight: 700;\n-  line-height: 0px;\n+  line-height: 20px;\n     }\n h2{\n     font-size: 18px;\n     font-weight: 500;\n"
+                },
+                {
+                    "date": 1683022071237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n \n h1{\n     font-size: 96px;\n     font-weight: 700;\n-  line-height: 20px;\n+  line-height: 240px;\n     }\n h2{\n     font-size: 18px;\n     font-weight: 500;\n"
+                },
+                {
+                    "date": 1683022095476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     text-align: center;\n     display: flex;\n     flex-direction: column;\n     }\n-    @include media_tablet{\n+    @include media_desktop{\n         h1{\n             font-size: 288px;\n         }\n         h2{\n"
+                },
+                {
+                    "date": 1683022113990,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,9 @@\n     display: flex;\n     flex-direction: column;\n     }\n     @include media_desktop{\n+        \n         h1{\n             font-size: 288px;\n         }\n         h2{\n"
+                },
+                {
+                    "date": 1683022119753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     display: flex;\n     flex-direction: column;\n     }\n     @include media_desktop{\n-        \n+        height: 100%;\n         h1{\n             font-size: 288px;\n         }\n         h2{\n"
+                },
+                {
+                    "date": 1683022133786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     display: flex;\n     flex-direction: column;\n     }\n     @include media_desktop{\n-        height: 100%;\n+      //  height: 100%;\n         h1{\n             font-size: 288px;\n         }\n         h2{\n"
+                },
+                {
+                    "date": 1683022240653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     display: flex;\n     flex-direction: column;\n     }\n     @include media_desktop{\n-      //  height: 100%;\n+        height: 100%;\n         h1{\n             font-size: 288px;\n         }\n         h2{\n"
+                },
+                {
+                    "date": 1683022248968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     display: flex;\n     flex-direction: column;\n     }\n     @include media_desktop{\n-        height: 100%;\n+        height: 500px;\n         h1{\n             font-size: 288px;\n         }\n         h2{\n"
+                },
+                {
+                    "date": 1683022257567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     display: flex;\n     flex-direction: column;\n     }\n     @include media_desktop{\n-        height: 500px;\n+        height: 1000px;\n         h1{\n             font-size: 288px;\n         }\n         h2{\n"
+                },
+                {
+                    "date": 1683022286629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,9 @@\n     @include media_desktop{\n         height: 1000px;\n         h1{\n             font-size: 288px;\n+            \n         }\n         h2{\n             font-size: 36px;\n             flex-direction: row;\n"
+                },
+                {
+                    "date": 1683022294342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     @include media_desktop{\n         height: 1000px;\n         h1{\n             font-size: 288px;\n-            \n+            line-height: 440px;\n         }\n         h2{\n             font-size: 36px;\n             flex-direction: row;\n"
+                },
+                {
+                    "date": 1683022299902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     @include media_desktop{\n         height: 1000px;\n         h1{\n             font-size: 288px;\n-            line-height: 440px;\n+            line-height: 540px;\n         }\n         h2{\n             font-size: 36px;\n             flex-direction: row;\n"
+                },
+                {
+                    "date": 1683022320094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,8 @@\n     display: flex;\n     flex-direction: column;\n     }\n     @include media_desktop{\n-        height: 1000px;\n         h1{\n             font-size: 288px;\n             line-height: 540px;\n         }\n"
+                },
+                {
+                    "date": 1683022778846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n     }\n     @include media_desktop{\n         h1{\n             font-size: 288px;\n-            line-height: 540px;\n+            line-height: 50px;\n         }\n         h2{\n             font-size: 36px;\n             flex-direction: row;\n"
+                },
+                {
+                    "date": 1683022787839,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n     }\n     @include media_desktop{\n         h1{\n             font-size: 288px;\n-            line-height: 50px;\n+            line-height: 500px;\n         }\n         h2{\n             font-size: 36px;\n             flex-direction: row;\n"
+                },
+                {
+                    "date": 1683022793847,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n     }\n     @include media_desktop{\n         h1{\n             font-size: 288px;\n-            line-height: 500px;\n+            line-height: 480px;\n         }\n         h2{\n             font-size: 36px;\n             flex-direction: row;\n"
+                },
+                {
+                    "date": 1683022799994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n     }\n     @include media_desktop{\n         h1{\n             font-size: 288px;\n-            line-height: 480px;\n+            line-height: 380px;\n         }\n         h2{\n             font-size: 36px;\n             flex-direction: row;\n"
+                },
+                {
+                    "date": 1683062031831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,8 @@\n     text-decoration: underline;\n     font-size: 18px;\n     line-height: 200px;\n     }\n-\n h1{\n     font-size: 96px;\n     font-weight: 700;\n   line-height: 240px;\n"
+                },
+                {
+                    "date": 1683110065684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n @import '../settings/settings.scss';\n \n .container_error{\n-    color : #ff6060;\n+    color : ;\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n     & a {\n"
+                },
+                {
+                    "date": 1683110096956,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n @import '../settings/settings.scss';\n \n .container_error{\n-    color : ;\n+    color : $primary-color;\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n     & a {\n"
+                }
+            ],
+            "date": 1683018405365,
+            "name": "Commit-0",
+            "content": "\n.container_error{\n    color : #ff6060;\n    display: flex;\n    flex-direction: column;\n   // flex-wrap: wrap;\n    justify-content: space-between;\n    align-items: center;\n   height: 500px;\n    & a {\n    text-decoration: underline;\n    font-size: 18px;\n    line-height: 411px;\n    }\n\nh1{\n    \nfont-size: 288px;\nfont-weight: 700;\nline-height: 411px;\n\n\n}\nh2{\nfont-size: 36px;\nfont-weight: 500;\nfont-size: 36px;\nline-height: 51px;\n\n\n}\n21/07/2022\n\n\n}"
+        }
+    ]
+}

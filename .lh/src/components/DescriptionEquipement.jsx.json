@@ -1,0 +1,110 @@
+{
+    "sourceFile": "src/components/DescriptionEquipement.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 23,
+            "patches": [
+                {
+                    "date": 1682447285438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1682447294397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { useState } from \"react\";\n-import '..//pages/_logement.scss';\n+import '../styles/pages/_logement.scss';\n import logements from '../data/logements.json';\n import { useParams } from 'react-router-dom';\n \n \n"
+                },
+                {
+                    "date": 1682848632403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     \n     return (\n         <div className='container_description-equipment'>\n           <div className='description_equipment'>\n-            <p className='paragraph_title'>\n+            <p className='paragraph_title '>\n               Description <span className={`chevron ${isDescriptionVisible ? 'open' : ''}`} onClick={toggleDescription}> &#x2304;</span>\n             </p>\n             {isDescriptionVisible && <p className='paragraph'>{logement.description}</p>}\n           </div>\n"
+                },
+                {
+                    "date": 1682848647887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     \n     return (\n         <div className='container_description-equipment'>\n           <div className='description_equipment'>\n-            <p className='paragraph_title '>\n+            <p className= 'paragraph_title '>\n               Description <span className={`chevron ${isDescriptionVisible ? 'open' : ''}`} onClick={toggleDescription}> &#x2304;</span>\n             </p>\n             {isDescriptionVisible && <p className='paragraph'>{logement.description}</p>}\n           </div>\n"
+                },
+                {
+                    "date": 1682848658557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     \n     return (\n         <div className='container_description-equipment'>\n           <div className='description_equipment'>\n-            <p className= 'paragraph_title '>\n+            <p className={`chevron ${isDescriptionVisible ? 'open' : ''}`} onClick={toggleDescription} paragraph_title '>\n               Description <span className={`chevron ${isDescriptionVisible ? 'open' : ''}`} onClick={toggleDescription}> &#x2304;</span>\n             </p>\n             {isDescriptionVisible && <p className='paragraph'>{logement.description}</p>}\n           </div>\n"
+                },
+                {
+                    "date": 1682848666381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     \n     return (\n         <div className='container_description-equipment'>\n           <div className='description_equipment'>\n-            <p className={`chevron ${isDescriptionVisible ? 'open' : ''}`} onClick={toggleDescription} paragraph_title '>\n+            <p className={`chevron ${isDescriptionVisible ? 'open' : ''}`} onClick={toggleDescription} paragraph_title'>\n               Description <span className={`chevron ${isDescriptionVisible ? 'open' : ''}`} onClick={toggleDescription}> &#x2304;</span>\n             </p>\n             {isDescriptionVisible && <p className='paragraph'>{logement.description}</p>}\n           </div>\n"
+                },
+                {
+                    "date": 1682848673877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     \n     return (\n         <div className='container_description-equipment'>\n           <div className='description_equipment'>\n-            <p className={`chevron ${isDescriptionVisible ? 'open' : ''}`} onClick={toggleDescription} paragraph_title'>\n+            <p className='paragraph_title '>\n               Description <span className={`chevron ${isDescriptionVisible ? 'open' : ''}`} onClick={toggleDescription}> &#x2304;</span>\n             </p>\n             {isDescriptionVisible && <p className='paragraph'>{logement.description}</p>}\n           </div>\n"
+                },
+                {
+                    "date": 1682848705335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     \n     return (\n         <div className='container_description-equipment'>\n           <div className='description_equipment'>\n-            <p className='paragraph_title '>\n+            <p className='paragraph_title ' >\n               Description <span className={`chevron ${isDescriptionVisible ? 'open' : ''}`} onClick={toggleDescription}> &#x2304;</span>\n             </p>\n             {isDescriptionVisible && <p className='paragraph'>{logement.description}</p>}\n           </div>\n"
+                },
+                {
+                    "date": 1682849491693,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     \n     return (\n         <div className='container_description-equipment'>\n           <div className='description_equipment'>\n-            <p className='paragraph_title ' >\n+            <p className='paragraph_title ' nClick={() => toggleDescription(index)}>\n               Description <span className={`chevron ${isDescriptionVisible ? 'open' : ''}`} onClick={toggleDescription}> &#x2304;</span>\n             </p>\n             {isDescriptionVisible && <p className='paragraph'>{logement.description}</p>}\n           </div>\n"
+                },
+                {
+                    "date": 1682849507752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     \n     return (\n         <div className='container_description-equipment'>\n           <div className='description_equipment'>\n-            <p className='paragraph_title ' nClick={() => toggleDescription(index)}>\n+            <p className='paragraph_title ' onClick={() => toggleDescription(index)}>\n               Description <span className={`chevron ${isDescriptionVisible ? 'open' : ''}`} onClick={toggleDescription}> &#x2304;</span>\n             </p>\n             {isDescriptionVisible && <p className='paragraph'>{logement.description}</p>}\n           </div>\n"
+                },
+                {
+                    "date": 1682849528943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     \n     return (\n         <div className='container_description-equipment'>\n           <div className='description_equipment'>\n-            <p className='paragraph_title ' onClick={() => toggleDescription(index)}>\n+            <p className='paragraph_title ' onClick={() => toggleDescription(}>\n               Description <span className={`chevron ${isDescriptionVisible ? 'open' : ''}`} onClick={toggleDescription}> &#x2304;</span>\n             </p>\n             {isDescriptionVisible && <p className='paragraph'>{logement.description}</p>}\n           </div>\n"
+                },
+                {
+                    "date": 1682849643934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,11 +23,11 @@\n     \n     return (\n         <div className='container_description-equipment'>\n           <div className='description_equipment'>\n-            <p className='paragraph_title ' onClick={() => toggleDescription(}>\n+            <p className='paragraph_title ' onClick={() => toggleDescription}>\n               Description <span className={`chevron ${isDescriptionVisible ? 'open' : ''}`} onClick={toggleDescription}> &#x2304;</span>\n-            </p>\n+            \n             {isDescriptionVisible && <p className='paragraph'>{logement.description}</p>}\n           </div>\n           <div className='description_equipment'>\n             <p className='paragraph_title'>\n"
+                },
+                {
+                    "date": 1682849649455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     \n     return (\n         <div className='container_description-equipment'>\n           <div className='description_equipment'>\n-            <p className='paragraph_title ' onClick={() => toggleDescription}>\n+            <p className='paragraph_title ' onClick={() => toggleDescription}></p>\n               Description <span className={`chevron ${isDescriptionVisible ? 'open' : ''}`} onClick={toggleDescription}> &#x2304;</span>\n             \n             {isDescriptionVisible && <p className='paragraph'>{logement.description}</p>}\n           </div>\n"
+                },
+                {
+                    "date": 1682849655914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     \n     return (\n         <div className='container_description-equipment'>\n           <div className='description_equipment'>\n-            <p className='paragraph_title ' onClick={() => toggleDescription}></p>\n+            <p className='paragraph_title ' onClick={() => toggleDescription}>\n               Description <span className={`chevron ${isDescriptionVisible ? 'open' : ''}`} onClick={toggleDescription}> &#x2304;</span>\n             \n             {isDescriptionVisible && <p className='paragraph'>{logement.description}</p>}\n           </div>\n"
+                },
+                {
+                    "date": 1682849678016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         <div className='container_description-equipment'>\n           <div className='description_equipment'>\n             <p className='paragraph_title ' onClick={() => toggleDescription}>\n               Description <span className={`chevron ${isDescriptionVisible ? 'open' : ''}`} onClick={toggleDescription}> &#x2304;</span>\n-            \n+            </p>\n             {isDescriptionVisible && <p className='paragraph'>{logement.description}</p>}\n           </div>\n           <div className='description_equipment'>\n             <p className='paragraph_title'>\n"
+                },
+                {
+                    "date": 1682849888109,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,10 +23,10 @@\n     \n     return (\n         <div className='container_description-equipment'>\n           <div className='description_equipment'>\n-            <p className='paragraph_title ' onClick={() => toggleDescription}>\n-              Description <span className={`chevron ${isDescriptionVisible ? 'open' : ''}`} onClick={toggleDescription}> &#x2304;</span>\n+          <p className='paragraph_title' onClick={toggleDescription}>\n+              Description <span className={`chevron ${isDescriptionVisible ? 'open' : ''}`}> &#x2304;</span>\n             </p>\n             {isDescriptionVisible && <p className='paragraph'>{logement.description}</p>}\n           </div>\n           <div className='description_equipment'>\n"
+                },
+                {
+                    "date": 1682849929153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n             </p>\n             {isDescriptionVisible && <p className='paragraph'>{logement.description}</p>}\n           </div>\n           <div className='description_equipment'>\n-            <p className='paragraph_title'>\n+            <p className='paragraph_title' >\n               Equipement <span className={`chevron ${isEquipementVisible ? 'open' : ''}`} onClick={toggleEquipement}> &#x2304;</span>\n             </p>\n             {isEquipementVisible && <p className='paragraph'>{logement.equipments.map((eq, i) => (\n               <li key={ i }>{ eq }</li>))}</p>}\n"
+                },
+                {
+                    "date": 1682850020983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n             </p>\n             {isDescriptionVisible && <p className='paragraph'>{logement.description}</p>}\n           </div>\n           <div className='description_equipment'>\n-            <p className='paragraph_title' >\n+            <p className='paragraph_title' onClick={toggleEqui}>\n               Equipement <span className={`chevron ${isEquipementVisible ? 'open' : ''}`} onClick={toggleEquipement}> &#x2304;</span>\n             </p>\n             {isEquipementVisible && <p className='paragraph'>{logement.equipments.map((eq, i) => (\n               <li key={ i }>{ eq }</li>))}</p>}\n"
+                },
+                {
+                    "date": 1682850071937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n             </p>\n             {isDescriptionVisible && <p className='paragraph'>{logement.description}</p>}\n           </div>\n           <div className='description_equipment'>\n-            <p className='paragraph_title' onClick={toggleEqui}>\n+            <p className='paragraph_title' onClick={toggleEquipement}>\n               Equipement <span className={`chevron ${isEquipementVisible ? 'open' : ''}`} onClick={toggleEquipement}> &#x2304;</span>\n             </p>\n             {isEquipementVisible && <p className='paragraph'>{logement.equipments.map((eq, i) => (\n               <li key={ i }>{ eq }</li>))}</p>}\n"
+                },
+                {
+                    "date": 1682853794193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,8 @@\n \n   const toggleEquipement = () => {\n     setIsEquipementVisible(!isEquipementVisible);\n   };\n-\n     \n     return (\n         <div className='container_description-equipment'>\n           <div className='description_equipment'>\n"
+                },
+                {
+                    "date": 1682853959790,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,8 @@\n \n export default function DescriptionEquipement(props){\n     const { id } = useParams();\n     const logement = logements.find((logement) => logement.id === id);\n-    // const [isContentVisible, setIsContentVisible] = useState(false)\n     const [isDescriptionVisible, setIsDescriptionVisible] = useState(false);\n   const [isEquipementVisible, setIsEquipementVisible] = useState(false);\n \n   const toggleDescription = () => {\n"
+                },
+                {
+                    "date": 1682854051448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n           <div className='description_equipment'>\n             <p className='paragraph_title' onClick={toggleEquipement}>\n               Equipement <span className={`chevron ${isEquipementVisible ? 'open' : ''}`} onClick={toggleEquipement}> &#x2304;</span>\n             </p>\n-            {isEquipementVisible && <p className='paragraph'>{logement.equipments.map((eq, i) => (\n+            {isEquipementVisible && <p className='paragraph '>{logement.equipments.map((eq, i) => (\n               <li key={ i }>{ eq }</li>))}</p>}\n           </div>\n         </div>\n       );  \n"
+                },
+                {
+                    "date": 1682869152303,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,41 @@\n+import { useState } from \"react\";\n+import '../styles/pages/_logement.scss';\n+import logements from '../data/logements.json';\n+import { useParams } from 'react-router-dom';\n+\n+\n+\n+export default function DescriptionEquipement(props){\n+    const { id } = useParams();\n+    const logement = logements.find((logement) => logement.id === id);\n+    const [isDescriptionVisible, setIsDescriptionVisible] = useState(false);\n+  const [isEquipementVisible, setIsEquipementVisible] = useState(false);\n+\n+  const toggleDescription = () => {\n+    setIsDescriptionVisible(!isDescriptionVisible);\n+  };\n+\n+  const toggleEquipement = () => {\n+    setIsEquipementVisible(!isEquipementVisible);\n+  };\n+    \n+    return (\n+        <div className='container_description-equipment'>\n+          <div className='description_equipment'>\n+          <p className='paragraph_title' onClick={toggleDescription}>\n+              Description <span className={`chevron ${isDescriptionVisible ? 'open' : ''}`}> &#x2304;</span>\n+            </p>\n+            {isDescriptionVisible && <p className='paragraph'>{logement.description}</p>}\n+          </div>\n+          <div className='description_equipment'>\n+            <p className='paragraph_title' onClick={toggleEquipement}>\n+              Equipement <span className={`chevron ${isEquipementVisible ? 'open' : ''}`} onClick={toggleEquipement}> &#x2304;</span>\n+            </p>\n+            {isEquipementVisible && <p className='paragraph open'>{logement.equipments.map((eq, i) => (\n+              <li key={ i }>{ eq }</li>))}</p>}\n+          </div>\n+        </div>\n+      );  \n+    }\n+\n+\n"
+                },
+                {
+                    "date": 1683055954581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,45 +38,4 @@\n       );  \n     }\n \n \n-import { useState } from \"react\";\n-import '../styles/pages/_logement.scss';\n-import logements from '../data/logements.json';\n-import { useParams } from 'react-router-dom';\n-\n-\n-\n-export default function DescriptionEquipement(props){\n-    const { id } = useParams();\n-    const logement = logements.find((logement) => logement.id === id);\n-    const [isDescriptionVisible, setIsDescriptionVisible] = useState(false);\n-  const [isEquipementVisible, setIsEquipementVisible] = useState(false);\n-\n-  const toggleDescription = () => {\n-    setIsDescriptionVisible(!isDescriptionVisible);\n-  };\n-\n-  const toggleEquipement = () => {\n-    setIsEquipementVisible(!isEquipementVisible);\n-  };\n-    \n-    return (\n-        <div className='container_description-equipment'>\n-          <div className='description_equipment'>\n-          <p className='paragraph_title' onClick={toggleDescription}>\n-              Description <span className={`chevron ${isDescriptionVisible ? 'open' : ''}`}> &#x2304;</span>\n-            </p>\n-            {isDescriptionVisible && <p className='paragraph'>{logement.description}</p>}\n-          </div>\n-          <div className='description_equipment'>\n-            <p className='paragraph_title' onClick={toggleEquipement}>\n-              Equipement <span className={`chevron ${isEquipementVisible ? 'open' : ''}`} onClick={toggleEquipement}> &#x2304;</span>\n-            </p>\n-            {isEquipementVisible && <p className='paragraph '>{logement.equipments.map((eq, i) => (\n-              <li key={ i }>{ eq }</li>))}</p>}\n-          </div>\n-        </div>\n-      );  \n-    }\n-\n-\n"
+                }
+            ],
+            "date": 1682447285438,
+            "name": "Commit-0",
+            "content": "import { useState } from \"react\";\nimport '..//pages/_logement.scss';\nimport logements from '../data/logements.json';\nimport { useParams } from 'react-router-dom';\n\n\n\nexport default function DescriptionEquipement(props){\n    const { id } = useParams();\n    const logement = logements.find((logement) => logement.id === id);\n    // const [isContentVisible, setIsContentVisible] = useState(false)\n    const [isDescriptionVisible, setIsDescriptionVisible] = useState(false);\n  const [isEquipementVisible, setIsEquipementVisible] = useState(false);\n\n  const toggleDescription = () => {\n    setIsDescriptionVisible(!isDescriptionVisible);\n  };\n\n  const toggleEquipement = () => {\n    setIsEquipementVisible(!isEquipementVisible);\n  };\n\n    \n    return (\n        <div className='container_description-equipment'>\n          <div className='description_equipment'>\n            <p className='paragraph_title'>\n              Description <span className={`chevron ${isDescriptionVisible ? 'open' : ''}`} onClick={toggleDescription}> &#x2304;</span>\n            </p>\n            {isDescriptionVisible && <p className='paragraph'>{logement.description}</p>}\n          </div>\n          <div className='description_equipment'>\n            <p className='paragraph_title'>\n              Equipement <span className={`chevron ${isEquipementVisible ? 'open' : ''}`} onClick={toggleEquipement}> &#x2304;</span>\n            </p>\n            {isEquipementVisible && <p className='paragraph'>{logement.equipments.map((eq, i) => (\n              <li key={ i }>{ eq }</li>))}</p>}\n          </div>\n        </div>\n      );  \n    }\n\n\n"
+        }
+    ]
+}

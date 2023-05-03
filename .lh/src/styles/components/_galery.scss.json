@@ -1,0 +1,614 @@
+{
+    "sourceFile": "src/styles/components/_galery.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 149,
+            "patches": [
+                {
+                    "date": 1682619934663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1682619965390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   width: 100%;\n   background-color: #f7f7f7;\n   display: grid;\n   gap: 20px;\n-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));\n+  grid-template-columns: repeat(auto-fill, minmax(px, 1fr));\n   padding: 20px;\n \n   .card_logement {\n    // min-height: 270px;\n"
+                },
+                {
+                    "date": 1682619982577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,10 @@\n   width: 100%;\n   background-color: #f7f7f7;\n   display: grid;\n   gap: 20px;\n-  grid-template-columns: repeat(auto-fill, minmax(px, 1fr));\n-  padding: 20px;\n+  grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));\n+  //padding: 20px;\n \n   .card_logement {\n    // min-height: 270px;\n     display: flex;\n"
+                },
+                {
+                    "date": 1682620440632,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .galery {\n   margin-bottom: 30px;\n   width: 100%;\n-  background-color: #f7f7f7;\n+  //background-color: #f7f7f7;\n   display: grid;\n   gap: 20px;\n   grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));\n   //padding: 20px;\n"
+                },
+                {
+                    "date": 1682620465472,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n .galery {\n   margin-bottom: 30px;\n   width: 100%;\n   //background-color: #f7f7f7;\n+  ba\n   display: grid;\n   gap: 20px;\n   grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));\n   //padding: 20px;\n"
+                },
+                {
+                    "date": 1682620472470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n .galery {\n   margin-bottom: 30px;\n   width: 100%;\n   //background-color: #f7f7f7;\n-  ba\n+  background-color:  $color-whitesmoke;\n   display: grid;\n   gap: 20px;\n   grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));\n   //padding: 20px;\n"
+                },
+                {
+                    "date": 1682620497045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n .galery {\n   margin-bottom: 30px;\n   width: 100%;\n   //background-color: #f7f7f7;\n-  background-color:  $color-whitesmoke;\n+  background-color: #;\n   display: grid;\n   gap: 20px;\n   grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));\n   //padding: 20px;\n"
+                },
+                {
+                    "date": 1682620510428,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n .galery {\n   margin-bottom: 30px;\n   width: 100%;\n   //background-color: #f7f7f7;\n-  background-color: #;\n+  background-color:  $color-whitesmoke: #f6f6f6;\n+  ;\n   display: grid;\n   gap: 20px;\n   grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));\n   //padding: 20px;\n"
+                },
+                {
+                    "date": 1682620516126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n .galery {\n   margin-bottom: 30px;\n   width: 100%;\n   //background-color: #f7f7f7;\n-  background-color:  $color-whitesmoke: #f6f6f6;\n+  background-color:  #f6f6f6;\n   ;\n   display: grid;\n   gap: 20px;\n   grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));\n"
+                },
+                {
+                    "date": 1682620529592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n .galery {\n   margin-bottom: 30px;\n   width: 100%;\n   //background-color: #f7f7f7;\n-  background-color:  #f6f6f6;\n+ \n   ;\n   display: grid;\n   gap: 20px;\n   grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));\n"
+                },
+                {
+                    "date": 1682620540023,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,8 @@\n .galery {\n   margin-bottom: 30px;\n   width: 100%;\n-  //background-color: #f7f7f7;\n  \n-  ;\n   display: grid;\n   gap: 20px;\n   grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));\n   //padding: 20px;\n"
+                },
+                {
+                    "date": 1682620608133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n .galery {\n   margin-bottom: 30px;\n   width: 100%;\n- \n   display: grid;\n   gap: 20px;\n   grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));\n   //padding: 20px;\n@@ -26,9 +25,9 @@\n       object-fit: cover;\n       border-radius: 1rem;\n     }\n     .background_title {\n-      width: 100%;\n+     // width: 100%;\n       //width: auto;\n       position: absolute;\n       bottom: 0;\n       border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1682620673092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n    // min-height: 270px;\n     display: flex;\n    // width: 404px;\n     align-items: flex-end;\n-    position: relative;\n+    \n     border-radius: 10px;\n     transition: transform 200ms ease-in-out;\n \t//transition-duration: 0.5s;\n   &:hover {\n"
+                },
+                {
+                    "date": 1682620694358,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,9 @@\n       width: 100%;\n       height: 270px;\n       object-fit: cover;\n       border-radius: 1rem;\n+      \n     }\n     .background_title {\n      // width: 100%;\n       //width: auto;\n"
+                },
+                {
+                    "date": 1682620728956,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n    // min-height: 270px;\n     display: flex;\n    // width: 404px;\n     align-items: flex-end;\n-    \n+    position: relative;\n     border-radius: 10px;\n     transition: transform 200ms ease-in-out;\n \t//transition-duration: 0.5s;\n   &:hover {\n@@ -23,10 +23,8 @@\n       width: 100%;\n       height: 270px;\n       object-fit: cover;\n       border-radius: 1rem;\n-      \n-    }\n     .background_title {\n      // width: 100%;\n       //width: auto;\n       position: absolute;\n"
+                },
+                {
+                    "date": 1682620736681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n       position: absolute;\n       bottom: 0;\n       border-radius: 1rem;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n-\n+    }\n       .logement_title {\n         padding: 10px;\n         width: 300px;\n         margin-right: 50px;\n"
+                },
+                {
+                    "date": 1682620766619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n       position: absolute;\n       bottom: 0;\n       border-radius: 1rem;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n-    }\n+   \n       .logement_title {\n         padding: 10px;\n         width: 300px;\n         margin-right: 50px;\n"
+                },
+                {
+                    "date": 1682620772653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,5 +41,6 @@\n         color: #f1f1f1;\n       }\n     }\n   }\n+  }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682620780686,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n       position: absolute;\n       bottom: 0;\n       border-radius: 1rem;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n-   \n+    }\n       .logement_title {\n         padding: 10px;\n         width: 300px;\n         margin-right: 50px;\n@@ -41,6 +41,5 @@\n         color: #f1f1f1;\n       }\n     }\n   }\n-  }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682620799250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,23 +23,17 @@\n       width: 100%;\n       height: 270px;\n       object-fit: cover;\n       border-radius: 1rem;\n-    .background_title {\n+    }\n+.background_title {\n      // width: 100%;\n       //width: auto;\n       position: absolute;\n       bottom: 0;\n       border-radius: 1rem;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n+\n+     \n     }\n-      .logement_title {\n-        padding: 10px;\n-        width: 300px;\n-        margin-right: 50px;\n-        font-size: 18px;\n-        font-weight: 500;\n-        color: #f1f1f1;\n-      }\n-    }\n   }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682620804871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,16 @@\n       height: 270px;\n       object-fit: cover;\n       border-radius: 1rem;\n     }\n+    .logement_title {\n+      padding: 10px;\n+      width: 300px;\n+      margin-right: 50px;\n+      font-size: 18px;\n+      font-weight: 500;\n+      color: #f1f1f1;\n+    }\n .background_title {\n      // width: 100%;\n       //width: auto;\n       position: absolute;\n"
+                },
+                {
+                    "date": 1682620809953,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n       margin-right: 50px;\n       font-size: 18px;\n       font-weight: 500;\n       color: #f1f1f1;\n-    }\n+    \n .background_title {\n      // width: 100%;\n       //width: auto;\n       position: absolute;\n"
+                },
+                {
+                    "date": 1682620815648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,8 @@\n       bottom: 0;\n       border-radius: 1rem;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n \n-     \n+}\n     }\n   }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682620822799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,8 @@\n       bottom: 0;\n       border-radius: 1rem;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n \n-}\n+}}}\n     }\n   }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682620832080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,8 @@\n       bottom: 0;\n       border-radius: 1rem;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n \n-}}}\n+}}}â\n     }\n   }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682620839319,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,8 @@\n       bottom: 0;\n       border-radius: 1rem;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n \n-}}}â\n+}}\n     }\n   }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682620844519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,8 @@\n       bottom: 0;\n       border-radius: 1rem;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n \n-}}\n+     \n     }\n   }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682620928927,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .galery {\n-  margin-bottom: 30px;\n+  margin-bottom: 30px auto;\n   width: 100%;\n   display: grid;\n   gap: 20px;\n   grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));\n@@ -31,9 +31,9 @@\n       margin-right: 50px;\n       font-size: 18px;\n       font-weight: 500;\n       color: #f1f1f1;\n-    \n+    }\n .background_title {\n      // width: 100%;\n       //width: auto;\n       position: absolute;\n"
+                },
+                {
+                    "date": 1682620939874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .galery {\n-  margin-bottom: 30px auto;\n+  margin: 30px auto;\n   width: 100%;\n   display: grid;\n   gap: 20px;\n   grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));\n"
+                },
+                {
+                    "date": 1682621057381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,8 @@\n   width: 100%;\n   display: grid;\n   gap: 20px;\n   grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));\n-  //padding: 20px;\n \n   .card_logement {\n    // min-height: 270px;\n     display: flex;\n"
+                },
+                {
+                    "date": 1682621075115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   .card_logement {\n    // min-height: 270px;\n     display: flex;\n    // width: 404px;\n-    align-items: flex-end;\n+    //align-items: flex-end;\n     position: relative;\n     border-radius: 10px;\n     transition: transform 200ms ease-in-out;\n \t//transition-duration: 0.5s;\n"
+                },
+                {
+                    "date": 1682621103326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,9 @@\n       width: 100%;\n       height: 270px;\n       object-fit: cover;\n       border-radius: 1rem;\n+      \n     }\n     .logement_title {\n       padding: 10px;\n       width: 300px;\n"
+                },
+                {
+                    "date": 1682621108574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n       width: 100%;\n       height: 270px;\n       object-fit: cover;\n       border-radius: 1rem;\n-      \n+      position\n     }\n     .logement_title {\n       padding: 10px;\n       width: 300px;\n"
+                },
+                {
+                    "date": 1682621114456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n       width: 100%;\n       height: 270px;\n       object-fit: cover;\n       border-radius: 1rem;\n-      position\n+      position: absolute;\n     }\n     .logement_title {\n       padding: 10px;\n       width: 300px;\n"
+                },
+                {
+                    "date": 1682621132221,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n \t}\n     img {\n      display: block;\n       width: 100%;\n-      height: 270px;\n+      //height: 270px;\n       object-fit: cover;\n       border-radius: 1rem;\n       position: absolute;\n     }\n"
+                },
+                {
+                    "date": 1682621144184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,12 +19,12 @@\n \t}\n     img {\n      display: block;\n       width: 100%;\n-      //height: 270px;\n+      height: 270px;\n       object-fit: cover;\n       border-radius: 1rem;\n-      position: absolute;\n+      \n     }\n     .logement_title {\n       padding: 10px;\n       width: 300px;\n"
+                },
+                {
+                    "date": 1682621228683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,10 @@\n       width: 100%;\n       height: 270px;\n       object-fit: cover;\n       border-radius: 1rem;\n-      \n+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n+\n     }\n     .logement_title {\n       padding: 10px;\n       width: 300px;\n"
+                },
+                {
+                    "date": 1682621257201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,16 +33,7 @@\n       font-size: 18px;\n       font-weight: 500;\n       color: #f1f1f1;\n     }\n-.background_title {\n-     // width: 100%;\n-      //width: auto;\n-      position: absolute;\n-      bottom: 0;\n-      border-radius: 1rem;\n-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n \n-     \n-    }\n   }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682621271223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,7 +33,16 @@\n       font-size: 18px;\n       font-weight: 500;\n       color: #f1f1f1;\n     }\n+.background_title {\n+     // width: 100%;\n+      //width: auto;\n+      position: absolute;\n+      bottom: 0;\n+      border-radius: 1rem;\n+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n \n+     \n+    }\n   }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682621286238,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n       color: #f1f1f1;\n     }\n .background_title {\n      // width: 100%;\n-      //width: auto;\n+    /width: auto;\n       position: absolute;\n       bottom: 0;\n       border-radius: 1rem;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n"
+                },
+                {
+                    "date": 1682621294686,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n       color: #f1f1f1;\n     }\n .background_title {\n      // width: 100%;\n-    /width: auto;\n+    width: auto;\n       position: absolute;\n       bottom: 0;\n       border-radius: 1rem;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n"
+                },
+                {
+                    "date": 1682621329497,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n \n     }\n     .logement_title {\n       padding: 10px;\n-      width: 300px;\n+      //width: 300px;\n       margin-right: 50px;\n       font-size: 18px;\n       font-weight: 500;\n       color: #f1f1f1;\n"
+                },
+                {
+                    "date": 1682621339519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     }\n     .logement_title {\n       padding: 10px;\n       //width: 300px;\n-      margin-right: 50px;\n+      //margin-right: 50px;\n       font-size: 18px;\n       font-weight: 500;\n       color: #f1f1f1;\n     }\n"
+                },
+                {
+                    "date": 1682621361584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n       padding: 10px;\n       //width: 300px;\n       //margin-right: 50px;\n       font-size: 18px;\n-      font-weight: 500;\n+      \n       color: #f1f1f1;\n     }\n .background_title {\n      // width: 100%;\n"
+                },
+                {
+                    "date": 1682621396486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n       color: #f1f1f1;\n     }\n .background_title {\n      // width: 100%;\n-    width: auto;\n+    //width: auto;\n       position: absolute;\n       bottom: 0;\n       border-radius: 1rem;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n"
+                },
+                {
+                    "date": 1682621403309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n       color: #f1f1f1;\n     }\n .background_title {\n      // width: 100%;\n-    //width: auto;\n+    width: auto;\n       position: absolute;\n       bottom: 0;\n       border-radius: 1rem;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n"
+                },
+                {
+                    "date": 1682621414285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n       \n       color: #f1f1f1;\n     }\n .background_title {\n-     // width: 100%;\n+      width: 100%;\n     width: auto;\n       position: absolute;\n       bottom: 0;\n       border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1682621423604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n \n     }\n     .logement_title {\n       padding: 10px;\n-      //width: 300px;\n+      width: 300px;\n       //margin-right: 50px;\n       font-size: 18px;\n       \n       color: #f1f1f1;\n"
+                },
+                {
+                    "date": 1682621434398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n \n     }\n     .logement_title {\n       padding: 10px;\n-      width: 300px;\n+      width: 100;\n       //margin-right: 50px;\n       font-size: 18px;\n       \n       color: #f1f1f1;\n"
+                },
+                {
+                    "date": 1682621440158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n \n     }\n     .logement_title {\n       padding: 10px;\n-      width: 100;\n+      width: 100%;\n       //margin-right: 50px;\n       font-size: 18px;\n       \n       color: #f1f1f1;\n"
+                },
+                {
+                    "date": 1682621449718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n \n     }\n     .logement_title {\n-      padding: 10px;\n+    //  padding: 10px;\n       width: 100%;\n       //margin-right: 50px;\n       font-size: 18px;\n       \n"
+                },
+                {
+                    "date": 1682621466462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,9 @@\n       \n       color: #f1f1f1;\n     }\n .background_title {\n+  \n       width: 100%;\n     width: auto;\n       position: absolute;\n       bottom: 0;\n"
+                },
+                {
+                    "date": 1682621609430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n       \n       color: #f1f1f1;\n     }\n .background_title {\n-  \n+   padding: 10px;\n       width: 100%;\n     width: auto;\n       position: absolute;\n       bottom: 0;\n"
+                },
+                {
+                    "date": 1682621615396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,17 +26,16 @@\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n \n     }\n     .logement_title {\n-    //  padding: 10px;\n+      padding: 10px;\n       width: 100%;\n       //margin-right: 50px;\n       font-size: 18px;\n       \n       color: #f1f1f1;\n     }\n .background_title {\n-   padding: 10px;\n       width: 100%;\n     width: auto;\n       position: absolute;\n       bottom: 0;\n"
+                },
+                {
+                    "date": 1682621620895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n \n     }\n     .logement_title {\n       padding: 10px;\n-      width: 100%;\n+      width: 300px;\n       //margin-right: 50px;\n       font-size: 18px;\n       \n       color: #f1f1f1;\n"
+                },
+                {
+                    "date": 1682621627258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,17 +27,17 @@\n \n     }\n     .logement_title {\n       padding: 10px;\n-      width: 300px;\n+      //width: 300px;\n       //margin-right: 50px;\n       font-size: 18px;\n       \n       color: #f1f1f1;\n     }\n .background_title {\n-      width: 100%;\n-    width: auto;\n+     // width: 100%;\n+    //width: auto;\n       position: absolute;\n       bottom: 0;\n       border-radius: 1rem;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n"
+                },
+                {
+                    "date": 1682621633290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,16 +28,16 @@\n     }\n     .logement_title {\n       padding: 10px;\n       //width: 300px;\n-      //margin-right: 50px;\n+      margin-right: 50px;\n       font-size: 18px;\n-      \n+      font-weight: 500;\n       color: #f1f1f1;\n     }\n .background_title {\n      // width: 100%;\n-    //width: auto;\n+    width: auto;\n       position: absolute;\n       bottom: 0;\n       border-radius: 1rem;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n"
+                },
+                {
+                    "date": 1682621638539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,17 +27,17 @@\n \n     }\n     .logement_title {\n       padding: 10px;\n-      //width: 300px;\n+      width: 300px;\n       margin-right: 50px;\n       font-size: 18px;\n       font-weight: 500;\n       color: #f1f1f1;\n     }\n .background_title {\n      // width: 100%;\n-    width: auto;\n+    /width: auto;\n       position: absolute;\n       bottom: 0;\n       border-radius: 1rem;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n"
+                },
+                {
+                    "date": 1682621644814,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,10 +22,9 @@\n       width: 100%;\n       height: 270px;\n       object-fit: cover;\n       border-radius: 1rem;\n-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n-\n+      \n     }\n     .logement_title {\n       padding: 10px;\n       width: 300px;\n@@ -35,9 +34,9 @@\n       color: #f1f1f1;\n     }\n .background_title {\n      // width: 100%;\n-    /width: auto;\n+      //width: auto;\n       position: absolute;\n       bottom: 0;\n       border-radius: 1rem;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n"
+                },
+                {
+                    "date": 1682621690653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n       \n     }\n     .logement_title {\n       padding: 10px;\n-      width: 300px;\n+     // width: 300px;\n       margin-right: 50px;\n       font-size: 18px;\n       font-weight: 500;\n       color: #f1f1f1;\n"
+                },
+                {
+                    "date": 1682621757369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n       \n     }\n     .logement_title {\n       padding: 10px;\n-     // width: 300px;\n+     width: 300px;\n       margin-right: 50px;\n       font-size: 18px;\n       font-weight: 500;\n       color: #f1f1f1;\n"
+                },
+                {
+                    "date": 1682621762423,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n       \n     }\n     .logement_title {\n       padding: 10px;\n-     width: 300px;\n+     width: 100;\n       margin-right: 50px;\n       font-size: 18px;\n       font-weight: 500;\n       color: #f1f1f1;\n"
+                },
+                {
+                    "date": 1682621775767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,10 +26,10 @@\n       \n     }\n     .logement_title {\n       padding: 10px;\n-     width: 100;\n-      margin-right: 50px;\n+     width: 100%;\n+      //margin-right: 50px;\n       font-size: 18px;\n       font-weight: 500;\n       color: #f1f1f1;\n     }\n"
+                },
+                {
+                    "date": 1682621787033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n       font-weight: 500;\n       color: #f1f1f1;\n     }\n .background_title {\n-     // width: 100%;\n+      width: 100%;\n       //width: auto;\n       position: absolute;\n       bottom: 0;\n       border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1682869188334,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,46 @@\n+.galery {\n+  margin: 30px auto;\n+  width: 100%;\n+  display: grid;\n+  gap: 20px;\n+  grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));\n+\n+  .card_logement {\n+   // min-height: 270px;\n+    display: flex;\n+   // width: 404px;\n+    //align-items: flex-end;\n+    position: relative;\n+    border-radius: 10px;\n+    transition: transform 200ms ease-in-out;\n+  &:hover {\n+    transform: scale(1.05);\n+\t}\n+    img {\n+     display: block;\n+      width: 100%;\n+      height: 270px;\n+      object-fit: cover;\n+      border-radius: 1rem;\n+      \n+    }\n+    .logement_title {\n+      padding: 10px;\n+     width: 100%;\n+      //margin-right: 50px;\n+      font-size: 18px;\n+      font-weight: 500;\n+      color: #f1f1f1;\n+    }\n+.background_title {\n+      width: 100%;\n+      //width: auto;\n+      position: absolute;\n+      bottom: 0;\n+      border-radius: 1rem;\n+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n+\n+     \n+    }\n+  }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682869215573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,8 @@\n \n   .card_logement {\n    // min-height: 270px;\n     display: flex;\n-   // width: 404px;\n     //align-items: flex-end;\n     position: relative;\n     border-radius: 10px;\n     transition: transform 200ms ease-in-out;\n@@ -42,52 +41,5 @@\n \n      \n     }\n   }\n-}\n-.galery {\n-  margin: 30px auto;\n-  width: 100%;\n-  display: grid;\n-  gap: 20px;\n-  grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));\n-\n-  .card_logement {\n-   // min-height: 270px;\n-    display: flex;\n-   // width: 404px;\n-    //align-items: flex-end;\n-    position: relative;\n-    border-radius: 10px;\n-    transition: transform 200ms ease-in-out;\n-\t//transition-duration: 0.5s;\n-  &:hover {\n-    transform: scale(1.05);\n-\t}\n-    img {\n-     display: block;\n-      width: 100%;\n-      height: 270px;\n-      object-fit: cover;\n-      border-radius: 1rem;\n-      \n-    }\n-    .logement_title {\n-      padding: 10px;\n-     width: 100%;\n-      //margin-right: 50px;\n-      font-size: 18px;\n-      font-weight: 500;\n-      color: #f1f1f1;\n-    }\n-.background_title {\n-      width: 100%;\n-      //width: auto;\n-      position: absolute;\n-      bottom: 0;\n-      border-radius: 1rem;\n-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n-\n-     \n-    }\n-  }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682869248807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,14 +2,12 @@\n   margin: 30px auto;\n   width: 100%;\n   display: grid;\n   gap: 20px;\n-  grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));\n+  grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));\n \n   .card_logement {\n-   // min-height: 270px;\n     display: flex;\n-    //align-items: flex-end;\n     position: relative;\n     border-radius: 10px;\n     transition: transform 200ms ease-in-out;\n   &:hover {\n"
+                },
+                {
+                    "date": 1682869256283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   margin: 30px auto;\n   width: 100%;\n   display: grid;\n   gap: 20px;\n-  grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));\n+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));\n \n   .card_logement {\n     display: flex;\n     position: relative;\n"
+                },
+                {
+                    "date": 1682869278494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   margin: 30px auto;\n   width: 100%;\n   display: grid;\n   gap: 20px;\n-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));\n+  grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));\n \n   .card_logement {\n     display: flex;\n     position: relative;\n"
+                },
+                {
+                    "date": 1682869545778,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n      display: block;\n       width: 100%;\n       height: 270px;\n       object-fit: cover;\n-      border-radius: 1rem;\n+      border-radius: 1$brxsrem;\n       \n     }\n     .logement_title {\n       padding: 10px;\n"
+                },
+                {
+                    "date": 1682869553196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n      display: block;\n       width: 100%;\n       height: 270px;\n       object-fit: cover;\n-      border-radius: 1$brxsrem;\n+      border-radius: $brxs;\n       \n     }\n     .logement_title {\n       padding: 10px;\n"
+                },
+                {
+                    "date": 1682869567232,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+\n .galery {\n   margin: 30px auto;\n   width: 100%;\n   display: grid;\n"
+                },
+                {
+                    "date": 1682869614080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-\n+@import '../../variables.scss';\n .galery {\n   margin: 30px auto;\n   width: 100%;\n   display: grid;\n"
+                },
+                {
+                    "date": 1682869619581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-@import '../../variables.scss';\n+@import '/../variables.scss';\n .galery {\n   margin: 30px auto;\n   width: 100%;\n   display: grid;\n"
+                },
+                {
+                    "date": 1682869692762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-@import '/../variables.scss';\n+@import '../settings/settings.scss';\n .galery {\n   margin: 30px auto;\n   width: 100%;\n   display: grid;\n"
+                },
+                {
+                    "date": 1682869718887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,8 @@\n     }\n     .logement_title {\n       padding: 10px;\n      width: 100%;\n-      //margin-right: 50px;\n       font-size: 18px;\n       font-weight: 500;\n       color: #f1f1f1;\n     }\n"
+                },
+                {
+                    "date": 1682869729075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,16 +23,16 @@\n       \n     }\n     .logement_title {\n       padding: 10px;\n-     width: 100%;\n+      width: 100%;\n       font-size: 18px;\n       font-weight: 500;\n       color: #f1f1f1;\n     }\n .background_title {\n       width: 100%;\n-      //width: auto;\n+      width: auto;\n       position: absolute;\n       bottom: 0;\n       border-radius: 1rem;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n"
+                },
+                {
+                    "date": 1682869734848,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,8 @@\n       color: #f1f1f1;\n     }\n .background_title {\n       width: 100%;\n-      width: auto;\n       position: absolute;\n       bottom: 0;\n       border-radius: 1rem;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n"
+                },
+                {
+                    "date": 1682869797273,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,9 @@\n       padding: 10px;\n       width: 100%;\n       font-size: 18px;\n       font-weight: 500;\n+      \n       color: #f1f1f1;\n     }\n .background_title {\n       width: 100%;\n"
+                },
+                {
+                    "date": 1682869813069,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,14 +26,14 @@\n       padding: 10px;\n       width: 100%;\n       font-size: 18px;\n       font-weight: 500;\n-      \n+      position: absolute;\n       color: #f1f1f1;\n     }\n .background_title {\n       width: 100%;\n-      position: absolute;\n+    //  position: absolute;\n       bottom: 0;\n       border-radius: 1rem;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n \n"
+                },
+                {
+                    "date": 1682869824326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,14 +26,14 @@\n       padding: 10px;\n       width: 100%;\n       font-size: 18px;\n       font-weight: 500;\n-      position: absolute;\n+      position: relative;\n       color: #f1f1f1;\n     }\n .background_title {\n       width: 100%;\n-    //  position: absolute;\n+      position: absolute;\n       bottom: 0;\n       border-radius: 1rem;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n \n"
+                },
+                {
+                    "date": 1682869832860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n       position: relative;\n       color: #f1f1f1;\n     }\n .background_title {\n-      width: 100%;\n+    //  width: 100%;\n       position: absolute;\n       bottom: 0;\n       border-radius: 1rem;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n"
+                },
+                {
+                    "date": 1682869862517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));\n \n   .card_logement {\n     display: flex;\n-    position: relative;\n+  \n     border-radius: 10px;\n     transition: transform 200ms ease-in-out;\n   &:hover {\n     transform: scale(1.05);\n"
+                },
+                {
+                    "date": 1682869870731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,9 @@\n       height: 270px;\n       object-fit: cover;\n       border-radius: $brxs;\n       \n+      \n     }\n     .logement_title {\n       padding: 10px;\n       width: 100%;\n"
+                },
+                {
+                    "date": 1682869896653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,17 +19,17 @@\n       width: 100%;\n       height: 270px;\n       object-fit: cover;\n       border-radius: $brxs;\n+      position: relative;\n       \n-      \n     }\n     .logement_title {\n       padding: 10px;\n       width: 100%;\n       font-size: 18px;\n       font-weight: 500;\n-      position: relative;\n+      position: a;\n       color: #f1f1f1;\n     }\n .background_title {\n     //  width: 100%;\n"
+                },
+                {
+                    "date": 1682869914681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n       padding: 10px;\n       width: 100%;\n       font-size: 18px;\n       font-weight: 500;\n-      position: a;\n+      position: relative;\n       color: #f1f1f1;\n     }\n .background_title {\n     //  width: 100%;\n"
+                },
+                {
+                    "date": 1682869922733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));\n \n   .card_logement {\n     display: flex;\n-  \n+    position: relative;\n     border-radius: 10px;\n     transition: transform 200ms ease-in-out;\n   &:hover {\n     transform: scale(1.05);\n@@ -19,9 +19,8 @@\n       width: 100%;\n       height: 270px;\n       object-fit: cover;\n       border-radius: $brxs;\n-      position: relative;\n       \n     }\n     .logement_title {\n       padding: 10px;\n"
+                },
+                {
+                    "date": 1682869946629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n   &:hover {\n     transform: scale(1.05);\n \t}\n     img {\n-     display: block;\n+     //display: block;\n       width: 100%;\n       height: 270px;\n       object-fit: cover;\n       border-radius: $brxs;\n"
+                },
+                {
+                    "date": 1682869960982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n \t}\n     img {\n      //display: block;\n       width: 100%;\n-      height: 270px;\n+     // height: 270px;\n       object-fit: cover;\n       border-radius: $brxs;\n       \n     }\n"
+                },
+                {
+                    "date": 1682870009330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n       padding: 10px;\n       width: 100%;\n       font-size: 18px;\n       font-weight: 500;\n-      position: relative;\n+     // position: relative;\n       color: #f1f1f1;\n     }\n .background_title {\n     //  width: 100%;\n"
+                },
+                {
+                    "date": 1682870024613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n       color: #f1f1f1;\n     }\n .background_title {\n     //  width: 100%;\n-      position: absolute;\n+     // position: absolute;\n       bottom: 0;\n       border-radius: 1rem;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n \n"
+                },
+                {
+                    "date": 1682870033664,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n       color: #f1f1f1;\n     }\n .background_title {\n     //  width: 100%;\n-     // position: absolute;\n+      position: absolute;\n       bottom: 0;\n       border-radius: 1rem;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n \n"
+                },
+                {
+                    "date": 1682870064573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n .background_title {\n     //  width: 100%;\n       position: absolute;\n       bottom: 0;\n-      border-radius: 1rem;\n+      border-radius: $brxsem;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n \n      \n     }\n"
+                },
+                {
+                    "date": 1682870083401,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,12 +30,12 @@\n      // position: relative;\n       color: #f1f1f1;\n     }\n .background_title {\n-    //  width: 100%;\n+    width: 100%;\n       position: absolute;\n       bottom: 0;\n-      border-radius: $brxsem;\n+      border-radius: $brxs;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n \n      \n     }\n"
+                },
+                {
+                    "date": 1682870200645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n       padding: 10px;\n       width: 100%;\n       font-size: 18px;\n       font-weight: 500;\n-     // position: relative;\n+      position: relative;\n       color: #f1f1f1;\n     }\n .background_title {\n     width: 100%;\n"
+                },
+                {
+                    "date": 1682870208189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,8 @@\n       padding: 10px;\n       width: 100%;\n       font-size: 18px;\n       font-weight: 500;\n-      position: relative;\n       color: #f1f1f1;\n     }\n .background_title {\n     width: 100%;\n"
+                },
+                {
+                    "date": 1682870251277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n \t}\n     img {\n      //display: block;\n       width: 100%;\n-     // height: 270px;\n+      height: 270px;\n       object-fit: cover;\n       border-radius: $brxs;\n       \n     }\n"
+                },
+                {
+                    "date": 1682870260901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n \t}\n     img {\n      //display: block;\n       width: 100%;\n-      height: 270px;\n+      mheight: 270px;\n       object-fit: cover;\n       border-radius: $brxs;\n       \n     }\n"
+                },
+                {
+                    "date": 1682870286314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n \t}\n     img {\n      //display: block;\n       width: 100%;\n-      mheight: 270px;\n+     // min-height: 270px;\n       object-fit: cover;\n       border-radius: $brxs;\n       \n     }\n"
+                },
+                {
+                    "date": 1682870291723,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n \t}\n     img {\n      //display: block;\n       width: 100%;\n-     // min-height: 270px;\n+     min-height: 270px;\n       object-fit: cover;\n       border-radius: $brxs;\n       \n     }\n"
+                },
+                {
+                    "date": 1682870305988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n \t}\n     img {\n      //display: block;\n       width: 100%;\n-     min-height: 270px;\n+     min-height: 20px;\n       object-fit: cover;\n       border-radius: $brxs;\n       \n     }\n"
+                },
+                {
+                    "date": 1682870320968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n \t}\n     img {\n      //display: block;\n       width: 100%;\n-     min-height: 20px;\n+     min-height: 335px;\n       object-fit: cover;\n       border-radius: $brxs;\n       \n     }\n"
+                },
+                {
+                    "date": 1682870353418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n   &:hover {\n     transform: scale(1.05);\n \t}\n     img {\n-     //display: block;\n+     display: block;\n       width: 100%;\n      min-height: 335px;\n       object-fit: cover;\n       border-radius: $brxs;\n"
+                },
+                {
+                    "date": 1682870380353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n     width: 100%;\n       position: absolute;\n       bottom: 0;\n       border-radius: $brxs;\n-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.5) 100%);\n \n      \n     }\n   }\n"
+                },
+                {
+                    "date": 1682870391080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n     width: 100%;\n       position: absolute;\n       bottom: 0;\n       border-radius: $brxs;\n-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.5) 100%);\n+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 20%, rgba(0, 0, 0, 0.5) 100%);\n \n      \n     }\n   }\n"
+                },
+                {
+                    "date": 1682870396271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n     width: 100%;\n       position: absolute;\n       bottom: 0;\n       border-radius: $brxs;\n-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 20%, rgba(0, 0, 0, 0.5) 100%);\n+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0.5) 100%);\n \n      \n     }\n   }\n"
+                },
+                {
+                    "date": 1682870401697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n     width: 100%;\n       position: absolute;\n       bottom: 0;\n       border-radius: $brxs;\n-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0.5) 100%);\n+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 100%, rgba(0, 0, 0, 0.5) 100%);\n \n      \n     }\n   }\n"
+                },
+                {
+                    "date": 1682870415072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n     width: 100%;\n       position: absolute;\n       bottom: 0;\n       border-radius: $brxs;\n-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 100%, rgba(0, 0, 0, 0.5) 100%);\n+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgba(0, 0, 0, 0.5) 10%);\n \n      \n     }\n   }\n"
+                },
+                {
+                    "date": 1682870601382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   margin: 30px auto;\n   width: 100%;\n   display: grid;\n   gap: 20px;\n-  grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));\n+  grid-template-columns: repeat(auto-fill, minmax(2555px, 1fr));\n \n   .card_logement {\n     display: flex;\n     position: relative;\n@@ -33,9 +33,9 @@\n     width: 100%;\n       position: absolute;\n       bottom: 0;\n       border-radius: $brxs;\n-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgba(0, 0, 0, 0.5) 10%);\n+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgba(0, 0, 0, 0.5) 60%);\n \n      \n     }\n   }\n"
+                },
+                {
+                    "date": 1682870619367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   margin: 30px auto;\n   width: 100%;\n   display: grid;\n   gap: 20px;\n-  grid-template-columns: repeat(auto-fill, minmax(2555px, 1fr));\n+  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));\n \n   .card_logement {\n     display: flex;\n     position: relative;\n@@ -16,9 +16,9 @@\n \t}\n     img {\n      display: block;\n       width: 100%;\n-     min-height: 335px;\n+     min-height: 2555px;\n       object-fit: cover;\n       border-radius: $brxs;\n       \n     }\n"
+                },
+                {
+                    "date": 1682870663761,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n \t}\n     img {\n      display: block;\n       width: 100%;\n-     min-height: 2555px;\n+     min-height: 255px;\n       object-fit: cover;\n       border-radius: $brxs;\n       \n     }\n"
+                },
+                {
+                    "date": 1682870697756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,9 @@\n       width: 100%;\n       font-size: 18px;\n       font-weight: 500;\n       color: #f1f1f1;\n+      \n     }\n .background_title {\n     width: 100%;\n       position: absolute;\n"
+                },
+                {
+                    "date": 1682870708579,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,10 @@\n       width: 100%;\n       font-size: 18px;\n       font-weight: 500;\n       color: #f1f1f1;\n-      \n+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 60%);\n+\n     }\n .background_title {\n     width: 100%;\n       position: absolute;\n"
+                },
+                {
+                    "date": 1682870713985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n       width: 100%;\n       font-size: 18px;\n       font-weight: 500;\n       color: #f1f1f1;\n-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 60%);\n+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n \n     }\n .background_title {\n     width: 100%;\n"
+                },
+                {
+                    "date": 1682870735500,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,15 +30,7 @@\n       color: #f1f1f1;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n \n     }\n-.background_title {\n-    width: 100%;\n-      position: absolute;\n-      bottom: 0;\n-      border-radius: $brxs;\n-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgba(0, 0, 0, 0.5) 60%);\n \n-     \n-    }\n   }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682870753639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,7 +30,15 @@\n       color: #f1f1f1;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n \n     }\n+.background_title {\n+    width: 100%;\n+      position: absolute;\n+      bottom: 0;\n+      border-radius: $brxs;\n+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgba(0, 0, 0, 0.5) 60%);\n \n+     \n+    }\n   }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682870764524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,8 @@\n       width: 100%;\n       font-size: 18px;\n       font-weight: 500;\n       color: #f1f1f1;\n-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n \n     }\n .background_title {\n     width: 100%;\n"
+                },
+                {
+                    "date": 1682870781244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,8 @@\n .background_title {\n     width: 100%;\n       position: absolute;\n       bottom: 0;\n-      border-radius: $brxs;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgba(0, 0, 0, 0.5) 60%);\n \n      \n     }\n"
+                },
+                {
+                    "date": 1682870787441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,8 +33,9 @@\n .background_title {\n     width: 100%;\n       position: absolute;\n       bottom: 0;\n+      border-radius: $brxs;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgba(0, 0, 0, 0.5) 60%);\n \n      \n     }\n"
+                },
+                {
+                    "date": 1682870799925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,9 @@\n \n     }\n .background_title {\n     width: 100%;\n+    \n       position: absolute;\n       bottom: 0;\n       border-radius: $brxs;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgba(0, 0, 0, 0.5) 60%);\n"
+                },
+                {
+                    "date": 1682870806396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n \n     }\n .background_title {\n     width: 100%;\n-    \n+    h\n       position: absolute;\n       bottom: 0;\n       border-radius: $brxs;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgba(0, 0, 0, 0.5) 60%);\n"
+                },
+                {
+                    "date": 1682870812960,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n \n     }\n .background_title {\n     width: 100%;\n-    h\n+    height: fit-content;\n       position: absolute;\n       bottom: 0;\n       border-radius: $brxs;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgba(0, 0, 0, 0.5) 60%);\n"
+                },
+                {
+                    "date": 1682870822705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n \n     }\n .background_title {\n     width: 100%;\n-    height: fit-content;\n+    height: ;\n       position: absolute;\n       bottom: 0;\n       border-radius: $brxs;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgba(0, 0, 0, 0.5) 60%);\n"
+                },
+                {
+                    "date": 1682870834564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,8 @@\n \n     }\n .background_title {\n     width: 100%;\n-    height: ;\n       position: absolute;\n       bottom: 0;\n       border-radius: $brxs;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgba(0, 0, 0, 0.5) 60%);\n"
+                },
+                {
+                    "date": 1682870841940,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     width: 100%;\n       position: absolute;\n       bottom: 0;\n       border-radius: $brxs;\n-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgba(0, 0, 0, 0.5) 60%);\n+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 60%);\n \n      \n     }\n   }\n"
+                },
+                {
+                    "date": 1682870847613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     width: 100%;\n       position: absolute;\n       bottom: 0;\n       border-radius: $brxs;\n-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 60%);\n+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n \n      \n     }\n   }\n"
+                },
+                {
+                    "date": 1682876076755,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   margin: 30px auto;\n   width: 100%;\n   display: grid;\n   gap: 20px;\n-  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));\n+  grid-template-columns: repeat(auto-fill, minmax(px, 1fr));\n \n   .card_logement {\n     display: flex;\n     position: relative;\n"
+                },
+                {
+                    "date": 1682876096572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   margin: 30px auto;\n   width: 100%;\n   display: grid;\n   gap: 20px;\n-  grid-template-columns: repeat(auto-fill, minmax(px, 1fr));\n+  grid-template-columns: repeat(auto-fill, minmax(0px, 1fr));\n \n   .card_logement {\n     display: flex;\n     position: relative;\n"
+                },
+                {
+                    "date": 1682876114055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   margin: 30px auto;\n   width: 100%;\n   display: grid;\n   gap: 20px;\n-  grid-template-columns: repeat(auto-fill, minmax(0px, 1fr));\n+  grid-template-columns: repeat(auto-fill, minmax(10px, 1fr));\n \n   .card_logement {\n     display: flex;\n     position: relative;\n"
+                },
+                {
+                    "date": 1682876120947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   margin: 30px auto;\n   width: 100%;\n   display: grid;\n   gap: 20px;\n-  grid-template-columns: repeat(auto-fill, minmax(10px, 1fr));\n+  grid-template-columns: repeat(auto-fill, minmax(0px, 1fr));\n \n   .card_logement {\n     display: flex;\n     position: relative;\n"
+                },
+                {
+                    "date": 1682876138619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   margin: 30px auto;\n   width: 100%;\n   display: grid;\n   gap: 20px;\n-  grid-template-columns: repeat(auto-fill, minmax(0px, 1fr));\n+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));\n \n   .card_logement {\n     display: flex;\n     position: relative;\n"
+                },
+                {
+                    "date": 1682876151107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   margin: 30px auto;\n   width: 100%;\n   display: grid;\n   gap: 20px;\n-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));\n+  grid-template-columns: repeat(auto-fill, minmax(0px, 1fr));\n \n   .card_logement {\n     display: flex;\n     position: relative;\n"
+                },
+                {
+                    "date": 1682876178484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   margin: 30px auto;\n   width: 100%;\n   display: grid;\n   gap: 20px;\n-  grid-template-columns: repeat(auto-fill, minmax(0px, 1fr));\n+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));\n \n   .card_logement {\n     display: flex;\n     position: relative;\n"
+                },
+                {
+                    "date": 1682876219187,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   margin: 30px auto;\n   width: 100%;\n   display: grid;\n   gap: 20px;\n-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));\n+  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));\n \n   .card_logement {\n     display: flex;\n     position: relative;\n"
+                },
+                {
+                    "date": 1682876261090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   margin: 30px auto;\n   width: 100%;\n   display: grid;\n   gap: 20px;\n-  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));\n+  grid-template-columns: repeat(auto-fill, minmax(555px, 1fr));\n \n   .card_logement {\n     display: flex;\n     position: relative;\n"
+                },
+                {
+                    "date": 1682876267186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   margin: 30px auto;\n   width: 100%;\n   display: grid;\n   gap: 20px;\n-  grid-template-columns: repeat(auto-fill, minmax(555px, 1fr));\n+  grid-template-columns: repeat(auto-fill, minmax(355px, 1fr));\n \n   .card_logement {\n     display: flex;\n     position: relative;\n"
+                },
+                {
+                    "date": 1682876295020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n .galery {\n   margin: 30px auto;\n   width: 100%;\n   display: grid;\n-  gap: 20px;\n+ // gap: 20px;\n   grid-template-columns: repeat(auto-fill, minmax(355px, 1fr));\n \n   .card_logement {\n     display: flex;\n"
+                },
+                {
+                    "date": 1682876302682,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n .galery {\n   margin: 30px auto;\n   width: 100%;\n   display: grid;\n- // gap: 20px;\n+  gap: 20px;\n   grid-template-columns: repeat(auto-fill, minmax(355px, 1fr));\n \n   .card_logement {\n     display: flex;\n"
+                },
+                {
+                    "date": 1682876314554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     position: relative;\n     border-radius: 10px;\n     transition: transform 200ms ease-in-out;\n   &:hover {\n-    transform: scale(1.05);\n+    transform: scale(.05);\n \t}\n     img {\n      display: block;\n       width: 100%;\n"
+                },
+                {
+                    "date": 1682876322354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,17 +3,17 @@\n   margin: 30px auto;\n   width: 100%;\n   display: grid;\n   gap: 20px;\n-  grid-template-columns: repeat(auto-fill, minmax(355px, 1fr));\n+  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));\n \n   .card_logement {\n     display: flex;\n     position: relative;\n     border-radius: 10px;\n     transition: transform 200ms ease-in-out;\n   &:hover {\n-    transform: scale(.05);\n+    transform: scale(2.05);\n \t}\n     img {\n      display: block;\n       width: 100%;\n"
+                },
+                {
+                    "date": 1682876340121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,17 +3,17 @@\n   margin: 30px auto;\n   width: 100%;\n   display: grid;\n   gap: 20px;\n-  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));\n+  grid-template-columns: repeat(auto-fill, minmax(355px, 1fr));\n \n   .card_logement {\n     display: flex;\n     position: relative;\n     border-radius: 10px;\n     transition: transform 200ms ease-in-out;\n   &:hover {\n-    transform: scale(2.05);\n+    transform: scale(1.05);\n \t}\n     img {\n      display: block;\n       width: 100%;\n"
+                },
+                {
+                    "date": 1682876348121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   margin: 30px auto;\n   width: 100%;\n   display: grid;\n   gap: 20px;\n-  grid-template-columns: repeat(auto-fill, minmax(355px, 1fr));\n+  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));\n \n   .card_logement {\n     display: flex;\n     position: relative;\n"
+                },
+                {
+                    "date": 1682943953156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n   .card_logement {\n     display: flex;\n     position: relative;\n-    border-radius: 10px;\n+    border-radius: $brxs;\n     transition: transform 200ms ease-in-out;\n   &:hover {\n     transform: scale(1.05);\n \t}\n"
+                },
+                {
+                    "date": 1682953192266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,8 @@\n       position: absolute;\n       bottom: 0;\n       border-radius: $brxs;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n-\n      \n     }\n   }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682953203632,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,8 @@\n       position: absolute;\n       bottom: 0;\n       border-radius: $brxs;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n-     \n     }\n   }\n+  \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682953213541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,6 +37,9 @@\n       border-radius: $brxs;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n     }\n   }\n-  \n+  @include media_desktop{\n+    \n+      \n+  }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682953224911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,6 @@\n       border-radius: $brxs;\n       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n     }\n   }\n-  @include media_desktop{\n-    \n-      \n-  }\n+ \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1682953230492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,12 @@\n   width: 100%;\n   display: grid;\n   gap: 20px;\n   grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));\n-\n+  @include media_desktop{\n+    \n+      \n+  }\n   .card_logement {\n     display: flex;\n     position: relative;\n     border-radius: $brxs;\n"
+                },
+                {
+                    "date": 1682953237524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   display: grid;\n   gap: 20px;\n   grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));\n   @include media_desktop{\n-    \n+    background-color: ;\n       \n   }\n   .card_logement {\n     display: flex;\n"
+                },
+                {
+                    "date": 1682956000445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   display: grid;\n   gap: 20px;\n   grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));\n   @include media_desktop{\n-    background-color: aqua;\n+    background-color: $color-whitesmoke;\n       \n   }\n   .card_logement {\n     display: flex;\n"
+                }
+            ],
+            "date": 1682619934663,
+            "name": "Commit-0",
+            "content": ".galery {\n  margin-bottom: 30px;\n  width: 100%;\n  background-color: #f7f7f7;\n  display: grid;\n  gap: 20px;\n  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));\n  padding: 20px;\n\n  .card_logement {\n   // min-height: 270px;\n    display: flex;\n   // width: 404px;\n    align-items: flex-end;\n    position: relative;\n    border-radius: 10px;\n    transition: transform 200ms ease-in-out;\n\t//transition-duration: 0.5s;\n  &:hover {\n    transform: scale(1.05);\n\t}\n    img {\n     display: block;\n      width: 100%;\n      height: 270px;\n      object-fit: cover;\n      border-radius: 1rem;\n    }\n    .background_title {\n      width: 100%;\n      //width: auto;\n      position: absolute;\n      bottom: 0;\n      border-radius: 1rem;\n      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);\n\n      .logement_title {\n        padding: 10px;\n        width: 300px;\n        margin-right: 50px;\n        font-size: 18px;\n        font-weight: 500;\n        color: #f1f1f1;\n      }\n    }\n  }\n}"
+        }
+    ]
+}

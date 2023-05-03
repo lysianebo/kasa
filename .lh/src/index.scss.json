@@ -1,0 +1,154 @@
+{
+    "sourceFile": "src/index.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 34,
+            "patches": [
+                {
+                    "date": 1682450781123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1682450797749,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-@import './/settings/settings';\n+@import '../settings/settings';\n @import './pages/pages';\n @import './components/caroussel';\n @import './components/containerChezVous';\n @import './components/galery';\n"
+                },
+                {
+                    "date": 1682450807117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-@import '../settings/settings';\n+@import './   /settings/settings';\n @import './pages/pages';\n @import './components/caroussel';\n @import './components/containerChezVous';\n @import './components/galery';\n"
+                },
+                {
+                    "date": 1682450832776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-@import './   /settings/settings';\n+@import './styles/   /settings/settings';\n @import './pages/pages';\n @import './components/caroussel';\n @import './components/containerChezVous';\n @import './components/galery';\n"
+                },
+                {
+                    "date": 1682450839943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-@import './styles/   /settings/settings';\n+@import './styles/settings/   /settings/settings';\n @import './pages/pages';\n @import './components/caroussel';\n @import './components/containerChezVous';\n @import './components/galery';\n"
+                },
+                {
+                    "date": 1682450850789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-@import './styles/settings/   /settings/settings';\n+@import './styles/settings/settings.scss   /settings/settings';\n @import './pages/pages';\n @import './components/caroussel';\n @import './components/containerChezVous';\n @import './components/galery';\n"
+                },
+                {
+                    "date": 1682450856879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-@import './styles/settings/settings.scss   /settings/settings';\n+@import './styles/settings/settings/settings';\n @import './pages/pages';\n @import './components/caroussel';\n @import './components/containerChezVous';\n @import './components/galery';\n"
+                },
+                {
+                    "date": 1682450895657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-@import './styles/settings/settings/settings';\n-@import './pages/pages';\n+@import './styles/settings/settings';\n+@import '.styles//pages/pages';\n @import './components/caroussel';\n @import './components/containerChezVous';\n @import './components/galery';\n"
+                },
+                {
+                    "date": 1682450902361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n @import './styles/settings/settings';\n-@import '.styles//pages/pages';\n+@import './styles/pages/pages';\n @import './components/caroussel';\n @import './components/containerChezVous';\n @import './components/galery';\n"
+                },
+                {
+                    "date": 1682450926116,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n @import './styles/settings/settings';\n @import './styles/pages/pages';\n-@import './components/caroussel';\n+@import './style/components/caroussel';\n @import './components/containerChezVous';\n @import './components/galery';\n"
+                },
+                {
+                    "date": 1682450932587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n @import './styles/settings/settings';\n @import './styles/pages/pages';\n @import './style/components/caroussel';\n-@import './components/containerChezVous';\n+@import './style/components/containerChezVous';\n @import './components/galery';\n"
+                },
+                {
+                    "date": 1682450939761,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n @import './styles/settings/settings';\n @import './styles/pages/pages';\n @import './style/components/caroussel';\n @import './style/components/containerChezVous';\n-@import './components/galery';\n+@import './styles/components/galery';\n"
+                },
+                {
+                    "date": 1682450945540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n @import './styles/settings/settings';\n @import './styles/pages/pages';\n @import './style/components/caroussel';\n-@import './style/components/containerChezVous';\n+@import './styles/components/containerChezVous';\n @import './styles/components/galery';\n"
+                },
+                {
+                    "date": 1683110925250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-@import './styles/settings/settings';\n+//@import './styles/settings/settings';\n @import './styles/pages/pages';\n-@import './style/components/caroussel';\n+@import './styles/components/caroussel';\n @import './styles/components/containerChezVous';\n @import './styles/components/galery';\n"
+                },
+                {
+                    "date": 1683110931393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n //@import './styles/settings/settings';\n-@import './styles/pages/pages';\n+//@import './styles/pages/pages';\n @import './styles/components/caroussel';\n @import './styles/components/containerChezVous';\n @import './styles/components/galery';\n"
+                },
+                {
+                    "date": 1683110942295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n //@import './styles/settings/settings';\n //@import './styles/pages/pages';\n-@import './styles/components/caroussel';\n+//@import './styles/components/caroussel';\n @import './styles/components/containerChezVous';\n @import './styles/components/galery';\n"
+                },
+                {
+                    "date": 1683110951213,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n //@import './styles/settings/settings';\n //@import './styles/pages/pages';\n //@import './styles/components/caroussel';\n-@import './styles/components/containerChezVous';\n-@import './styles/components/galery';\n+//@import './styles/components/containerChezVous';\n+//@import './styles/components/galery';\n"
+                },
+                {
+                    "date": 1683110966760,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n //@import './styles/settings/settings';\n //@import './styles/pages/pages';\n //@import './styles/components/caroussel';\n //@import './styles/components/containerChezVous';\n-//@import './styles/components/galery';\n+@import './styles/components/galery';\n"
+                },
+                {
+                    "date": 1683111014726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n //@import './styles/settings/settings';\n //@import './styles/pages/pages';\n //@import './styles/components/caroussel';\n //@import './styles/components/containerChezVous';\n-@import './styles/components/galery';\n+@import './styles/components/';\n"
+                },
+                {
+                    "date": 1683111021397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n //@import './styles/settings/settings';\n //@import './styles/pages/pages';\n //@import './styles/components/caroussel';\n //@import './styles/components/containerChezVous';\n-@import './styles/components/';\n+@import './styles/components/H';\n"
+                },
+                {
+                    "date": 1683111086683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n //@import './styles/settings/settings';\n //@import './styles/pages/pages';\n //@import './styles/components/caroussel';\n //@import './styles/components/containerChezVous';\n-@import './styles/components/H';\n+//@import './styles/components/Home';\n"
+                },
+                {
+                    "date": 1683111101735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,3 @@\n-//@import './styles/settings/settings';\n-//@import './styles/pages/pages';\n //@import './styles/components/caroussel';\n //@import './styles/components/containerChezVous';\n //@import './styles/components/Home';\n"
+                },
+                {
+                    "date": 1683111325090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n //@import './styles/components/caroussel';\n //@import './styles/components/containerChezVous';\n-//@import './styles/components/Home';\n+@import './styles/components/Home';\n"
+                },
+                {
+                    "date": 1683111355079,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n //@import './styles/components/caroussel';\n //@import './styles/components/containerChezVous';\n-@import './styles/components/Home';\n+@import './Home';\n"
+                },
+                {
+                    "date": 1683111367734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n //@import './styles/components/caroussel';\n //@import './styles/components/containerChezVous';\n-@import './Home';\n+@import './pages/Home.jsx';\n"
+                },
+                {
+                    "date": 1683111386395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n //@import './styles/components/caroussel';\n //@import './styles/components/containerChezVous';\n-@import './pages/Home.jsx';\n+@import './styles/components/Home';\n"
+                },
+                {
+                    "date": 1683111420093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n //@import './styles/components/caroussel';\n //@import './styles/components/containerChezVous';\n-@import './styles/components/Home';\n+@import './styles/components/';\n"
+                },
+                {
+                    "date": 1683111462862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n //@import './styles/components/caroussel';\n //@import './styles/components/containerChezVous';\n-@import './styles/components/';\n+@import './styles//';\n"
+                },
+                {
+                    "date": 1683111491321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n //@import './styles/components/caroussel';\n //@import './styles/components/containerChezVous';\n-@import './styles//';\n+@import './styles/pages/pages';\n"
+                },
+                {
+                    "date": 1683111703205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n //@import './styles/components/caroussel';\n //@import './styles/components/containerChezVous';\n-@import './styles/pages/pages';\n+@import './styles/pages/pages.scss';\n+\n"
+                },
+                {
+                    "date": 1683117913631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n //@import './styles/components/caroussel';\n //@import './styles/components/containerChezVous';\n @import './styles/pages/pages.scss';\n-\n+//@import './about';\n+@import './errorPage';\n+@import './logement';\n"
+                },
+                {
+                    "date": 1683117919140,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n //@import './styles/components/caroussel';\n //@import './styles/components/containerChezVous';\n @import './styles/pages/pages.scss';\n //@import './about';\n-@import './errorPage';\n+//@import './errorPage';\n @import './logement';\n"
+                },
+                {
+                    "date": 1683117992571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n //@import './styles/components/caroussel';\n //@import './styles/components/containerChezVous';\n-@import './styles/pages/pages.scss';\n+//@import './styles/pages/pages.scss';\n //@import './about';\n //@import './errorPage';\n-@import './logement';\n+//@import './logement';\n"
+                },
+                {
+                    "date": 1683118228118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,4 +3,5 @@\n //@import './styles/pages/pages.scss';\n //@import './about';\n //@import './errorPage';\n //@import './logement';\n+\n"
+                },
+                {
+                    "date": 1683118407332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,5 @@\n //@import './styles/pages/pages.scss';\n //@import './about';\n //@import './errorPage';\n //@import './logement';\n-\n+@import '../settings/settings.scss';\n"
+                }
+            ],
+            "date": 1682450781123,
+            "name": "Commit-0",
+            "content": "@import './/settings/settings';\n@import './pages/pages';\n@import './components/caroussel';\n@import './components/containerChezVous';\n@import './components/galery';\n"
+        }
+    ]
+}

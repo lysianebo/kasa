@@ -1,0 +1,136 @@
+@import '../settings/settings.scss';
+
+.logement_page{
+    color: $primary-color;
+    h1{
+        font-size: $h2;
+        font-weight: 500px;
+    }
+    h2{
+        font-size: $h3;
+        line-height: 50px;
+    }
+    h3{
+        font-size: $text;
+        line-height: 50px;
+    }
+    .tags{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-bottom: 10px;
+        span{
+        background:$primary-color;
+        color: white;
+        border-radius: $brxxs;
+        font-size: 10px;
+        padding: 5px 0;
+        text-align: center;
+        width: 26%;
+        }
+    }
+    @include media_desktop{
+        h1{
+            font-size: $h2 * 2;
+            font-weight: 500px;
+        }
+         h3, h2{
+            line-height: 40px;
+            font-size: $h2 ;
+        }
+       .tags span{
+            font-size: $h3;
+            font-weight: 500;
+            width: 10%;
+            border-radius:$brxs;
+            margin-top: 10px;
+        }
+            .rating-stars{
+                align-items: flex-end;
+                font-size: 40px;
+              margin-bottom: 0;
+        }
+        .logement_owner{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: flex-end;
+            position: relative;
+            top : -120px ;
+            img{
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+            }
+    }
+        .container_description-equipment {
+            margin-top: -40px;
+            margin-bottom: 40px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: 40px;
+                grid-area: 1 / 1 / 2 / 3;
+          }
+    }
+}
+.logement_title_owner{
+ flex-direction: column;
+}
+.logement_owner{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 10px;
+position: relative;
+.owner{
+  display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 30%;
+    justify-content: flex-end;
+    
+       h3{
+        width: 50px;
+        text-align: right;
+        line-height: 1.5;
+    }
+    img{
+        width: 32px;
+        height: 32px;
+        background: #C4C4C4;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-left: 30px;
+        @include media_desktop{
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+        }
+    }
+    }
+}
+.rating-stars{
+    align-items: flex-start;
+    font-size: 20px;
+    .star{
+        &.on{
+            color: $primary-color;
+        }
+        &.off{
+            color: #E3E3E3;
+        }
+    }
+    }
+.container_description-equipment {
+   @include dropdown
+}
+      
+
+      
+      
+
+
+
+
+
